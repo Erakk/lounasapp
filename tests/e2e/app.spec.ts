@@ -32,7 +32,7 @@ test('browse: category + quick filters narrow the list, a card opens the place p
 
 test('empty state appears and "Tyhjennä" restores the list', async ({ page }) => {
   await open(page);
-  await page.getByRole('button', { name: /^Lisää/ }).click();
+  await page.getByRole('button', { name: /^Suodattimet/ }).click();
   await page.getByText('Vain suosikit ♥').click(); // tap the label, like a user
   await expect(page.getByRole('switch', { name: /Vain suosikit/ })).toBeChecked();
   await page.getByRole('button', { name: /Näytä 0 paikkaa/ }).click();

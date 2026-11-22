@@ -4,7 +4,7 @@ export const fi = {
   tabs: { search: 'Etsi', map: 'Kartta', random: 'Arvo', mine: 'Omat' },
   home: {
     question: 'Mitä tänään syötäisiin?',
-    openNow: (n: number) => `${n} paikkaa auki lounaalla nyt`,
+    openNow: (n: number) => `${n} auki nyt`,
     noneOpen: 'Ei lounasaikaa juuri nyt',
     results: (n: number) => `${n} paikkaa`,
     sortNearest: 'Järjestys: lähin',

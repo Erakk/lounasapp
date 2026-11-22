@@ -1,5 +1,4 @@
 import { useCallback, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { useShallow } from 'zustand/react/shallow';
 import { CategoryGrid } from '../components/CategoryGrid';
 import { FilterBar } from '../components/FilterBar';
@@ -29,12 +28,13 @@ export function HomeScreen() {
   // Category tile counts reflect the other filters, so the numbers match what you'd get by tapping.
   const counts = useMemo(() => countByCategory(filterPlaces(PLACES, { ...filters, categories: [] }, now, stats)), [filters, now, stats]);
   const results = useMemo(() => filterPlaces(PLACES, filters, now, stats), [filters, now, stats]);
-  const anyActive = activeFilterCount(filters) > 0 || filters.categories.length > 0;
+  const filterCount = activeFilterCount(filters);
+  const anyActive = filterCount > 0 || filters.categories.length > 0;
 
   const dateLabel = now.toLocaleDateString('fi-FI', { weekday: 'short', day: 'numeric', month: 'numeric' });
 
   return (
-    <div className="pb-20">
+    <div className="pb-4">
       <header className="flex items-center justify-between px-4 pt-6">
         <div>
           <h1 className="font-display text-[26px] font-bold tracking-tight">
@@ -45,13 +45,25 @@ export function HomeScreen() {
             {dateLabel} · {openCount ? fi.home.openNow(openCount) : fi.home.noneOpen}
           </p>
         </div>
-        <div aria-hidden className="grid size-[38px] place-items-center rounded-full bg-accent-soft text-lg">
-          🍽️
-        </div>
+        <button
+          type="button"
+          onClick={() => setSheetOpen(true)}
+          aria-label={filterCount ? `${fi.filters.title} (${filterCount} käytössä)` : fi.filters.title}
+          className={`relative inline-flex min-h-10 items-center gap-1.5 rounded-full border px-3.5 text-[13px] font-bold ${
+            filterCount ? 'border-ink bg-ink text-bg' : 'border-line bg-surface text-ink'
+          }`}
+        >
+          <span aria-hidden>⚙️</span> {fi.filters.title}
+          {filterCount > 0 && (
+            <span aria-hidden className="absolute -top-1.5 -right-1 grid size-5 place-items-center rounded-full bg-accent text-[11px] text-white">
+              {filterCount}
+            </span>
+          )}
+        </button>
       </header>
 
       <div className="sticky top-0 z-10 bg-bg/95 px-4 pt-3 pb-2 backdrop-blur">
-        <FilterBar onMore={() => setSheetOpen(true)} />
+        <FilterBar />
       </div>
 
       <section className="mt-3 px-4">
@@ -106,13 +118,6 @@ export function HomeScreen() {
           </ul>
         )}
       </section>
-
-      <Link
-        to="/arvo"
-        className="fixed inset-x-0 bottom-[calc(84px+env(safe-area-inset-bottom))] z-10 mx-auto flex h-14 w-[calc(100%-32px)] max-w-[448px] items-center justify-center gap-2.5 rounded-[18px] bg-accent text-base font-extrabold text-accent-ink shadow-[0_10px_24px_rgb(200_54_74/.35)] active:scale-[.98]"
-      >
-        🎲 Arvo paikka
-      </Link>
 
       <FilterSheet open={sheetOpen} resultCount={results.length} onClose={closeSheet} />
     </div>

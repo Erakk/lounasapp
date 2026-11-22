@@ -4,7 +4,7 @@ import { useToast } from '../state/toastStore';
 export function ToastHost() {
   const { toast, dismiss } = useToast();
   return (
-    <div aria-live="polite" className="pointer-events-none fixed inset-x-0 bottom-[calc(150px+env(safe-area-inset-bottom))] z-50 mx-auto flex max-w-[480px] justify-center px-4">
+    <div aria-live="polite" className="pointer-events-none fixed inset-x-0 bottom-[calc(92px+env(safe-area-inset-bottom))] z-50 mx-auto flex max-w-[480px] justify-center px-4">
       {toast && (
         <div
           key={toast.id}
