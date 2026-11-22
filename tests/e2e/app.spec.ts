@@ -106,3 +106,22 @@ test('map: markers render and tapping Kauppahalli lists its places', async ({ pa
   await expect(page.getByRole('link', { name: '4 Vuodenaikaa', exact: true })).toBeVisible();
   await expect(page.getByText(/\d+ paikkaa/).last()).toBeVisible();
 });
+
+test('random pick uses the same filters as the list, both ways', async ({ page }) => {
+  await open(page, '/arvo');
+  await expect(page.getByRole('button', { name: /Mennään/ })).toBeVisible({ timeout: 5000 });
+
+  // Choose a category on the Arvo screen → it picks again from that category.
+  await page.getByRole('group', { name: 'Kategoriat' }).getByRole('button', { name: /Intia & Nepal/ }).click();
+  await expect(page.getByText(/Mukana \d+\/14 listan paikasta|Kaikki 14 listan paikkaa mukana/)).toBeVisible();
+  await expect(page.getByRole('button', { name: /Mennään/ })).toBeVisible({ timeout: 5000 });
+  const picked = await page.locator('h2.font-display').innerText();
+  await page.getByRole('link', { name: 'Avaa tiedot' }).click();
+  await expect(page.getByText('Intia & Nepal').first()).toBeVisible();
+  expect(picked.length).toBeGreaterThan(0);
+
+  // The home list shows the same selection.
+  await page.getByRole('link', { name: /Etsi/ }).click();
+  await expect(page.getByRole('button', { name: /^Intia & Nepal/ })).toHaveAttribute('aria-pressed', 'true');
+  await expect(page.locator('section[aria-live] h2')).toHaveText('14 paikkaa');
+});

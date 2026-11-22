@@ -2,7 +2,7 @@ import { CATEGORIES, tileBg, type CategoryId } from '../data/categories';
 import { fi } from '../i18n/fi';
 
 // Asian subcategories are reachable through filters later; the grid shows the umbrella tile.
-const GRID_IDS: CategoryId[] = [
+export const GRID_IDS: CategoryId[] = [
   'kotiruoka', 'aasia', 'intia', 'burger', 'pizza', 'valimeri', 'kebab', 'buffet', 'bistro', 'kahvila', 'vege', 'keitto',
 ];
 

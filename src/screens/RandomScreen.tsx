@@ -4,7 +4,8 @@ import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { useShallow } from 'zustand/react/shallow';
 import { PLACES } from '../data/places';
 import { CATEGORIES, tileBg } from '../data/categories';
-import { filterPlaces } from '../domain/filters';
+import { activeFilterCount, filterPlaces } from '../domain/filters';
+import { weekdayOf } from '../domain/openingHours';
 import { buildOptions, pickRandom, type RandomOption } from '../domain/randomPick';
 import { hoursToday, priceLabel } from '../domain/format';
 import { relativeDay } from '../domain/stats';
@@ -13,7 +14,9 @@ import { addVisit, removeVisit } from '../db/repo';
 import { selectFilters, useFilters } from '../state/filterStore';
 import { selectRandomSettings, useRandomSettings } from '../state/randomStore';
 import { useToast } from '../state/toastStore';
-import { Switch } from '../components/FilterSheet';
+import { FilterSheet, Switch } from '../components/FilterSheet';
+import { FilterBar } from '../components/FilterBar';
+import { CategoryChips } from '../components/CategoryChips';
 import { fi } from '../i18n/fi';
 
 type Phase = 'rolling' | 'result' | 'done' | 'empty';
@@ -22,16 +25,28 @@ export function RandomScreen() {
   const navigate = useNavigate();
   const reduceMotion = useReducedMotion();
   const filters = useFilters(useShallow(selectFilters));
+  const toggleCategory = useFilters((s) => s.toggleCategory);
+  const [sheetOpen, setSheetOpen] = useState(false);
+  const closeSheet = useCallback(() => setSheetOpen(false), []);
   const settings = useRandomSettings(useShallow(selectRandomSettings));
   const setSettings = useRandomSettings((s) => s.set);
   const stats = useAllStats();
   const showToast = useToast((s) => s.show);
 
   const now = useMemo(() => new Date(), []);
-  const options = useMemo(
-    () => buildOptions(filterPlaces(PLACES, filters, now, stats), stats, settings, now),
-    [filters, settings, stats, now],
-  );
+  // Exactly the same filtering as the home list (shared filter store), then the random-only rules on top.
+  const listPlaces = useMemo(() => filterPlaces(PLACES, filters, now, stats), [filters, stats, now]);
+  const options = useMemo(() => buildOptions(listPlaces, stats, settings, now), [listPlaces, settings, stats, now]);
+
+  // Why the random pick may have fewer places than the list: explain it instead of hiding it.
+  const left = useMemo(() => {
+    const today = weekdayOf(now);
+    const noLunch = settings.lunchTodayOnly ? listPlaces.filter((p) => !p.lunchHours[today]?.length).length : 0;
+    const unverified = settings.skipUnverified
+      ? listPlaces.filter((p) => p.status !== 'open' && (!settings.lunchTodayOnly || p.lunchHours[today]?.length)).length
+      : 0;
+    return { noLunch, unverified, included: listPlaces.length - noLunch - unverified };
+  }, [listPlaces, settings, now]);
 
   const [phase, setPhase] = useState<Phase>('rolling');
   const [winner, setWinner] = useState<RandomOption>();
@@ -75,6 +90,20 @@ export function RandomScreen() {
     return () => clearInterval(timer.current);
   }, []);
 
+  // Changing filters or settings here (or on the list) picks again, so the result always matches them.
+  const criteriaKey = JSON.stringify(filters) + JSON.stringify(settings);
+  const firstKey = useRef(criteriaKey);
+  useEffect(() => {
+    if (criteriaKey === firstKey.current) return;
+    firstKey.current = criteriaKey;
+    // Hide the old result at once: it may no longer match the new filters.
+    clearInterval(timer.current);
+    setFlash('');
+    setPhase('rolling');
+    const t = setTimeout(() => rollRef.current(), 350); // wait for a burst of taps (e.g. + + +) to settle
+    return () => clearTimeout(t);
+  }, [criteriaKey]);
+
   // If settings or filters change so much that nothing is left, say so.
   useEffect(() => {
     if (!options.length && phase !== 'rolling') setPhase('empty');
@@ -91,10 +120,10 @@ export function RandomScreen() {
     setPhase('done');
   };
 
-  const criteria = describeCriteria(filters);
+  const filterCount = activeFilterCount(filters);
 
   return (
-    <div className="relative min-h-[calc(100vh-84px)] overflow-hidden bg-gradient-to-b from-accent to-[#9E2537] px-5 pt-12 pb-6 text-white">
+    <div className="relative min-h-[calc(100vh-84px)] overflow-hidden bg-gradient-to-b from-accent to-[#9E2537] px-5 pt-10 pb-6 text-white">
       {confettiKey > 0 && !reduceMotion && <Confetti key={confettiKey} />}
 
       <button
@@ -106,16 +135,59 @@ export function RandomScreen() {
         ✕
       </button>
 
-      <h1 className="font-display text-[30px] leading-tight font-bold">{phase === 'done' ? fi.random.done : fi.random.title}</h1>
-      <p className="mt-1.5 text-[13px] opacity-85">
-        {criteria} · {fi.random.options(options.length)}
+      <h1 className="pr-12 font-display text-[28px] leading-tight font-bold">{phase === 'done' ? fi.random.done : fi.random.title}</h1>
+      <p className="mt-1.5 text-[13px] opacity-90">
+        {fi.random.fromList(left.included, listPlaces.length)}
+        {left.noLunch > 0 && ` · ${fi.random.noLunchCount(left.noLunch)}`}
+        {left.unverified > 0 && ` · ${fi.random.unverifiedCount(left.unverified)}`}
+        {(left.noLunch > 0 || left.unverified > 0) && (
+          <>
+            {' '}
+            <button
+              type="button"
+              onClick={() => {
+                setShowSettings(true);
+                setTimeout(() => document.getElementById('random-settings')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 50);
+              }}
+              className="font-bold underline underline-offset-2"
+            >
+              {fi.random.change}
+            </button>
+          </>
+        )}
       </p>
 
-      <div className="relative mt-7 min-h-[340px]">
+      {/* Same filters as the home list – changes apply to both. */}
+      <section aria-label={fi.random.filtersTitle} className="mx-auto mt-3 max-w-[340px] rounded-[20px] bg-surface p-2.5 text-ink shadow-[0_8px_24px_rgb(0_0_0/.15)]">
+        <div className="mb-2 flex items-center justify-between pl-1">
+          <h2 className="text-sm font-extrabold">{fi.random.filtersTitle}</h2>
+          <button
+            type="button"
+            onClick={() => setSheetOpen(true)}
+            aria-label={filterCount ? `${fi.filters.title} (${filterCount} käytössä)` : fi.filters.title}
+            className={`relative inline-flex min-h-9 items-center gap-1.5 rounded-full border px-3 text-[12.5px] font-bold ${
+              filterCount ? 'border-ink bg-ink text-bg' : 'border-line bg-surface text-ink'
+            }`}
+          >
+            <span aria-hidden>⚙️</span> {fi.filters.title}
+            {filterCount > 0 && (
+              <span aria-hidden className="absolute -top-1.5 -right-1 grid size-5 place-items-center rounded-full bg-accent text-[11px] text-white">
+                {filterCount}
+              </span>
+            )}
+          </button>
+        </div>
+        <CategoryChips selected={filters.categories} onToggle={toggleCategory} />
+        <div className="mt-2">
+          <FilterBar />
+        </div>
+      </section>
+
+      <div className="relative mt-5 min-h-[260px]">
         {phase !== 'empty' && (
           <>
-            <div aria-hidden className="absolute inset-x-6 top-4 h-[300px] -rotate-6 rounded-[28px] bg-white/25" />
-            <div aria-hidden className="absolute inset-x-6 top-2 h-[300px] rotate-[5deg] rounded-[28px] bg-white/35" />
+            <div aria-hidden className="absolute inset-x-8 top-4 h-[230px] -rotate-6 rounded-[28px] bg-white/25" />
+            <div aria-hidden className="absolute inset-x-8 top-2 h-[230px] rotate-[5deg] rounded-[28px] bg-white/35" />
           </>
         )}
 
@@ -123,7 +195,7 @@ export function RandomScreen() {
           {phase === 'rolling' && (
             <motion.div
               key="rolling"
-              className="relative mx-auto grid h-[300px] max-w-[300px] place-items-center rounded-[28px] bg-surface p-6 text-center text-ink shadow-[0_30px_60px_rgb(0_0_0/.25)]"
+              className="relative mx-auto grid h-[240px] max-w-[300px] place-items-center rounded-[28px] bg-surface p-6 text-center text-ink shadow-[0_30px_60px_rgb(0_0_0/.25)]"
             >
               <div>
                 <div aria-hidden className="mb-3 animate-bounce text-5xl">
@@ -163,25 +235,26 @@ export function RandomScreen() {
         </AnimatePresence>
       </div>
 
-      <div className="mx-auto mt-6 grid max-w-[340px] gap-2.5">
+      <div className="mx-auto mt-4 flex max-w-[340px] gap-2.5">
         {phase === 'result' && (
-          <button type="button" onClick={() => void go()} className="h-14 rounded-[18px] bg-white text-[17px] font-extrabold text-[#A8283B] active:scale-[.98]">
+          <button type="button" onClick={() => void go()} className="h-14 flex-[1.5] rounded-[18px] bg-white text-[17px] font-extrabold text-[#A8283B] active:scale-[.98]">
             {fi.random.go}
           </button>
         )}
-        {phase === 'done' && winner?.kind === 'place' && <p className="text-center text-sm opacity-90">{fi.random.doneSub}</p>}
+        {phase === 'done' && winner?.kind === 'place' && <p className="flex-[1.5] self-center text-center text-[13px] leading-snug opacity-90">{fi.random.doneSub}</p>}
         {phase !== 'rolling' && options.length > 0 && (
           <button
             type="button"
             onClick={roll}
-            className="h-[50px] rounded-[18px] border-2 border-white/60 text-[15px] font-extrabold active:scale-[.98]"
+            className="h-14 flex-1 rounded-[18px] border-2 border-white/60 text-[15px] font-extrabold whitespace-nowrap active:scale-[.98]"
           >
             {phase === 'empty' ? fi.random.roll : fi.random.again}
           </button>
         )}
       </div>
 
-      <div className="mx-auto mt-6 max-w-[340px]">
+
+      <div id="random-settings" className="mx-auto mt-4 max-w-[340px]">
         <button
           type="button"
           aria-expanded={showSettings}
@@ -201,6 +274,8 @@ export function RandomScreen() {
           </div>
         )}
       </div>
+
+      <FilterSheet open={sheetOpen} resultCount={listPlaces.length} onClose={closeSheet} />
     </div>
   );
 }
@@ -212,7 +287,7 @@ function PlaceWinner({ option, lastVisited, now }: { option: Extract<RandomOptio
   const price = priceLabel(p);
   return (
     <>
-      <div aria-hidden className="grid h-[150px] place-items-center text-[72px]" style={{ background: tileBg(cat.tile) }}>
+      <div aria-hidden className="grid h-[110px] place-items-center text-[60px]" style={{ background: tileBg(cat.tile) }}>
         {cat.emoji}
       </div>
       <div className="p-4 pt-3.5">
@@ -255,7 +330,7 @@ function ClusterWinner({ option }: { option: Extract<RandomOption, { kind: 'clus
   const shown = option.places.slice(0, 10);
   return (
     <>
-      <div aria-hidden className="grid h-[120px] place-items-center bg-[#E6E6F2] text-[64px]">
+      <div aria-hidden className="grid h-[96px] place-items-center bg-[#E6E6F2] text-[52px]">
         🏬
       </div>
       <div className="p-4 pt-3.5">
@@ -277,15 +352,6 @@ function ClusterWinner({ option }: { option: Extract<RandomOption, { kind: 'clus
   );
 }
 
-function describeCriteria(f: ReturnType<typeof selectFilters>): string {
-  const parts: string[] = [];
-  parts.push(f.categories.length ? f.categories.map((c) => CATEGORIES.find((x) => x.id === c)!.label).join(' + ') : fi.random.everything);
-  if (f.groupSize) parts.push(`${f.groupSize} hlö`);
-  if (f.maxWalk) parts.push(`≤ ${f.maxWalk} min`);
-  if (f.maxPrice) parts.push(`≤ ${f.maxPrice} €`);
-  if (f.openNow) parts.push(fi.filters.openNow.toLowerCase());
-  return parts.join(' · ');
-}
 
 const COLORS = ['#FFD166', '#FFFFFF', '#7FA387', '#F9E1E4', '#E2A23B'];
 function Confetti() {
