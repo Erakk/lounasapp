@@ -1,0 +1,45 @@
+{
+  "name": "lounasapp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Lunch picker for central Tampere (origin: Kehräsaari)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run data && tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "build:places": "tsx scripts/build-places.ts",
+    "validate": "tsx scripts/validate-places.ts",
+    "data": "npm run build:places && npm run validate",
+    "typecheck": "tsc --noEmit",
+    "e2e": "npm run build && playwright test",
+    "icons": "tsx scripts/make-icons.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@tailwindcss/vite": "^4.1.11",
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "fake-indexeddb": "^6.0.0",
+    "tailwindcss": "^4.1.11",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vite-plugin-pwa": "^0.21.1",
+    "vitest": "^2.1.8"
+  },
+  "dependencies": {
+    "dexie": "^4.0.10",
+    "dexie-react-hooks": "^1.1.7",
+    "framer-motion": "^11.15.0",
+    "maplibre-gl": "^4.7.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "zod": "^3.24.1",
+    "zustand": "^5.0.2"
+  }
+}

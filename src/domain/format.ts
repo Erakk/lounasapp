@@ -1,0 +1,28 @@
+import type { Place } from './schema';
+import { weekdayOf } from './openingHours';
+
+const eur = (n: number) => n.toLocaleString('fi-FI', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+
+/** Short price for cards: "13,90 €", "10,90–13,90 €", "2,55 €/100 g" or "" when unknown. */
+export function priceLabel(p: Place): string {
+  const { lunch, min, max, note } = p.price;
+  if (p.format === 'by_weight' && note) return note;
+  if (min !== undefined && max !== undefined && min !== max) return `${eur(min).replace(' €', '')}–${eur(max)}`;
+  if (lunch !== undefined) return eur(lunch);
+  if (min !== undefined) return `alk. ${eur(min)}`;
+  return '';
+}
+
+/** Today's lunch hours, e.g. "10.30–14" or "" if no lunch today. */
+export function hoursToday(p: Place, date = new Date()): string {
+  const ranges = p.lunchHours[weekdayOf(date)];
+  if (!ranges?.length) return '';
+  return ranges.map((r) => `${short(r.from)}–${short(r.to)}`).join(', ');
+}
+
+function short(t: string): string {
+  const [h, m] = t.split(':');
+  return m === '00' ? String(Number(h)) : `${Number(h)}.${m}`;
+}
+
+export { short as shortTime };

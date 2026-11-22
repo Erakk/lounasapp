@@ -1,0 +1,1199 @@
+[
+ {
+  "name": "Koski",
+  "lunchListUrl": "https://ravintolakoski.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Rosso Ilves",
+  "lunchListUrl": "https://www.lounaat.info/lounas/rosso-ilves/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Osaka Teppanyaki",
+  "lunchListUrl": "https://www.osakateppanyaki.fi/tampere",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Luckiefun's Sushibuffet Koskikeskus",
+  "lunchListUrl": "https://www.koskikeskus.fi/store/luckiefuns-sushibuffet-koskikeskus-2/",
+  "source": "mall",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Ståhlberg Keskustori",
+  "lunchListUrl": "https://stahlbergkahvilat.fi/lounasravintolat/keskustori/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Saunaravintola Kuuma",
+  "lunchListUrl": "https://www.lounaat.info/lounas/saunaravintola-kuuma/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Sayam9",
+  "lunchListUrl": "https://www.lounaat.info/lounas/sayam9/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Ravintola Astor",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/ravintola-astor/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Salud",
+  "lunchListUrl": "https://www.salud.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "4 Vuodenaikaa",
+  "lunchListUrl": "https://4vuodenaikaa.fi/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Ravintola Mummola",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-mummola/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Kauppahallin Kotilounas",
+  "lunchListUrl": "https://kauppahallinkotilounas.fi/lounaslista/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Robert's Coffee Ratina",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/roberts-coffee/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Pons",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/pons/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Puisto",
+  "lunchListUrl": "https://www.lounaat.info/lounas/puisto/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "2h+k",
+  "lunchListUrl": "https://www.lounaat.info/lounas/2hk/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Roka Street Bistro",
+  "lunchListUrl": "https://www.lounaat.info/lounas/roka-street-bistro-tampere/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Social Burgerjoint",
+  "lunchListUrl": "https://www.lounaat.info/lounas/social-burgerjoint/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Lie Mi",
+  "lunchListUrl": "https://www.liemi.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Faasai (Koskipuisto)",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/faasai/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Nittaya Thai & Laos",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/nittaya-thai-and-laos/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Bistro DinDín",
+  "lunchListUrl": "https://bistrodindin.com",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Daiwo Sushi",
+  "lunchListUrl": "https://daiwosushi.fi/",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Sokos4 Ravintolamaailma",
+  "lunchListUrl": "https://www.lounaat.info/lounas/sokos4-ravintolamaailma/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Viikinkiravintola Harald",
+  "lunchListUrl": "https://www.ravintolaharald.fi/tampere/lounas/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Zarillo (Otavalankatu)",
+  "lunchListUrl": "https://www.zarillo.fi/lounas",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Biáng",
+  "lunchListUrl": "https://biang.fi/restaurants/tampere-aleksanterinkatu",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Funky Woo",
+  "lunchListUrl": "https://www.lounaat.info/lounas/funky-woo/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Los Pollos",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/los-pollos/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Ravintola Henriks",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/ravintola-henriks-tampere/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Itsudemo (Hallituskatu)",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/itsudemo-tampere/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Ravintola Thai & Laos",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/ravintola-thai-and-laos/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Eflatun",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/eflatun/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Ravintola Suoma",
+  "lunchListUrl": "https://ravintolasuoma.fi/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Restaurant Frenckell & Piha",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/restaurant-frenckell-and-piha/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Zarillo (Puutarhakatu)",
+  "lunchListUrl": "https://www.zarillo.fi/lounas",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Ståhlberg Näsilinnankatu",
+  "lunchListUrl": "https://stahlbergkahvilat.fi/lounasravintolat/nasilinnankatu/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Onni & Leo",
+  "lunchListUrl": "https://onnileo.fi/lounas-tampere-keskusta/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Zeytuun",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/zeytuun-kuninkaankatu/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Juvenes Saarni",
+  "lunchListUrl": "https://juvenes.fi/saarni/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Ravintola Å11",
+  "lunchListUrl": "https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/tampere/tulli-business-park/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Tammerin Kellari",
+  "lunchListUrl": "https://www.raflaamo.fi/fi/ravintola/tampere/tammerin-kellari/menu/lounas",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Semafori",
+  "lunchListUrl": "https://www.lounaat.info/lounas/semafori/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Finlayson Meetings",
+  "lunchListUrl": "https://www.lounaat.info/lounas/finlayson-meetings/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Panimoravintola Plevna",
+  "lunchListUrl": "https://plevna.fi/lounaslista/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Aleksis / MIN Maku (Technopolis)",
+  "lunchListUrl": "https://linkosuo.fi/toimipaikka/min-maku/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Tivoli",
+  "lunchListUrl": "https://www.lounasmenu.fi/tampere/tivoli/lounas/",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Nanda Devi",
+  "lunchListUrl": "https://nandadevi.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Moro Sky Bar",
+  "lunchListUrl": "https://www.lounaat.info/lounas/moro-sky-bar/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Juvenes Dynamo",
+  "lunchListUrl": "https://juvenes.fi/restaurant-dynamo/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Old Mates",
+  "lunchListUrl": "https://www.lounaat.info/lounas/old-mates-tampere/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Ravintola Piha",
+  "lunchListUrl": "https://www.ravintolapiha.fi/lounas",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Ravintola Tampella",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-tampella/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Boulangerie Marco",
+  "lunchListUrl": "https://boulangeriemarco.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Sodexo Linna",
+  "lunchListUrl": "https://www.sodexo.fi/ravintolat/ravintola-linna",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Ravintola Myllärit",
+  "lunchListUrl": "https://myllarit.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Food & Co Minerva",
+  "lunchListUrl": "https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/tampere/minerva/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Faasai Hatanpää",
+  "lunchListUrl": "https://www.faasairavintola.fi/hatanpaa.html",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Food & Co Naulankanta",
+  "lunchListUrl": "https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/tampere/naulankanta/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Ståhlberg Tulli",
+  "lunchListUrl": "https://stahlbergkahvilat.fi/lounasravintolat/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Telakka",
+  "lunchListUrl": "https://www.lounaat.info/lounas/telakka/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Valssi",
+  "lunchListUrl": "https://www.vapriikki.fi/vieraile/museoravintola-valssi/lounaslista/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Whatever",
+  "lunchListUrl": "https://restaurant-whatever.fi",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Food & Co Valtatie 30",
+  "lunchListUrl": "https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/tampere/valtatie-30/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Pikante Saippuatehdas",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pikante-ravintola-saippuatehdas/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Kitchen & Bar (Courtyard)",
+  "lunchListUrl": "https://www.lounaat.info/lounas/kitchen-bar-at-courtyard-by-marriott/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Linkosuo MIN Asemakeskus",
+  "lunchListUrl": "https://www.lounaat.info/lounas/linkosuo-min-asemakeskus/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Ståhlberg Tampella",
+  "lunchListUrl": "https://stahlbergkahvilat.fi/lounasravintolat/tampella/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Vallaton Kahvila",
+  "lunchListUrl": "https://www.lounaat.info/lounas/vallaton-kahvila/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Schnitzelhaus",
+  "lunchListUrl": "https://www.lounaat.info/lounas/schnitzelhaus/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Borneo",
+  "lunchListUrl": "https://www.ravintolaborneo.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Pikante 36",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pikante-36/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Gopal",
+  "lunchListUrl": "https://www.gopal.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Amurin Helmi",
+  "lunchListUrl": "https://www.amurinmuseokortteli.fi/kahvila-amurin-helmi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Delhi House",
+  "lunchListUrl": "https://delhihouse.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Salho Lunch & Catering",
+  "lunchListUrl": "https://www.salho.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Ristorante Fiorina",
+  "lunchListUrl": "https://ristorantefiorina.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Coriander",
+  "lunchListUrl": "https://www.coriander-restaurant.com/lounaslista-indian-buffet-restaurant-tampere.html",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Lillan Hotel & Kök",
+  "lunchListUrl": "https://www.lounaat.info/lounas/hotel-lillan-kok/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Zafran",
+  "lunchListUrl": "https://www.zafrantampere.com",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Talvipuutarha Sommer",
+  "lunchListUrl": "https://www.lounaat.info/lounas/talvipuutarha-sommer/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Friends & Brgrs",
+  "lunchListUrl": "https://www.friendsandbrgrs.fi/lounas-uudistuu-paivan-lounasateria-1390-e/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Burger Company",
+  "lunchListUrl": "https://www.burgercompany.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Aitoleipä Koskikeskus",
+  "lunchListUrl": "https://aitoleipa.fi/toimipiste/koskikeskus/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Manhattan Steak House",
+  "lunchListUrl": "https://manhattansteakhouse.fi/tampere/",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Rax Pizzabuffet",
+  "lunchListUrl": "https://www.rax.fi/",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Seoul Good",
+  "lunchListUrl": "https://seoulgood.fi/",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Maira",
+  "lunchListUrl": "https://www.maira.fi",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Eurolohi",
+  "lunchListUrl": "https://www.eurolohi.fi/menus",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Café de Halle",
+  "lunchListUrl": "https://www.cafedehalle.com",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "John Scott's Ratina",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/john-scotts-ratina/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Ristorante Momento",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/momento/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Pizzeria Via Tribunali",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/pizzeria-via-tribunali/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Classic Pizza Restaurant",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/classic-pizza-restaurant/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Pancho Villa",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/pancho-villa/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Hanko Aasia",
+  "lunchListUrl": "https://hankoaasia.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Fafa's Ratina",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/fafas/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Café Linkosuo Ratina",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/cafe-linkosuo-ratina/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Ravintola Periscope",
+  "lunchListUrl": "https://www.ravintolaperiscope.fi/lounas-tampere/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Burgers & Wine",
+  "lunchListUrl": "https://burgersandwine.fi/tampere-lounas/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Burger King Ratina",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/burger-king/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Subway Ratina",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/subway/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Kotipizza Ratina",
+  "lunchListUrl": "https://www.ratina.fi/liikkeet/kotipizza/#lunch",
+  "source": "mall",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Boneless",
+  "lunchListUrl": "https://boneless.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Hamptown Burger",
+  "lunchListUrl": "https://hamptownburger.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Green Hippo",
+  "lunchListUrl": "https://www.greenhippocafe.rocks/menu",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Pure Bite",
+  "lunchListUrl": "https://purebite.fi/lounas-purebite/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Itsuyaki Ratina",
+  "lunchListUrl": "https://www.itsuyaki.fi/ravintolat/ratina",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Baglung Durbar",
+  "lunchListUrl": "https://foodzone.fi/tampere/baglungdurbar/lunch/",
+  "source": "aggregator",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Don Franco Trattoria",
+  "lunchListUrl": "https://donfranco.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Sushi Panda",
+  "lunchListUrl": "https://www.sushipanda.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Tiiliholvi",
+  "lunchListUrl": "https://tiiliholvi.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Uuno",
+  "lunchListUrl": "https://uunopinza.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Ravintola Lilia",
+  "lunchListUrl": "https://ravintolalilia.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Thai Golden Chang",
+  "lunchListUrl": "https://www.thaigoldenchang.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Subham",
+  "lunchListUrl": "https://foodzone.fi/tampere/subham/lunch",
+  "source": "aggregator",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Huili Hatanpää",
+  "lunchListUrl": "https://huilipiste.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Etelän Kebab House",
+  "lunchListUrl": "https://etelankebab.com/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Mamoste Buffet & Grill",
+  "lunchListUrl": "https://www.mamoste.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Grill it! Paja",
+  "lunchListUrl": "https://www.raflaamo.fi/fi/ravintola/tampere/grill-it-paja-tampere/menu/lounas",
+  "source": "own",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "shows this or next week's lunch menu"
+ },
+ {
+  "name": "Ravintola Aama",
+  "lunchListUrl": "https://ravintolaaama.fi/a-la-carte-ja-lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Sher-E-Punjab",
+  "lunchListUrl": "https://www.sherepunjab.fi/menu",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Star & Moonlight",
+  "lunchListUrl": "https://starandmoonlight.net/starmenu/?lounaslista-lunch-menu",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Yak-Nak",
+  "lunchListUrl": "https://foodzone.fi/tampere/yaknak/lunchmenu",
+  "source": "aggregator",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Borneo Mamak",
+  "lunchListUrl": "https://www.borneomamak.fi/arkipaivan-lounas-tampere/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Tötö",
+  "lunchListUrl": "https://totoravintola.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Umaya",
+  "lunchListUrl": "https://umaya.fi",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Yatai Bimi Ramen",
+  "lunchListUrl": "https://yataibimiramen.fi",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "no lunch text readable (script-rendered or no lunch page)"
+ },
+ {
+  "name": "Ravintola Malika",
+  "lunchListUrl": "https://www.ravintolamalika.fi/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Noodle Master",
+  "lunchListUrl": "https://noodlemaster.fi",
+  "source": "own",
+  "quality": "site",
+  "httpStatus": 403,
+  "checkedAt": "2026-11-22",
+  "note": "blocks automated checks (403); opens in a browser"
+ },
+ {
+  "name": "OBANH",
+  "lunchListUrl": "https://obanhkitchen.com/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "mentions lunch; menu may be an image or loaded by script"
+ },
+ {
+  "name": "Toor Shahzada",
+  "lunchListUrl": "https://www.toorshahzada.fi/lounas/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Itsudemo Stockmann",
+  "lunchListUrl": "https://itsudemo.fi/itsudemo-stockmann-tampere/",
+  "source": "own",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-22",
+  "note": "lunch prices/info, no dated weekly list"
+ }
+]

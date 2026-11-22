@@ -1,0 +1,1458 @@
+[
+ {
+  "name": "Puisto",
+  "address": "Hämeenkatu 14a, Tampere",
+  "lat": 61.498318,
+  "lon": 23.764547,
+  "air_m": 310,
+  "walk_min": 5
+ },
+ {
+  "name": "Social Burgerjoint",
+  "address": "Hämeenkatu 14, Tampere",
+  "lat": 61.498483,
+  "lon": 23.765908,
+  "air_m": 346,
+  "walk_min": 6
+ },
+ {
+  "name": "Funky Woo / Biáng / Los Pollos",
+  "address": "Aleksanterinkatu 20, Tampere",
+  "lat": 61.499058,
+  "lon": 23.768091,
+  "air_m": 454,
+  "walk_min": 7
+ },
+ {
+  "name": "Sayam9",
+  "address": "Hatanpään valtatie 6, Tampere",
+  "lat": 61.496556,
+  "lon": 23.767943,
+  "air_m": 252,
+  "walk_min": 4
+ },
+ {
+  "name": "Roka Street Bistro",
+  "address": "Aleksanterinkatu 31, Tampere",
+  "lat": 61.496983,
+  "lon": 23.769414,
+  "air_m": 343,
+  "walk_min": 6
+ },
+ {
+  "name": "2h+k",
+  "address": "Aleksanterinkatu 33, Tampere",
+  "lat": 61.496733,
+  "lon": 23.769285,
+  "air_m": 325,
+  "walk_min": 5
+ },
+ {
+  "name": "Koski",
+  "address": "Kirkkokatu 10, Tampere",
+  "lat": 61.496318,
+  "lon": 23.761123,
+  "air_m": 159,
+  "walk_min": 3
+ },
+ {
+  "name": "Rosso Ilves",
+  "address": "Hatanpään valtatie 1, Tampere",
+  "lat": 61.496259,
+  "lon": 23.766584,
+  "air_m": 173,
+  "walk_min": 3
+ },
+ {
+  "name": "Salud",
+  "address": "Tuomiokirkonkatu 19, Tampere",
+  "lat": 61.497147,
+  "lon": 23.770505,
+  "air_m": 403,
+  "walk_min": 7,
+  "note": "lounaat.info address; restaurant site says Aleksanterinkatu 32"
+ },
+ {
+  "name": "Tammerin Kellari / Bistro Tammer",
+  "address": "Satakunnankatu 13, Tampere",
+  "lat": 61.500981,
+  "lon": 23.765816,
+  "air_m": 613,
+  "walk_min": 10
+ },
+ {
+  "name": "Kauppahalli (4 Vuodenaikaa, Mummola, Kotilounas)",
+  "address": "Hämeenkatu 19, Tampere",
+  "lat": 61.496931,
+  "lon": 23.758791,
+  "air_m": 300,
+  "walk_min": 5
+ },
+ {
+  "name": "Zarillo Otavalankatu",
+  "address": "Otavalankatu 9, Tampere",
+  "lat": 61.496674,
+  "lon": 23.77152,
+  "air_m": 435,
+  "walk_min": 7
+ },
+ {
+  "name": "Sokos4 / Harald",
+  "address": "Hämeenkatu 23, Tampere",
+  "lat": 61.497219,
+  "lon": 23.756749,
+  "air_m": 410,
+  "walk_min": 7
+ },
+ {
+  "name": "Finlayson Meetings",
+  "address": "Satakunnankatu 18, Tampere",
+  "lat": 61.501099,
+  "lon": 23.761019,
+  "air_m": 631,
+  "walk_min": 10
+ },
+ {
+  "name": "Zarillo Puutarhakatu",
+  "address": "Puutarhakatu 8, Tampere",
+  "lat": 61.499467,
+  "lon": 23.757585,
+  "air_m": 541,
+  "walk_min": 9
+ },
+ {
+  "name": "Suoma / Eflatun",
+  "address": "Puutarhakatu 13, Tampere",
+  "lat": 61.49909,
+  "lon": 23.757136,
+  "air_m": 523,
+  "walk_min": 8
+ },
+ {
+  "name": "Semafori",
+  "address": "Rautatienkatu 25, Tampere",
+  "lat": 61.498237,
+  "lon": 23.773858,
+  "air_m": 617,
+  "walk_min": 10
+ },
+ {
+  "name": "Saunaravintola Kuuma",
+  "address": "Laukontori 21, Tampere",
+  "lat": 61.494157,
+  "lon": 23.760222,
+  "air_m": 241,
+  "walk_min": 4
+ },
+ {
+  "name": "Ravintola Tampella",
+  "address": "Kelloportinkatu 1, Tampere",
+  "lat": 61.502046,
+  "lon": 23.762874,
+  "air_m": 722,
+  "walk_min": 12
+ },
+ {
+  "name": "Plevna",
+  "address": "Itäinenkatu 8, Tampere",
+  "lat": 61.500824,
+  "lon": 23.758654,
+  "air_m": 642,
+  "walk_min": 10
+ },
+ {
+  "name": "Sodexo Oikeustalo",
+  "address": "Kelloportinkatu 5, Tampere",
+  "lat": 61.502674,
+  "lon": 23.76259,
+  "air_m": 792,
+  "walk_min": 13
+ },
+ {
+  "name": "Ståhlberg Näsilinnankatu",
+  "address": "Näsilinnankatu 26, Tampere",
+  "lat": 61.497623,
+  "lon": 23.754397,
+  "air_m": 542,
+  "walk_min": 9
+ },
+ {
+  "name": "Robert's Coffee Ratina",
+  "address": "Vuolteenkatu 5, Tampere",
+  "lat": 61.493294,
+  "lon": 23.766727,
+  "air_m": 300,
+  "walk_min": 5
+ },
+ {
+  "name": "Moro Sky Bar",
+  "address": "Ratapihankatu 43, Tampere",
+  "lat": 61.496931,
+  "lon": 23.775885,
+  "air_m": 666,
+  "walk_min": 11
+ },
+ {
+  "name": "Å11",
+  "address": "Åkerlundinkatu 11, Tampere",
+  "lat": 61.495336,
+  "lon": 23.775095,
+  "air_m": 607,
+  "walk_min": 10
+ },
+ {
+  "name": "Telakka",
+  "address": "Tullikamarin aukio 3, Tampere",
+  "lat": 61.49805,
+  "lon": 23.777961,
+  "air_m": 807,
+  "walk_min": 13
+ },
+ {
+  "name": "Valssi",
+  "address": "Alaverstaanraitti 5, Tampere",
+  "lat": 61.50298,
+  "lon": 23.760146,
+  "air_m": 845,
+  "walk_min": 14
+ },
+ {
+  "name": "Linkosuo MIN Asemakeskus",
+  "address": "Peltokatu 26, Tampere",
+  "lat": 61.501964,
+  "lon": 23.77487,
+  "air_m": 927,
+  "walk_min": 15
+ },
+ {
+  "name": "Old Mates",
+  "address": "Sumeliuksenkatu 18, Tampere",
+  "lat": 61.495621,
+  "lon": 23.77684,
+  "air_m": 699,
+  "walk_min": 11
+ },
+ {
+  "name": "Myllärit",
+  "address": "Åkerlundinkatu 4, Tampere",
+  "lat": 61.496532,
+  "lon": 23.777957,
+  "air_m": 766,
+  "walk_min": 12
+ },
+ {
+  "name": "Vallaton Kahvila",
+  "address": "Pellavantori 2, Tampere",
+  "lat": 61.504336,
+  "lon": 23.762251,
+  "air_m": 978,
+  "walk_min": 16
+ },
+ {
+  "name": "Food & Co Minerva",
+  "address": "Kanslerinrinne 1, Tampere",
+  "lat": 61.493436,
+  "lon": 23.777484,
+  "air_m": 771,
+  "walk_min": 13
+ },
+ {
+  "name": "Schnitzelhaus",
+  "address": "Tammelan puistokatu 26, Tampere",
+  "lat": 61.500591,
+  "lon": 23.779358,
+  "air_m": 1003,
+  "walk_min": 16
+ },
+ {
+  "name": "Sodexo Linna",
+  "address": "Kalevantie 5, Tampere",
+  "lat": 61.495291,
+  "lon": 23.777975,
+  "air_m": 760,
+  "walk_min": 12
+ },
+ {
+  "name": "Kitchen & Bar Courtyard",
+  "address": "Yliopistonkatu 57, Tampere",
+  "lat": 61.495593,
+  "lon": 23.780833,
+  "air_m": 911,
+  "walk_min": 15
+ },
+ {
+  "name": "Piha",
+  "address": "Pyhäjärvenkatu 5, Tampere",
+  "lat": 61.49231,
+  "lon": 23.752165,
+  "air_m": 710,
+  "walk_min": 12
+ },
+ {
+  "name": "Food & Co Naulankanta",
+  "address": "Naulakatu 3, Tampere",
+  "lat": 61.491867,
+  "lon": 23.776302,
+  "air_m": 787,
+  "walk_min": 13
+ },
+ {
+  "name": "Pikante Saippuatehdas",
+  "address": "Naulakatu 2, Tampere",
+  "lat": 61.491501,
+  "lon": 23.778005,
+  "air_m": 885,
+  "walk_min": 14
+ },
+ {
+  "name": "Food & Co Valtatie 30",
+  "address": "Hatanpään valtatie 30, Tampere",
+  "lat": 61.488923,
+  "lon": 23.771455,
+  "air_m": 846,
+  "walk_min": 14
+ },
+ {
+  "name": "Delhi House",
+  "address": "Salhojankatu 25, Tampere",
+  "lat": 61.500289,
+  "lon": 23.78419,
+  "air_m": 1209,
+  "walk_min": 20
+ },
+ {
+  "name": "Ristorante Fiorina",
+  "address": "Kalevan puistotie 26, Tampere",
+  "lat": 61.500027,
+  "lon": 23.786527,
+  "air_m": 1311,
+  "walk_min": 21
+ },
+ {
+  "name": "Amurin Helmi",
+  "address": "Satakunnankatu 49, Tampere",
+  "lat": 61.499144,
+  "lon": 23.743428,
+  "air_m": 1145,
+  "walk_min": 19
+ },
+ {
+  "name": "Pikante 36",
+  "address": "Hatanpään valtatie 36, Tampere",
+  "lat": 61.4866,
+  "lon": 23.770434,
+  "air_m": 1060,
+  "walk_min": 17
+ },
+ {
+  "name": "Talvipuutarha Sommer",
+  "address": "Lapinniemenranta 6, Tampere",
+  "lat": 61.511444,
+  "lon": 23.775875,
+  "air_m": 1881,
+  "walk_min": 31
+ },
+ {
+  "name": "Coriander",
+  "address": "Lokomonkatu 11, Tampere",
+  "lat": 61.482735,
+  "lon": 23.767717,
+  "air_m": 1443,
+  "walk_min": 23
+ },
+ {
+  "name": "Lillan Hotel & Kök",
+  "address": "Kurjentaival 35, Tampere",
+  "lat": 61.48588,
+  "lon": 23.785607,
+  "air_m": 1586,
+  "walk_min": 26
+ },
+ {
+  "name": "Zafran",
+  "address": "Sammonkatu 26, Tampere",
+  "lat": 61.497064,
+  "lon": 23.797494,
+  "air_m": 1803,
+  "walk_min": 29
+ },
+ {
+  "name": "Astor",
+  "address": "Aleksis Kiven katu 26, Tampere",
+  "lat": 61.497008,
+  "lon": 23.759632,
+  "air_m": 267,
+  "walk_min": 4
+ },
+ {
+  "name": "Frenckell & Piha",
+  "address": "Frenckellinaukio 2, Tampere",
+  "lat": 61.500085,
+  "lon": 23.760859,
+  "air_m": 524,
+  "walk_min": 9
+ },
+ {
+  "name": "Zeytuun",
+  "address": "Kuninkaankatu 17, Tampere",
+  "lat": 61.499404,
+  "lon": 23.756829,
+  "air_m": 560,
+  "walk_min": 9
+ },
+ {
+  "name": "Thai & Laos",
+  "address": "Näsilinnankatu 23, Tampere",
+  "lat": 61.497588,
+  "lon": 23.754945,
+  "air_m": 514,
+  "walk_min": 8
+ },
+ {
+  "name": "Faasai Koskipuisto",
+  "address": "Koskikatu 7, Tampere",
+  "lat": 61.498525,
+  "lon": 23.765879,
+  "air_m": 349,
+  "walk_min": 6
+ },
+ {
+  "name": "Pons",
+  "address": "Hämeenkatu 13, Tampere",
+  "lat": 61.497814,
+  "lon": 23.766866,
+  "air_m": 302,
+  "walk_min": 5
+ },
+ {
+  "name": "Tivoli",
+  "address": "Itäinenkatu 9, Tampere",
+  "lat": 61.501095,
+  "lon": 23.759322,
+  "air_m": 657,
+  "walk_min": 11
+ },
+ {
+  "name": "Itsudemo",
+  "address": "Hallituskatu 20, Tampere",
+  "lat": 61.496377,
+  "lon": 23.754295,
+  "air_m": 505,
+  "walk_min": 8
+ },
+ {
+  "name": "Henriks",
+  "address": "Satamakatu 7, Tampere",
+  "lat": 61.494534,
+  "lon": 23.754991,
+  "air_m": 474,
+  "walk_min": 8
+ },
+ {
+  "name": "Whatever",
+  "address": "Itsenäisyydenkatu 5, Tampere",
+  "lat": 61.499092,
+  "lon": 23.777768,
+  "air_m": 845,
+  "walk_min": 14
+ },
+ {
+  "name": "Borneo",
+  "address": "Itsenäisyydenkatu 15, Tampere",
+  "lat": 61.499123,
+  "lon": 23.781466,
+  "air_m": 1024,
+  "walk_min": 17
+ },
+ {
+  "name": "Bistro DinDín",
+  "address": "Tuomiokirkonkatu 38, Tampere",
+  "lat": 61.496234,
+  "lon": 23.770549,
+  "air_m": 373,
+  "walk_min": 6
+ },
+ {
+  "name": "Faasai Hatanpää",
+  "address": "Hatanpään valtatie 26, Tampere",
+  "lat": 61.490004,
+  "lon": 23.772524,
+  "air_m": 777,
+  "walk_min": 13
+ },
+ {
+  "name": "Ståhlberg Keskustori",
+  "address": "Keskustori 7, Tampere",
+  "lat": 61.497078,
+  "lon": 23.760648,
+  "air_m": 232,
+  "walk_min": 4
+ },
+ {
+  "name": "Salho",
+  "address": "Tammelankatu 25, Tampere",
+  "lat": 61.499878,
+  "lon": 23.78559,
+  "air_m": 1258,
+  "walk_min": 20
+ },
+ {
+  "name": "Gopal",
+  "address": "Ilmarinkatu 16, Tampere",
+  "lat": 61.50085,
+  "lon": 23.782058,
+  "air_m": 1139,
+  "walk_min": 19
+ },
+ {
+  "name": "Lie Mi",
+  "address": "Hämeenkatu 14, Tampere",
+  "lat": 61.498483,
+  "lon": 23.765908,
+  "air_m": 346,
+  "walk_min": 6
+ },
+ {
+  "name": "Kahvila Kaleva",
+  "address": "Joukahaisenkatu 7, Tampere",
+  "lat": 61.499078,
+  "lon": 23.805319,
+  "air_m": 2245,
+  "walk_min": 36
+ },
+ {
+  "name": "Aleksis Technopolis",
+  "address": "Kalevantie 2, Tampere",
+  "lat": 61.494152,
+  "lon": 23.77564,
+  "air_m": 655,
+  "walk_min": 11
+ },
+ {
+  "name": "Rata Juvenes",
+  "address": "Uimalankatu 1, Tampere",
+  "lat": 61.501631,
+  "lon": 23.803803,
+  "air_m": 2234,
+  "walk_min": 36
+ },
+ {
+  "name": "Onni & Leo",
+  "address": "Kyttälänkatu 7, Tampere",
+  "lat": 61.499738,
+  "lon": 23.769403,
+  "air_m": 555,
+  "walk_min": 9
+ },
+ {
+  "name": "Aloha Ramen",
+  "address": "Tuomiokirkonkatu 40, Tampere",
+  "lat": 61.495912,
+  "lon": 23.770522,
+  "air_m": 366,
+  "walk_min": 6
+ },
+ {
+  "name": "Papu ja Pata",
+  "address": "Laukontori 10, Tampere",
+  "lat": 61.494991,
+  "lon": 23.759433,
+  "air_m": 233,
+  "walk_min": 4
+ },
+ {
+  "name": "Pizzeria Napoli",
+  "address": "Aleksanterinkatu 31, Tampere",
+  "lat": 61.496983,
+  "lon": 23.769414,
+  "air_m": 343,
+  "walk_min": 6
+ },
+ {
+  "name": "Boulangerie Marco",
+  "address": "Tullikatu 6, Tampere",
+  "lat": 61.496931,
+  "lon": 23.776982,
+  "air_m": 723,
+  "walk_min": 12
+ },
+ {
+  "name": "Nanda Devi",
+  "address": "Näsilinnankatu 17, Tampere",
+  "lat": 61.499512,
+  "lon": 23.754369,
+  "air_m": 660,
+  "walk_min": 11
+ },
+ {
+  "name": "Daiwo Sushi",
+  "address": "Hämeenkatu 7, Tampere",
+  "lat": 61.497978,
+  "lon": 23.769118,
+  "air_m": 395,
+  "walk_min": 6
+ },
+ {
+  "name": "Lam",
+  "address": "Tuomiokirkonkatu 34, Tampere",
+  "lat": 61.497247,
+  "lon": 23.770161,
+  "air_m": 392,
+  "walk_min": 6
+ },
+ {
+  "name": "Ståhlberg Tampella",
+  "address": "Tampellan esplanadi 4, Tampere",
+  "lat": 61.503903,
+  "lon": 23.763442,
+  "air_m": 927,
+  "walk_min": 15
+ },
+ {
+  "name": "Salud (site address)",
+  "address": "Aleksanterinkatu 32, Tampere",
+  "lat": 61.496326,
+  "lon": 23.768989,
+  "air_m": 295,
+  "walk_min": 5
+ },
+ {
+  "name": "Nittaya Thai & Laos",
+  "address": "Suvantokatu 7, Tampere",
+  "lat": 61.495683,
+  "lon": 23.770285,
+  "air_m": 352,
+  "walk_min": 6
+ },
+ {
+  "name": "Juvenes Dynamo",
+  "address": "Hatanpään valtatie 24, Tampere",
+  "lat": 61.490953,
+  "lon": 23.772099,
+  "air_m": 681,
+  "walk_min": 11
+ },
+ {
+  "name": "Juvenes Saarni",
+  "address": "Hatanpään valtatie 11, Tampere",
+  "lat": 61.491377,
+  "lon": 23.770703,
+  "air_m": 597,
+  "walk_min": 10
+ },
+ {
+  "name": "Ståhlberg Tulli",
+  "address": "Åkerlundinkatu 3, Tampere",
+  "lat": 61.495926,
+  "lon": 23.778573,
+  "air_m": 792,
+  "walk_min": 13
+ },
+ {
+  "name": "Ratina shopping centre",
+  "address": "Vuolteenkatu 1, Tampere",
+  "lat": 61.493267,
+  "lon": 23.767339,
+  "air_m": 322,
+  "walk_min": 5
+ },
+ {
+  "name": "Friends & Brgrs Keskustori",
+  "address": "Hämeenkatu 17, Tampere",
+  "lat": 61.497425,
+  "lon": 23.759368,
+  "air_m": 308,
+  "walk_min": 5
+ },
+ {
+  "name": "Hamptown Burger",
+  "address": "Rautatienkatu 22, Tampere",
+  "lat": 61.496906,
+  "lon": 23.771942,
+  "air_m": 464,
+  "walk_min": 8
+ },
+ {
+  "name": "Boneless",
+  "address": "Aleksanterinkatu 26, Tampere",
+  "lat": 61.497626,
+  "lon": 23.768632,
+  "air_m": 349,
+  "walk_min": 6
+ },
+ {
+  "name": "McDonalds Hämeenkatu",
+  "address": "Hämeenkatu 5, Tampere",
+  "lat": 61.497996,
+  "lon": 23.769772,
+  "air_m": 422,
+  "walk_min": 7
+ },
+ {
+  "name": "Hesburger Keskustori",
+  "address": "Keskustori 5, Tampere",
+  "lat": 61.497058,
+  "lon": 23.761354,
+  "air_m": 206,
+  "walk_min": 3
+ },
+ {
+  "name": "Leaf Sushi",
+  "address": null,
+  "lat": 61.496622,
+  "lon": 23.761072,
+  "air_m": 181,
+  "walk_min": 3,
+  "cuisine_osm": "",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Green Hippo",
+  "address": "Keskustori 7, Tampere",
+  "lat": 61.497129,
+  "lon": 23.760697,
+  "air_m": 235,
+  "walk_min": 4,
+  "cuisine_osm": "",
+  "opening_hours_osm": "Mo-Fr 08:00-21:00; Sa 09:00-21:00; Su 09",
+  "website": "https://www.greenhippocafe.rocks/tampere-keskustori",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Pure Bite",
+  "address": "Hatanpään valtatie 4, Tampere",
+  "lat": 61.496711,
+  "lon": 23.767621,
+  "air_m": 246,
+  "walk_min": 4,
+  "cuisine_osm": "thai;noodle",
+  "opening_hours_osm": "Mo-Th 10:30-20:00; Sa 12:00-21:00; Su 12",
+  "website": "https://purebite.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Wok Around",
+  "address": null,
+  "lat": 61.493301,
+  "lon": 23.766638,
+  "air_m": 297,
+  "walk_min": 5,
+  "cuisine_osm": "asian",
+  "opening_hours_osm": "Mo-Fr 10:30-20:00; Sa 11:00-19:00; Su 12",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Yatai Bimi Ramen",
+  "address": null,
+  "lat": 61.496966,
+  "lon": 23.758822,
+  "air_m": 300,
+  "walk_min": 5,
+  "cuisine_osm": "ramen",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Super Bowl",
+  "address": null,
+  "lat": 61.493373,
+  "lon": 23.76708,
+  "air_m": 304,
+  "walk_min": 5,
+  "cuisine_osm": "salad",
+  "opening_hours_osm": "Mo-Fr 10:00-20:00; Su 11:30-18:00; Sa 10",
+  "website": "https://superbowl.fi",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Itsuyaki",
+  "address": null,
+  "lat": 61.493287,
+  "lon": 23.766872,
+  "air_m": 305,
+  "walk_min": 5,
+  "cuisine_osm": "sushi",
+  "opening_hours_osm": "",
+  "website": "https://www.itsuyaki.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Fitwok",
+  "address": "Verkatehtaankatu 7, Tampere",
+  "lat": 61.497402,
+  "lon": 23.769756,
+  "air_m": 382,
+  "walk_min": 6,
+  "cuisine_osm": "wok",
+  "opening_hours_osm": "Mo-Th 11:00-20:00; Fr 11:00-21:00; Sa 12",
+  "website": "https://www.fitwok.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "The Everest Cuisine",
+  "address": "Satamakatu 5, Tampere",
+  "lat": 61.494856,
+  "lon": 23.756395,
+  "air_m": 394,
+  "walk_min": 6,
+  "cuisine_osm": "nepalese",
+  "opening_hours_osm": "Mo-Th 10:30-21:30, Fr 10:30-22:00, Sa 12",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Shanghai",
+  "address": "Tuomiokirkonkatu 21, Tampere",
+  "lat": 61.496726,
+  "lon": 23.770808,
+  "air_m": 400,
+  "walk_min": 6,
+  "cuisine_osm": "chinese",
+  "opening_hours_osm": "Tu-Th 11:00-20:30; Sa 12:00-20:45; Fr 11",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Bianco",
+  "address": "Otavalankatu 9, Tampere",
+  "lat": 61.496601,
+  "lon": 23.770994,
+  "air_m": 406,
+  "walk_min": 7,
+  "cuisine_osm": "kebab",
+  "opening_hours_osm": "Mo-Th 10:45-22:00; Fr 10:45-23:00; Sa 12",
+  "website": "https://pizzeria-ravintolabianco.com/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Hao Kitchen",
+  "address": "Suvantokatu 10, Tampere",
+  "lat": 61.4955,
+  "lon": 23.771439,
+  "air_m": 413,
+  "walk_min": 7,
+  "cuisine_osm": "sushi;salad;dessert;asian",
+  "opening_hours_osm": "Mo-Fr 10:30-21:00; Sa 11:00-21:00; Su 12",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Baglung Durbar",
+  "address": "Aleksanterinkatu 22, Tampere",
+  "lat": 61.498619,
+  "lon": 23.768199,
+  "air_m": 416,
+  "walk_min": 7,
+  "cuisine_osm": "nepalese",
+  "opening_hours_osm": "",
+  "website": "https://baglungdurbar.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Don Franco Trattoria",
+  "address": "Tuomiokirkonkatu 17, Tampere",
+  "lat": 61.497454,
+  "lon": 23.770609,
+  "air_m": 424,
+  "walk_min": 7,
+  "cuisine_osm": "pizza;italian",
+  "opening_hours_osm": "Mo-We 16:00-22:00; Th 11:00-22:00; Fr 11",
+  "website": "https://donfranco.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Manoushe",
+  "address": "Tampereen valtatie 12, Tampere",
+  "lat": 61.491556,
+  "lon": 23.763742,
+  "air_m": 446,
+  "walk_min": 7,
+  "cuisine_osm": "lebanese",
+  "opening_hours_osm": "Tu-Sa 10:00-18:00",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Kiinan Tähti",
+  "address": "Hallituskatu 15, Tampere",
+  "lat": 61.496106,
+  "lon": 23.754841,
+  "air_m": 472,
+  "walk_min": 8,
+  "cuisine_osm": "chinese",
+  "opening_hours_osm": "Mo-Th 11:00-20:00; Fr 11:00-21:00; Sa 12",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Sushi Panda Tampere",
+  "address": "Tuomiokirkonkatu 26, Tampere",
+  "lat": 61.499078,
+  "lon": 23.769639,
+  "air_m": 503,
+  "walk_min": 8,
+  "cuisine_osm": "sushi",
+  "opening_hours_osm": "",
+  "website": "https://www.sushipanda.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Tiiliholvi",
+  "address": "Kauppakatu 10, Tampere",
+  "lat": 61.498167,
+  "lon": 23.755572,
+  "air_m": 518,
+  "walk_min": 8,
+  "cuisine_osm": "international",
+  "opening_hours_osm": "Mo-Fr 11:00-15:00,17:00-24:00; Sa 17:00-",
+  "website": "https://tiiliholvi.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Uuno",
+  "address": "Tuomiokirkonkatu 26, Tampere",
+  "lat": 61.499305,
+  "lon": 23.769551,
+  "air_m": 520,
+  "walk_min": 8,
+  "cuisine_osm": "italian",
+  "opening_hours_osm": "Mo-Th 11:00-21:00; Fr 11:00-22:00; Sa 12",
+  "website": "https://uunopinza.fi",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Tarboosh Café & Bistro",
+  "address": "Kuninkaankatu 22, Tampere",
+  "lat": 61.498775,
+  "lon": 23.756513,
+  "air_m": 521,
+  "walk_min": 8,
+  "cuisine_osm": "",
+  "opening_hours_osm": "",
+  "website": "https://tarboosh.fi",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Ravintola Lilia",
+  "address": "Puutarhakatu 13, Tampere",
+  "lat": 61.499086,
+  "lon": 23.756989,
+  "air_m": 528,
+  "walk_min": 9,
+  "cuisine_osm": "local",
+  "opening_hours_osm": "We 11:00-21:00; Mo, Tu, Th, Fr 11:00-14:",
+  "website": "https://ravintolalilia.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Thai Golden Chang",
+  "address": "Hämeenkatu 29, Tampere",
+  "lat": 61.49707,
+  "lon": 23.753909,
+  "air_m": 544,
+  "walk_min": 9,
+  "cuisine_osm": "thai",
+  "opening_hours_osm": "Mo-Th 11:00-21:00; Fr 11:00-22:00; Sa 12",
+  "website": "https://www.thaigoldenchang.fi",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Iskif Restaurant & Cafe",
+  "address": "Kuninkaankatu 17, Tampere",
+  "lat": 61.499362,
+  "lon": 23.75679,
+  "air_m": 558,
+  "walk_min": 9,
+  "cuisine_osm": "",
+  "opening_hours_osm": "",
+  "website": "https://iskif.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Subham",
+  "address": "Rongankatu 6, Tampere",
+  "lat": 61.500082,
+  "lon": 23.768614,
+  "air_m": 567,
+  "walk_min": 9,
+  "cuisine_osm": "nepalese",
+  "opening_hours_osm": "Tu-Fr 10:45-21:00; Sa 12:00-21:00; Su 12",
+  "website": "https://subham.fi",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Huili",
+  "address": "Hatanpään valtatie 20, Tampere",
+  "lat": 61.492237,
+  "lon": 23.771947,
+  "air_m": 575,
+  "walk_min": 9,
+  "cuisine_osm": "",
+  "opening_hours_osm": "Mo-Fr 06:00-19:00; Sa 08:00-19:00; Su 10",
+  "website": "https://huilipiste.fi/ravintola/huili-hatanpaa-tampere/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Etelän Kebab House",
+  "address": "Hämeenkatu 30, Tampere",
+  "lat": 61.497297,
+  "lon": 23.752937,
+  "air_m": 601,
+  "walk_min": 10,
+  "cuisine_osm": "kebab",
+  "opening_hours_osm": "Mo-Th 11:00-24:00, Fr 11:00-05:00, Sa 12",
+  "website": "https://etelankebab.com",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Bento Ya!",
+  "address": "Rautatienkatu 25, Tampere",
+  "lat": 61.498616,
+  "lon": 23.773141,
+  "air_m": 607,
+  "walk_min": 10,
+  "cuisine_osm": "asian",
+  "opening_hours_osm": "11:00-21:00",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Falafel 5/5",
+  "address": "Puutarhakatu 12, Tampere",
+  "lat": 61.499132,
+  "lon": 23.754764,
+  "air_m": 617,
+  "walk_min": 10,
+  "cuisine_osm": "middle_eastern",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Curry Spot, Piccante Ristorante",
+  "address": "Puutarhakatu 21, Tampere",
+  "lat": 61.498843,
+  "lon": 23.754115,
+  "air_m": 624,
+  "walk_min": 10,
+  "cuisine_osm": "",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "King Gyros",
+  "address": null,
+  "lat": 61.498833,
+  "lon": 23.753982,
+  "air_m": 629,
+  "walk_min": 10,
+  "cuisine_osm": "",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Mamoste",
+  "address": "Näsilinnankatu 19, Tampere",
+  "lat": 61.499257,
+  "lon": 23.754369,
+  "air_m": 642,
+  "walk_min": 10,
+  "cuisine_osm": "",
+  "opening_hours_osm": "",
+  "website": "https://www.mamoste.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Grill it!",
+  "address": "Ratapihankatu 43, Tampere",
+  "lat": 61.497159,
+  "lon": 23.775597,
+  "air_m": 658,
+  "walk_min": 11,
+  "cuisine_osm": "international",
+  "opening_hours_osm": "Mo-Fr 11:00-13:00, 16:00-23:00; Sa 13:00",
+  "website": "https://www.raflaamo.fi/en/restaurant/tampere/grill-it-paja-tampere",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Jalla Jalla",
+  "address": "Näsilinnankatu 16, Tampere",
+  "lat": 61.499626,
+  "lon": 23.753771,
+  "air_m": 692,
+  "walk_min": 11,
+  "cuisine_osm": "",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Kim's Bap",
+  "address": null,
+  "lat": 61.496206,
+  "lon": 23.776886,
+  "air_m": 705,
+  "walk_min": 11,
+  "cuisine_osm": "korean",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Yi Sushi",
+  "address": null,
+  "lat": 61.497298,
+  "lon": 23.77656,
+  "air_m": 711,
+  "walk_min": 12,
+  "cuisine_osm": "chinese;sushi",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Ming Zhu",
+  "address": null,
+  "lat": 61.497083,
+  "lon": 23.776866,
+  "air_m": 721,
+  "walk_min": 12,
+  "cuisine_osm": "",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Nón Lá",
+  "address": "Lapintie 4, Tampere",
+  "lat": 61.502244,
+  "lon": 23.764865,
+  "air_m": 745,
+  "walk_min": 12,
+  "cuisine_osm": "vietnamese",
+  "opening_hours_osm": "Mo-Sa 10:30-20:00; Su 11:30-19:00",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Ravintola The Curry Leaf",
+  "address": "Papinkatu 20, Tampere",
+  "lat": 61.49254,
+  "lon": 23.750729,
+  "air_m": 764,
+  "walk_min": 12,
+  "cuisine_osm": "",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Ravintola Aama",
+  "address": "Satakunnankatu 29, Tampere",
+  "lat": 61.500117,
+  "lon": 23.752652,
+  "air_m": 773,
+  "walk_min": 13,
+  "cuisine_osm": "nepalese",
+  "opening_hours_osm": "",
+  "website": "https://ravintolaaama.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Lapintie Kebab Pizzeria",
+  "address": "Lapintie 8, Tampere",
+  "lat": 61.502801,
+  "lon": 23.765785,
+  "air_m": 812,
+  "walk_min": 13,
+  "cuisine_osm": "burger;kebab;pizza",
+  "opening_hours_osm": "Mo-Th 10:30-22:00; Fr 10:30-24:00; Sa 00",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Ola Greek Food",
+  "address": "Itsenäisyydenkatu 5, Tampere",
+  "lat": 61.499092,
+  "lon": 23.777768,
+  "air_m": 845,
+  "walk_min": 14,
+  "cuisine_osm": "greek",
+  "opening_hours_osm": "Mo,Tu 10:30-24:00, We-Sa 10:30-05:00, Su",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Sher-E-Punjab",
+  "address": "Yliopistonkatu 50, Tampere",
+  "lat": 61.496883,
+  "lon": 23.779509,
+  "air_m": 853,
+  "walk_min": 14,
+  "cuisine_osm": "indian",
+  "opening_hours_osm": "",
+  "website": "https://www.sherepunjab.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "New Chinese Food",
+  "address": "Tammelan puistokatu 36, Tampere",
+  "lat": 61.499323,
+  "lon": 23.779352,
+  "air_m": 931,
+  "walk_min": 15,
+  "cuisine_osm": "",
+  "opening_hours_osm": "Mo-Fr 11:00-22:00; Sa,Su 12:00-22:00",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Toki Nuki",
+  "address": "Pinninkatu 32, Tampere",
+  "lat": 61.501009,
+  "lon": 23.777926,
+  "air_m": 969,
+  "walk_min": 16,
+  "cuisine_osm": "ramen;japanese",
+  "opening_hours_osm": "Tu-Sa 11:00-20:00; Su 12:00-20:00",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Star & Moonlight",
+  "address": "Tammelan puistokatu 30-32, Tampere",
+  "lat": 61.500084,
+  "lon": 23.779324,
+  "air_m": 971,
+  "walk_min": 16,
+  "cuisine_osm": "",
+  "opening_hours_osm": "Tu-Th 11:00-21:00; Fr 11:00-22:00; Sa 12",
+  "website": "https://starandmoonlight.net/starmenu/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Yak-Nak",
+  "address": "Pinninkatu 32, Tampere",
+  "lat": 61.501111,
+  "lon": 23.77792,
+  "air_m": 976,
+  "walk_min": 16,
+  "cuisine_osm": "nepalese",
+  "opening_hours_osm": "Mo-Th 11:00-21:00; Fr 11:00-24:00; Sa 12",
+  "website": "https://www.yaknak.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Ravintola Mardin",
+  "address": "Pinninkatu 32, Tampere",
+  "lat": 61.501176,
+  "lon": 23.777912,
+  "air_m": 980,
+  "walk_min": 16,
+  "cuisine_osm": "pizza;kebab;burger;chicken",
+  "opening_hours_osm": "Mo-Th 11:00-24:00, Fr,Sa 11:00-05:00, Su",
+  "website": "https://mardin.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Borneo Mamak",
+  "address": "Ilmarinkatu 8, Tampere",
+  "lat": 61.500886,
+  "lon": 23.778674,
+  "air_m": 992,
+  "walk_min": 16,
+  "cuisine_osm": "malaysian",
+  "opening_hours_osm": "Mo-Sa 11:00-21:00",
+  "website": "https://www.borneomamak.fi/",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Hyunh Vietnamilainen Keittiö",
+  "address": null,
+  "lat": 61.501275,
+  "lon": 23.778306,
+  "air_m": 1003,
+  "walk_min": 16,
+  "cuisine_osm": "vietnamese",
+  "opening_hours_osm": "Mo-Sa 10:00-17:00; Su 11:00-16:00",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Momo Hub",
+  "address": null,
+  "lat": 61.50152,
+  "lon": 23.779332,
+  "air_m": 1063,
+  "walk_min": 17,
+  "cuisine_osm": "nepalese",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "An Nam",
+  "address": "Pinninkatu 23, Tampere",
+  "lat": 61.50182,
+  "lon": 23.778897,
+  "air_m": 1066,
+  "walk_min": 17,
+  "cuisine_osm": "vietnamese",
+  "opening_hours_osm": "",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Nile Kebab",
+  "address": null,
+  "lat": 61.502497,
+  "lon": 23.778852,
+  "air_m": 1115,
+  "walk_min": 18,
+  "cuisine_osm": "",
+  "opening_hours_osm": "Tu-Sa 11:00-20:00; Su 12:00-20:00",
+  "website": "",
+  "source": "OpenStreetMap 2026-11-22"
+ },
+ {
+  "name": "Tötö Ravintola",
+  "address": "Itsenäisyydenkatu 15, Tampere",
+  "lat": 61.499123,
+  "lon": 23.781466,
+  "air_m": 1024,
+  "walk_min": 17,
+  "note": "same building as Borneo"
+ },
+ {
+  "name": "Noodle Master Tampere",
+  "address": "Aleksanterinkatu 29B, Tampere",
+  "lat": 61.4975285,
+  "lon": 23.7691206,
+  "air_m": 363,
+  "walk_min": 6,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "OBANH",
+  "address": "Verkatehtaankatu 7 B, Tampere",
+  "lat": 61.4974017,
+  "lon": 23.7694211,
+  "air_m": 367,
+  "walk_min": 6,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "Umaya",
+  "address": "Hallituskatu 3, Tampere",
+  "lat": 61.4966016,
+  "lon": 23.7608824,
+  "air_m": 187,
+  "walk_min": 3,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "Yatai Bimi Ramen",
+  "address": "Kauppahalli, Hämeenkatu 19, Tampere",
+  "lat": 61.4970949,
+  "lon": 23.7586289,
+  "air_m": 317,
+  "walk_min": 5,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "Itsudemo Stockmann",
+  "address": "Hämeenkatu 6, Tampere",
+  "lat": 61.4985774,
+  "lon": 23.7696412,
+  "air_m": 461,
+  "walk_min": 7,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "What The Pho",
+  "address": "Itsenäisyydenkatu 5, Tampere",
+  "lat": 61.4990961,
+  "lon": 23.7778218,
+  "air_m": 848,
+  "walk_min": 14,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "Ravintola Malika",
+  "address": "Aleksanterinkatu 37, Tampere",
+  "lat": 61.4957066,
+  "lon": 23.7696317,
+  "air_m": 317,
+  "walk_min": 5,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "Toor Shahzada",
+  "address": "Suvantokatu 7–9, Tampere",
+  "lat": 61.4957266,
+  "lon": 23.7704912,
+  "air_m": 363,
+  "walk_min": 6,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "Ainoya Asian Restaurant",
+  "address": "Yliopistonkatu 50, Tampere",
+  "lat": 61.4967752,
+  "lon": 23.7794924,
+  "air_m": 851,
+  "walk_min": 14,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "Rapee Grill",
+  "address": "Laukontori 21, Tampere",
+  "lat": 61.4944904,
+  "lon": 23.7603875,
+  "air_m": 211,
+  "walk_min": 3,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "Punjab Kebab",
+  "address": "Kirkkokatu 10, Tampere",
+  "lat": 61.49631,
+  "lon": 23.7611901,
+  "air_m": 155,
+  "walk_min": 3,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "Galata Kebab House",
+  "address": "Näsilinnankatu 31, Tampere",
+  "lat": 61.4961583,
+  "lon": 23.7557254,
+  "air_m": 426,
+  "walk_min": 7,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "Ravintola Vientiane",
+  "address": "Rautatienkatu 14, Tampere",
+  "lat": 61.4987909,
+  "lon": 23.7713748,
+  "air_m": 544,
+  "walk_min": 9,
+  "source": "Google Maps 2026-11-22"
+ },
+ {
+  "name": "King Kebab",
+  "address": "Rautatienkatu 14 B, Tampere",
+  "lat": 61.498878,
+  "lon": 23.7712764,
+  "air_m": 547,
+  "walk_min": 9,
+  "source": "Google Maps 2026-11-22"
+ }
+]

@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lounasapp – mockupit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #FBF7F2; --surface: #FFFFFF; --ink: #1F2421; --ink-2: #5B615D; --ink-3: #8C918D;
+    --line: #ECE5DC; --accent: #C8364A; --accent-ink: #FFFFFF; --accent-soft: #F9E1E4;
+    --sage: #7FA387; --sage-soft: #E4EFE6; --amber: #E2A23B; --shadow: 0 1px 2px rgba(31,36,33,.06), 0 8px 24px rgba(31,36,33,.08);
+    --tile-kotiruoka:#F6E7D7; --tile-aasia:#FBE3E1; --tile-intia:#FBEBC8; --tile-burger:#FBE5CF; --tile-pizza:#FCE0DA;
+    --tile-valimeri:#E8F0DD; --tile-kebab:#F3E3D3; --tile-buffet:#EFE6F6; --tile-vege:#DFF0E3; --tile-bistro:#EDE3E8;
+    --tile-japani:#E3ECF7; --tile-klusteri:#E6E6F2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:#151816; --surface:#1E2220; --ink:#F1EEE9; --ink-2:#B9B6B0; --ink-3:#8A8781; --line:#2C302D;
+      --accent:#E0566A; --accent-soft:#3A2227; --sage:#93B89B; --sage-soft:#22302A; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+      --tile-kotiruoka:#3A3026; --tile-aasia:#3D2826; --tile-intia:#3B3322; --tile-burger:#3B2F22; --tile-pizza:#3D2A26;
+      --tile-valimeri:#2B3326; --tile-kebab:#352C24; --tile-buffet:#302838; --tile-vege:#24332A; --tile-bistro:#33292F;
+      --tile-japani:#25303D; --tile-klusteri:#2B2B38;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:#151816; --surface:#1E2220; --ink:#F1EEE9; --ink-2:#B9B6B0; --ink-3:#8A8781; --line:#2C302D;
+    --accent:#E0566A; --accent-soft:#3A2227; --sage:#93B89B; --sage-soft:#22302A; --shadow:0 1px 2px rgba(0,0,0,.3),0 8px 24px rgba(0,0,0,.35);
+    --tile-kotiruoka:#3A3026; --tile-aasia:#3D2826; --tile-intia:#3B3322; --tile-burger:#3B2F22; --tile-pizza:#3D2A26;
+    --tile-valimeri:#2B3326; --tile-kebab:#352C24; --tile-buffet:#302838; --tile-vege:#24332A; --tile-bistro:#33292F;
+    --tile-japani:#25303D; --tile-klusteri:#2B2B38;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { background: #E9E2D8; color: var(--ink); font-family: 'Plus Jakarta Sans', system-ui, sans-serif; padding: 32px 16px 64px; }
+  :root[data-theme="dark"] body { background: #0C0E0D; }
+  .page-head { max-width: 1260px; margin: 0 auto 28px; display: flex; flex-wrap: wrap; gap: 12px; align-items: baseline; justify-content: space-between; }
+  .page-head h1 { font-family: Fraunces, serif; font-size: 28px; margin: 0; }
+  .page-head p { margin: 4px 0 0; color: var(--ink-2); font-size: 14px; }
+  .theme-btn { border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 8px 14px; font: inherit; font-size: 13px; cursor: pointer; }
+  .phones { display: flex; flex-wrap: wrap; gap: 32px; justify-content: center; }
+  .phone-wrap { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+  .phone-label { font-size: 13px; font-weight: 700; color: var(--ink-2); letter-spacing: .04em; text-transform: uppercase; }
+  .phone { width: 375px; max-width: calc(100vw - 32px); height: 780px; background: var(--bg); border-radius: 40px; box-shadow: 0 0 0 10px #1F2421, 0 30px 60px rgba(0,0,0,.25); overflow: hidden; position: relative; display: flex; flex-direction: column; }
+  .scroll { flex: 1; overflow-y: auto; padding: 18px 16px 120px; scrollbar-width: none; }
+  .scroll::-webkit-scrollbar { display: none; }
+
+  /* Header */
+  .hdr { display: flex; justify-content: space-between; align-items: center; padding-top: 8px; }
+  .brand { font-family: Fraunces, serif; font-size: 26px; font-weight: 700; letter-spacing: -.01em; }
+  .brand span { color: var(--accent); }
+  .sub { color: var(--ink-2); font-size: 13px; margin-top: 2px; }
+  .avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--accent-soft); display: grid; place-items: center; font-size: 18px; }
+
+  /* Filter bar */
+  .filters { display: flex; gap: 8px; overflow-x: auto; margin: 16px -16px 0; padding: 0 16px 4px; scrollbar-width: none; }
+  .filters::-webkit-scrollbar { display: none; }
+  .chip { flex: none; display: inline-flex; align-items: center; gap: 6px; padding: 9px 13px; border-radius: 999px; background: var(--surface); border: 1px solid var(--line); font-size: 13px; font-weight: 600; color: var(--ink); white-space: nowrap; }
+  .chip.on { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+  .chip .stepper { display: inline-flex; align-items: center; gap: 8px; }
+  .chip .stepper b { width: 22px; height: 22px; border-radius: 50%; background: var(--bg); color: var(--ink); display: grid; place-items: center; font-size: 14px; }
+  .chip.on .stepper b { background: rgba(255,255,255,.15); color: inherit; }
+  .chip.sage { background: var(--sage-soft); border-color: transparent; color: var(--ink); }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--sage); }
+
+  /* Category grid */
+  .section-title { display: flex; justify-content: space-between; align-items: baseline; margin: 22px 0 10px; }
+  .section-title h2 { font-size: 16px; margin: 0; font-weight: 800; }
+  .section-title a { color: var(--accent); font-size: 13px; font-weight: 700; text-decoration: none; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .tile { border-radius: 20px; padding: 12px 10px 10px; min-height: 92px; display: flex; flex-direction: column; justify-content: space-between; position: relative; transition: transform .15s; cursor: pointer; border: 2px solid transparent; }
+  .tile:active { transform: scale(.97); }
+  .tile .emoji { font-size: 28px; line-height: 1; }
+  .tile .name { font-weight: 700; font-size: 13px; line-height: 1.2; }
+  .tile .count { font-size: 11px; color: var(--ink-2); font-weight: 600; }
+  .tile.sel { border-color: var(--accent); transform: scale(1.02); box-shadow: var(--shadow); }
+  .tile.sel::after { content: '✓'; position: absolute; top: 8px; right: 10px; width: 20px; height: 20px; border-radius: 50%; background: var(--accent); color: #fff; font-size: 12px; display: grid; place-items: center; font-weight: 800; }
+
+  /* Cards */
+  .sortrow { display: flex; justify-content: space-between; align-items: center; margin: 22px 0 10px; }
+  .sortrow h2 { font-size: 16px; margin: 0; font-weight: 800; }
+  .sortrow .sort { font-size: 12px; color: var(--ink-2); font-weight: 600; }
+  .card { background: var(--surface); border-radius: 22px; box-shadow: var(--shadow); padding: 14px; display: grid; grid-template-columns: 56px 1fr auto; gap: 12px; align-items: center; margin-bottom: 10px; }
+  .thumb { width: 56px; height: 56px; border-radius: 16px; display: grid; place-items: center; font-size: 28px; }
+  .card h3 { margin: 0; font-size: 15px; font-weight: 800; }
+  .meta { font-size: 12px; color: var(--ink-2); margin-top: 3px; display: flex; gap: 8px; flex-wrap: wrap; }
+  .badges { display: flex; gap: 5px; margin-top: 7px; flex-wrap: wrap; }
+  .badge { font-size: 10.5px; font-weight: 700; padding: 3px 7px; border-radius: 999px; background: var(--bg); color: var(--ink-2); }
+  .badge.open { background: var(--sage-soft); color: #3E6B48; }
+  :root[data-theme="dark"] .badge.open { color: var(--sage); }
+  .badge.mine { background: var(--accent-soft); color: var(--accent); }
+  .price { text-align: right; }
+  .price b { display: block; font-size: 16px; font-weight: 800; }
+  .icon-btn { margin-top: 6px; width: 34px; height: 34px; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); display: grid; place-items: center; font-size: 15px; margin-left: auto; }
+
+  /* Random FAB + tab bar */
+  .fab { position: absolute; left: 16px; right: 16px; bottom: 84px; height: 56px; border-radius: 18px; background: var(--accent); color: var(--accent-ink); border: 0; font: inherit; font-size: 16px; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 10px; box-shadow: 0 10px 24px rgba(200,54,74,.35); }
+  .tabbar { position: absolute; left: 0; right: 0; bottom: 0; height: 74px; background: var(--surface); border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(4, 1fr); padding: 8px 8px 18px; }
+  .tab { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 11px; font-weight: 700; color: var(--ink-3); }
+  .tab i { font-style: normal; font-size: 20px; }
+  .tab.on { color: var(--accent); }
+
+  /* Detail */
+  .hero { height: 210px; position: relative; display: grid; place-items: center; font-size: 86px; background: radial-gradient(circle at 30% 30%, #FDF1D9, var(--tile-intia)); }
+  .hero .back, .hero .fav { position: absolute; top: 18px; width: 40px; height: 40px; border-radius: 14px; background: rgba(255,255,255,.85); display: grid; place-items: center; font-size: 18px; color: #1F2421; }
+  .hero .back { left: 16px; } .hero .fav { right: 16px; }
+  .detail { padding: 0 16px 140px; margin-top: -26px; position: relative; }
+  .dcard { background: var(--surface); border-radius: 26px; box-shadow: var(--shadow); padding: 18px; }
+  .dcard h1 { font-family: Fraunces, serif; font-size: 26px; margin: 4px 0 2px; }
+  .lunchbtn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; margin-top: 14px; height: 48px; border-radius: 14px; border: 2px solid var(--ink); background: transparent; color: var(--ink); font: inherit; font-weight: 800; font-size: 14px; }
+  .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
+  .fact { background: var(--bg); border-radius: 16px; padding: 10px 12px; }
+  .fact small { display: block; font-size: 11px; color: var(--ink-3); font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+  .fact b { font-size: 14px; }
+  .incl { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+  .visit { margin-top: 14px; background: var(--accent-soft); border-radius: 22px; padding: 14px; display: flex; align-items: center; gap: 14px; }
+  .visit .count { font-family: Fraunces, serif; font-size: 40px; font-weight: 700; color: var(--accent); line-height: 1; min-width: 44px; text-align: center; }
+  .visit .txt { flex: 1; font-size: 13px; color: var(--ink-2); }
+  .visit .txt b { display: block; color: var(--ink); font-size: 14px; }
+  .visit button { border: 0; background: var(--accent); color: #fff; font: inherit; font-weight: 800; border-radius: 14px; padding: 12px 14px; font-size: 14px; }
+  .notes h2 { font-size: 16px; margin: 20px 0 10px; display: flex; justify-content: space-between; }
+  .notes h2 a { color: var(--accent); font-size: 13px; text-decoration: none; }
+  .note { background: var(--surface); border-radius: 18px; padding: 12px 14px; box-shadow: var(--shadow); margin-bottom: 8px; font-size: 13px; }
+  .note .stars { color: var(--amber); font-size: 13px; letter-spacing: 1px; }
+  .note .when { color: var(--ink-3); font-size: 11px; font-weight: 600; }
+  .note .tags { display: flex; gap: 5px; margin-top: 6px; }
+
+  /* Random */
+  .random-bg { position: absolute; inset: 0; background: linear-gradient(180deg, var(--accent) 0%, #9E2537 100%); }
+  .random { position: relative; z-index: 1; padding: 54px 20px 0; color: #fff; height: 100%; display: flex; flex-direction: column; }
+  .random .close { position: absolute; top: 18px; right: 18px; width: 38px; height: 38px; border-radius: 50%; background: rgba(255,255,255,.18); display: grid; place-items: center; }
+  .random h2 { font-family: Fraunces, serif; font-size: 30px; margin: 0; }
+  .random .criteria { font-size: 13px; opacity: .85; margin-top: 6px; }
+  .deck { position: relative; height: 380px; margin-top: 26px; }
+  .ghost, .winner { position: absolute; left: 50%; width: 290px; border-radius: 28px; background: var(--surface); color: var(--ink); min-height: 310px; }
+  .ghost { height: 300px; top: 12px; opacity: .45; }
+  .ghost.g1 { transform: translateX(-50%) rotate(-7deg) translateY(10px); }
+  .ghost.g2 { transform: translateX(-50%) rotate(6deg) translateY(4px); opacity: .6; }
+  .winner { transform: translateX(-50%); top: 0; box-shadow: 0 30px 60px rgba(0,0,0,.25); overflow: hidden; animation: flip .9s cubic-bezier(.2,.8,.2,1.1); }
+  @keyframes flip { from { transform: translateX(-50%) rotateY(90deg) scale(.9); } to { transform: translateX(-50%) rotateY(0) scale(1); } }
+  @media (prefers-reduced-motion: reduce) { .winner { animation: none; } }
+  .winner .top { height: 170px; display: grid; place-items: center; font-size: 72px; background: var(--tile-japani); }
+  .winner .body { padding: 16px 18px 18px; }
+  .winner h3 { font-family: Fraunces, serif; font-size: 24px; margin: 0; }
+  .actions { margin-top: auto; padding-bottom: 34px; display: grid; gap: 10px; }
+  .btn-go { height: 56px; border-radius: 18px; border: 0; background: #fff; color: var(--accent); font: inherit; font-weight: 800; font-size: 17px; }
+  .btn-re { height: 50px; border-radius: 18px; border: 2px solid rgba(255,255,255,.6); background: transparent; color: #fff; font: inherit; font-weight: 800; font-size: 15px; }
+  .confetti { position: absolute; inset: 0; pointer-events: none; z-index: 0; }
+  .confetti span { position: absolute; width: 8px; height: 14px; border-radius: 3px; opacity: .8; }
+  .notes-box { max-width: 1260px; margin: 36px auto 0; font-size: 14px; color: var(--ink-2); line-height: 1.6; }
+  .notes-box h2 { font-family: Fraunces, serif; color: var(--ink); font-size: 20px; }
+  .swatches { display: flex; flex-wrap: wrap; gap: 10px; margin: 10px 0; }
+  .sw { display: flex; align-items: center; gap: 8px; font-size: 12px; }
+  .sw i { width: 28px; height: 28px; border-radius: 9px; display: block; border: 1px solid rgba(0,0,0,.06); }
+</style>
+</head>
+<body>
+  <div class="page-head">
+    <div>
+      <h1>Lounasapp – ruutujen mockupit</h1>
+      <p>Versio 1 · 22.11.2026 · Oikeaa dataa places.json:sta · Etusivu, paikan tiedot ja arvonta</p>
+    </div>
+    <button class="theme-btn" onclick="toggleTheme()">🌗 Vaihda teema</button>
+  </div>
+
+  <div class="phones">
+    <!-- ───────── 1. HOME ───────── -->
+    <div class="phone-wrap">
+      <div class="phone-label">1 · Etsi (koti)</div>
+      <div class="phone">
+        <div class="scroll">
+          <div class="hdr">
+            <div>
+              <div class="brand">Lounas<span>.</span></div>
+              <div class="sub">ma 23.11. · 159 paikkaa auki lounaalla</div>
+            </div>
+            <div class="avatar">🍽️</div>
+          </div>
+
+          <div class="filters">
+            <span class="chip on"><span class="stepper">👥 <b>–</b> 5 <b>+</b></span></span>
+            <span class="chip on">🚶 ≤ 10 min</span>
+            <span class="chip">💶 ≤ 14 €</span>
+            <span class="chip sage"><span class="dot"></span> Auki nyt</span>
+            <span class="chip">⚙️ Lisää</span>
+          </div>
+
+          <div class="section-title"><h2>Mitä tänään syötäisiin?</h2><a href="#">Kaikki</a></div>
+          <div class="grid">
+            <div class="tile" style="background:var(--tile-kotiruoka)"><span class="emoji">🥘</span><div><div class="name">Kotiruoka</div><div class="count">40 paikkaa</div></div></div>
+            <div class="tile sel" style="background:var(--tile-aasia)"><span class="emoji">🥢</span><div><div class="name">Aasialainen</div><div class="count">46 paikkaa</div></div></div>
+            <div class="tile sel" style="background:var(--tile-intia)"><span class="emoji">🍛</span><div><div class="name">Intia & Nepal</div><div class="count">14 paikkaa</div></div></div>
+            <div class="tile" style="background:var(--tile-burger)"><span class="emoji">🍔</span><div><div class="name">Burgerit</div><div class="count">14 paikkaa</div></div></div>
+            <div class="tile" style="background:var(--tile-pizza)"><span class="emoji">🍕</span><div><div class="name">Pizza & pasta</div><div class="count">15 paikkaa</div></div></div>
+            <div class="tile" style="background:var(--tile-valimeri)"><span class="emoji">🧆</span><div><div class="name">Välimeri</div><div class="count">6 paikkaa</div></div></div>
+            <div class="tile" style="background:var(--tile-kebab)"><span class="emoji">🥙</span><div><div class="name">Kebab & grilli</div><div class="count">9 paikkaa</div></div></div>
+            <div class="tile" style="background:var(--tile-buffet)"><span class="emoji">🍽️</span><div><div class="name">Buffet</div><div class="count">61 paikkaa</div></div></div>
+            <div class="tile" style="background:var(--tile-klusteri)"><span class="emoji">🏬</span><div><div class="name">Klusterit</div><div class="count">3 aluetta</div></div></div>
+          </div>
+
+          <div class="sortrow"><h2>23 osumaa</h2><span class="sort">Järjestys: lähin ▾</span></div>
+
+          <div class="card">
+            <div class="thumb" style="background:var(--tile-intia)">🍛</div>
+            <div>
+              <h3>Ravintola Malika</h3>
+              <div class="meta"><span>🚶 5 min</span><span>Nepal</span><span>10.30–14</span></div>
+              <div class="badges"><span class="badge open">Auki nyt</span><span class="badge">Kasvis</span><span class="badge mine">Käyty 4×</span></div>
+            </div>
+            <div class="price"><b>10,90 €</b><span class="icon-btn" title="Lounaslista">📋</span></div>
+          </div>
+
+          <div class="card">
+            <div class="thumb" style="background:var(--tile-aasia)">🍜</div>
+            <div>
+              <h3>Noodle Master</h3>
+              <div class="meta"><span>🚶 6 min</span><span>Kiina & nuudelit</span><span>11–21</span></div>
+              <div class="badges"><span class="badge open">Auki nyt</span><span class="badge">Vegaani ok</span></div>
+            </div>
+            <div class="price"><b>14,90 €</b><span class="icon-btn">📋</span></div>
+          </div>
+
+          <div class="card">
+            <div class="thumb" style="background:var(--tile-intia)">🍛</div>
+            <div>
+              <h3>Toor Shahzada</h3>
+              <div class="meta"><span>🚶 6 min</span><span>Intia</span><span>Buffet</span></div>
+              <div class="badges"><span class="badge open">Auki nyt</span><span class="badge">Iso ryhmä ok</span></div>
+            </div>
+            <div class="price"><b>14,00 €</b><span class="icon-btn">📋</span></div>
+          </div>
+
+          <div class="card">
+            <div class="thumb" style="background:var(--tile-japani)">🍣</div>
+            <div>
+              <h3>Itsudemo Stockmann</h3>
+              <div class="meta"><span>🚶 7 min</span><span>Japani & sushi</span><span>Buffet</span></div>
+              <div class="badges"><span class="badge open">Auki nyt</span><span class="badge mine">Viimeksi 3 vk sitten</span></div>
+            </div>
+            <div class="price"><b>14,50 €</b><span class="icon-btn">📋</span></div>
+          </div>
+        </div>
+        <button class="fab">🎲 Arvo paikka</button>
+        <nav class="tabbar">
+          <span class="tab on"><i>🔍</i>Etsi</span><span class="tab"><i>🗺️</i>Kartta</span><span class="tab"><i>🎲</i>Arvo</span><span class="tab"><i>⭐</i>Omat</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ───────── 2. DETAIL ───────── -->
+    <div class="phone-wrap">
+      <div class="phone-label">2 · Paikan tiedot</div>
+      <div class="phone">
+        <div class="scroll" style="padding:0">
+          <div class="hero">🍛<span class="back">←</span><span class="fav">♡</span></div>
+          <div class="detail">
+            <div class="dcard">
+              <div class="badges" style="margin-top:0"><span class="badge open">● Lounas auki 10.30–14</span><span class="badge">Intia & Nepal</span></div>
+              <h1>Ravintola Malika</h1>
+              <div class="meta"><span>📍 Aleksanterinkatu 37</span><span>🚶 5 min · 317 m</span></div>
+              <button class="lunchbtn">📋 Lounastiedot verkossa ↗</button>
+              <div class="facts">
+                <div class="fact"><small>Hinta</small><b>10,90–13,90 €</b></div>
+                <div class="fact"><small>Muoto</small><b>Lautasannos</b></div>
+                <div class="fact"><small>Ryhmä</small><b>Max ~6 hlö</b></div>
+                <div class="fact"><small>Riski</small><b>🌶️ Tulinen</b></div>
+              </div>
+              <div class="incl">
+                <span class="badge">🥣 Keitto</span><span class="badge">🥗 Salaatti</span><span class="badge">🍞 Naan</span><span class="badge">☕ Kahvi/tee</span><span class="badge">🌱 Kasvisvaihtoehto</span>
+              </div>
+            </div>
+
+            <div class="visit">
+              <div class="count">4</div>
+              <div class="txt"><b>Käyty 4 kertaa</b>Viimeksi to 12.11. · 5 hlö</div>
+              <button>+1 Kävimme</button>
+            </div>
+
+            <div class="notes">
+              <h2>Muistiinpanot <a href="#">+ Lisää</a></h2>
+              <div class="note">
+                <div style="display:flex;justify-content:space-between"><span class="stars">★★★★★</span><span class="when">12.11.</span></div>
+                Lammas-curry erinomainen, naan tuoretta. Mene ennen 11.30, sen jälkeen jonoa.
+                <div class="tags"><span class="badge">Hyvä hinta</span><span class="badge">Jono 11.45</span></div>
+              </div>
+              <div class="note">
+                <div style="display:flex;justify-content:space-between"><span class="stars">★★★★☆</span><span class="when">28.10.</span></div>
+                Kasvislounas 10,90 € – Tampereen paras hinta-laatu.
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="tabbar">
+          <span class="tab on"><i>🔍</i>Etsi</span><span class="tab"><i>🗺️</i>Kartta</span><span class="tab"><i>🎲</i>Arvo</span><span class="tab"><i>⭐</i>Omat</span>
+        </nav>
+      </div>
+    </div>
+
+    <!-- ───────── 3. RANDOM ───────── -->
+    <div class="phone-wrap">
+      <div class="phone-label">3 · Arvonta</div>
+      <div class="phone">
+        <div class="random-bg"></div>
+        <div class="confetti" id="confetti"></div>
+        <div class="random">
+          <span class="close">✕</span>
+          <h2>Tänään syödään…</h2>
+          <div class="criteria">Aasialainen + Intia · 5 hlö · ≤ 10 min · ei viime viikolla käytyjä</div>
+          <div class="deck">
+            <div class="ghost g1"></div>
+            <div class="ghost g2"></div>
+            <div class="winner">
+              <div class="top">🍣</div>
+              <div class="body">
+                <div class="badges" style="margin-top:0"><span class="badge open">Auki 11–16</span><span class="badge">Buffet</span></div>
+                <h3>Itsudemo Stockmann</h3>
+                <div class="meta"><span>🚶 7 min</span><span>14,50 €</span><span>Käyty 2×</span></div>
+                <div class="meta" style="margin-top:8px">Sushi- ja aasialainen buffet, jäätelöbuffet</div>
+              </div>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="btn-go">Mennään! 🎉</button>
+            <button class="btn-re">🎲 Arvo uudelleen</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="notes-box">
+    <h2>Suunnitteluperiaatteet</h2>
+    <div class="swatches">
+      <span class="sw"><i style="background:#FBF7F2"></i>Tausta #FBF7F2</span>
+      <span class="sw"><i style="background:#1F2421"></i>Muste #1F2421</span>
+      <span class="sw"><i style="background:#C8364A"></i>Puolukka #C8364A</span>
+      <span class="sw"><i style="background:#7FA387"></i>Salvia #7FA387</span>
+      <span class="sw"><i style="background:#E2A23B"></i>Tähdet #E2A23B</span>
+    </div>
+    <ul>
+      <li><b>Fontit:</b> Fraunces otsikoissa ja brändissä, Plus Jakarta Sans muussa tekstissä.</li>
+      <li><b>Etusivu:</b> pikasuodattimet ovat ylhäällä aina näkyvissä. Kategorioista voi valita useamman kerralla, ja valittu ruutu korostuu reunalla ja ✓-merkillä. Arvo paikka -painike on aina peukalon ulottuvilla.</li>
+      <li><b>Kortti:</b> näyttää kävelyajan, kategorian, lounasajan ja hinnan. 📋-painike avaa lounaslistan suoraan, ja omat käynnit näkyvät punaisena merkkinä.</li>
+      <li><b>Paikan tiedot:</b> lounaslista on ylimpänä painikkeena. Tärkeimmät tiedot näkyvät neljässä laatikossa. "+1 Kävimme" toimii yhdellä napautuksella, ja muistiinpanoissa on tähdet ja pikatagit.</li>
+      <li><b>Arvonta:</b> kortti kääntyy esiin, ja valitut ehdot näkyvät ylhäällä. "Mennään!" kirjaa käynnin. Jos käyttäjä on valinnut vähemmän liikettä, animaatiot jäävät pois.</li>
+      <li><b>Tumma teema</b> käyttää samoja sävyjä vähemmän kylläisinä. Vaihda teemaa yläkulman napista.</li>
+    </ul>
+  </div>
+
+<script>
+  function toggleTheme() {
+    const r = document.documentElement;
+    const dark = r.getAttribute('data-theme') === 'dark' ||
+      (!r.hasAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+    r.setAttribute('data-theme', dark ? 'light' : 'dark');
+  }
+  // tiny confetti for the random screen
+  const c = document.getElementById('confetti');
+  const colors = ['#FFD166', '#FFFFFF', '#7FA387', '#F9E1E4', '#E2A23B'];
+  for (let i = 0; i < 26; i++) {
+    const s = document.createElement('span');
+    s.style.left = Math.random() * 100 + '%';
+    s.style.top = Math.random() * 45 + '%';
+    s.style.background = colors[i % colors.length];
+    s.style.transform = `rotate(${Math.random() * 360}deg)`;
+    c.appendChild(s);
+  }
+</script>
+</body>
+</html>

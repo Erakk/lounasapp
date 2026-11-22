@@ -1,0 +1,189 @@
+@import 'tailwindcss';
+
+/* ── Design tokens (see docs/mockups/index.html) ── */
+:root {
+  --bg: #fbf7f2;
+  --surface: #ffffff;
+  --ink: #1f2421;
+  --ink-2: #5b615d;
+  --ink-3: #6a6f6b;
+  --line: #ece5dc;
+  --accent: #c8364a;
+  --accent-ink: #ffffff;
+  --accent-soft: #f9e1e4;
+  /* Red for text on light/pink surfaces (AA contrast). */
+  --accent-text: #a8283b;
+  --sage: #7fa387;
+  --sage-soft: #e4efe6;
+  --sage-ink: #3e6b48;
+  --amber: #e2a23b;
+  --shadow-card: 0 1px 2px rgb(31 36 33 / 0.06), 0 8px 24px rgb(31 36 33 / 0.08);
+  --tile-mix: 100%;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #151816;
+    --surface: #1e2220;
+    --ink: #f1eee9;
+    --ink-2: #b9b6b0;
+    --ink-3: #8a8781;
+    --line: #2c302d;
+    --accent: #c23b4f;
+    --accent-text: #f08a99;
+    --accent-soft: #3a2227;
+    --sage: #93b89b;
+    --sage-soft: #22302a;
+    --sage-ink: #93b89b;
+    --shadow-card: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.35);
+    --tile-mix: 22%;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --bg: #151816;
+  --surface: #1e2220;
+  --ink: #f1eee9;
+  --ink-2: #b9b6b0;
+  --ink-3: #8a8781;
+  --line: #2c302d;
+  --accent: #c23b4f;
+  --accent-text: #f08a99;
+  --accent-soft: #3a2227;
+  --sage: #93b89b;
+  --sage-soft: #22302a;
+  --sage-ink: #93b89b;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.35);
+  --tile-mix: 22%;
+  color-scheme: dark;
+}
+
+/* Expose tokens to Tailwind utilities: bg-bg, text-ink, bg-accent, shadow-card, font-display … */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-text: var(--accent-text);
+  --color-sage: var(--sage);
+  --color-sage-soft: var(--sage-soft);
+  --color-sage-ink: var(--sage-ink);
+  --color-amber: var(--amber);
+  --shadow-card: var(--shadow-card);
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display: 'Fraunces', Georgia, serif;
+  --radius-tile: 20px;
+  --radius-card: 22px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Visible keyboard focus everywhere (mouse/touch clicks don't show it). */
+:focus-visible {
+  outline: 2px solid var(--accent-text);
+  outline-offset: 2px;
+}
+
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Confetti burst for "Mennään!" */
+@keyframes confetti-fall {
+  0% {
+    transform: translate3d(0, -20px, 0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--dx, 0px), 520px, 0) rotate(var(--rot, 540deg));
+    opacity: 0;
+  }
+}
+.confetti-piece {
+  position: absolute;
+  top: 0;
+  width: 8px;
+  height: 14px;
+  border-radius: 3px;
+  animation: confetti-fall 1.6s cubic-bezier(0.2, 0.6, 0.4, 1) forwards;
+}
+
+/* Map: dim the light basemap in dark mode so it doesn't glare. */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .map-canvas canvas {
+    filter: brightness(0.72) contrast(1.05) saturate(0.8);
+  }
+}
+:root[data-theme='dark'] .map-canvas canvas {
+  filter: brightness(0.72) contrast(1.05) saturate(0.8);
+}
+.maplibregl-ctrl-attrib {
+  font-size: 10px;
+}
+
+/* Lightweight CSS animations (no JS animation library needed on the main screens). */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+}
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+.anim-fade {
+  animation: fade-in 0.2s ease-out;
+}
+.anim-sheet {
+  animation: sheet-up 0.32s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+.anim-toast {
+  animation: toast-in 0.22s ease-out;
+}
+
+/* Map pins: grow the inner circle from its centre; never transform the MapLibre-positioned outer element. */
+.map-pin-circle {
+  transform-origin: center;
+  transition: transform 0.18s ease-out, border-color 0.18s ease-out;
+}
+.map-pin[data-selected='true'] .map-pin-circle {
+  transform: scale(1.3);
+  border-color: var(--accent);
+}
