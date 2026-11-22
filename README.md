@@ -2,6 +2,8 @@
 
 Lunch picker for central Tampere. Distances are measured from Kehräsaari.
 
+**Live app:** https://erakk.github.io/lounasapp/ (open on your phone → "Add to Home screen"). Every push to `main` redeploys automatically via GitHub Actions.
+
 - Plan: [docs/app-plan.md](docs/app-plan.md)
 - Research: [docs/lounaspaikat-tampere-tutkimus.md](docs/lounaspaikat-tampere-tutkimus.md)
 - Lunch-list links: [docs/lunch-links.md](docs/lunch-links.md)
