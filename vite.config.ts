@@ -10,7 +10,10 @@ export default defineConfig({
     react(),
     tailwindcss(),
     VitePWA({
-      registerType: 'autoUpdate',
+      // 'prompt' = a new version waits until src/pwa.ts decides to apply it (right away, unless the user is typing).
+      registerType: 'prompt',
+      injectRegister: false, // registered in src/pwa.ts
+
       includeAssets: ['icon.svg', 'apple-touch-icon.png'],
       manifest: {
         name: 'Lounas – Tampere',
