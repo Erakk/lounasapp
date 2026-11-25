@@ -54,3 +54,40 @@ export function bounds(points: { lat: number; lon: number }[], padDeg = 0.002): 
     [Math.max(...lons) + padDeg, Math.max(...lats) + padDeg],
   ];
 }
+
+/** Great-circle distance in metres (same formula as scripts/build-places.ts). */
+export function haversineM(a: { lat: number; lon: number }, b: { lat: number; lon: number }): number {
+  const R = 6371000;
+  const toRad = (d: number) => (d * Math.PI) / 180;
+  const dLat = toRad(b.lat - a.lat);
+  const dLon = toRad(b.lon - a.lon);
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(a.lat)) * Math.cos(toRad(b.lat)) * Math.sin(dLon / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+}
+
+export const walkMinFor = (distanceM: number) => Math.max(1, Math.round((distanceM * WALK_DETOUR) / WALK_SPEED_M_PER_MIN));
+
+/** Ray-casting point-in-polygon test; `ring` is [lon, lat] pairs. */
+export function pointInRing(lat: number, lon: number, ring: readonly (readonly [number, number] | readonly number[])[]): boolean {
+  let inside = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i] as [number, number];
+    const [xj, yj] = ring[j] as [number, number];
+    if (yi > lat !== yj > lat && lon < ((xj - xi) * (lat - yi)) / (yj - yi) + xi) inside = !inside;
+  }
+  return inside;
+}
+
+/**
+ * Places with distance and walking time measured from `origin`, sorted nearest first.
+ * Returns the input untouched when the origin is where the data was built from.
+ */
+export function withOrigin(places: Place[], origin: { lat: number; lon: number }, dataOrigin?: { lat: number; lon: number }): Place[] {
+  if (dataOrigin && dataOrigin.lat === origin.lat && dataOrigin.lon === origin.lon) return places;
+  return places
+    .map((p) => {
+      const distanceM = Math.round(haversineM(origin, p));
+      return { ...p, distanceM, walkMin: walkMinFor(distanceM) };
+    })
+    .sort((a, b) => a.distanceM - b.distanceM);
+}

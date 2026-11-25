@@ -336,4 +336,4 @@ M0–M5 is a usable app. M6–M7 makes it nice.
 | D3 | Show the ~35 "unverified" places (no lunch info) or hide them? | Show them with a "tarkista" badge, excluded from random by default |
 | D4 | UI language: Finnish only, or Finnish + English? | Finnish, with strings in one file for later English |
 | D5 | Photos: our own, the restaurants' (needs permission), or illustrations? | Category illustrations (no copyright issues) |
-| D6 | Starting point: always Kehräsaari, or the phone's location? | Kehräsaari, with an optional "use my location" toggle in v1.1 |
+| D6 | Starting point: always Kehräsaari, or the phone's location? | **Decided:** user-selectable "Lähtöpiste" (presets, own location, address search via Nominatim, or a point on the map), limited to the City of Tampere boundary; Kehräsaari is the default |

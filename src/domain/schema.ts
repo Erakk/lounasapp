@@ -33,8 +33,9 @@ export const PlaceSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string().min(1),
   address: z.string().min(1),
-  lat: z.number().min(61.45).max(61.55), // inside central Tampere
-  lon: z.number().min(23.65).max(23.85),
+  // Bounding box of the City of Tampere; the exact boundary is checked by scripts/validate-places.ts.
+  lat: z.number().min(61.42).max(61.84),
+  lon: z.number().min(23.54).max(24.12),
   distanceM: z.number().int().nonnegative(),
   walkMin: z.number().int().positive(),
   clusterId: z.enum(clusterIds).optional(),

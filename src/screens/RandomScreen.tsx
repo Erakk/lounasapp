@@ -2,12 +2,13 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { useShallow } from 'zustand/react/shallow';
-import { PLACES } from '../data/places';
+import { usePlaces } from '../state/usePlaces';
+import { useOrigin } from '../state/originStore';
 import { CATEGORIES, tileBg } from '../data/categories';
 import { activeFilterCount, filterPlaces } from '../domain/filters';
 import { weekdayOf } from '../domain/openingHours';
 import { buildOptions, pickRandom, type RandomOption } from '../domain/randomPick';
-import { hoursToday, priceLabel } from '../domain/format';
+import { distanceLabel, hoursToday, priceLabel } from '../domain/format';
 import { relativeDay } from '../domain/stats';
 import { useAllStats } from '../db/hooks';
 import { addVisit, removeVisit } from '../db/repo';
@@ -33,9 +34,11 @@ export function RandomScreen() {
   const stats = useAllStats();
   const showToast = useToast((s) => s.show);
 
+  const places = usePlaces();
+  const originId = useOrigin((s) => s.origin.id);
   const now = useMemo(() => new Date(), []);
   // Exactly the same filtering as the home list (shared filter store), then the random-only rules on top.
-  const listPlaces = useMemo(() => filterPlaces(PLACES, filters, now, stats), [filters, stats, now]);
+  const listPlaces = useMemo(() => filterPlaces(places, filters, now, stats), [places, filters, stats, now]);
   const options = useMemo(() => buildOptions(listPlaces, stats, settings, now), [listPlaces, settings, stats, now]);
 
   // Why the random pick may have fewer places than the list: explain it instead of hiding it.
@@ -91,7 +94,7 @@ export function RandomScreen() {
   }, []);
 
   // Changing filters or settings here (or on the list) picks again, so the result always matches them.
-  const criteriaKey = JSON.stringify(filters) + JSON.stringify(settings);
+  const criteriaKey = JSON.stringify(filters) + JSON.stringify(settings) + originId;
   const firstKey = useRef(criteriaKey);
   useEffect(() => {
     if (criteriaKey === firstKey.current) return;
@@ -297,7 +300,7 @@ function PlaceWinner({ option, lastVisited, now }: { option: Extract<RandomOptio
         </div>
         <h2 className="mt-1.5 font-display text-2xl leading-tight font-bold">{p.name}</h2>
         <p className="mt-1 flex flex-wrap gap-x-2.5 text-xs text-ink-2">
-          <span>🚶 {p.walkMin} min</span>
+          <span>{distanceLabel(p)}</span>
           {price && <span>{price}</span>}
           <span>{cat.label}</span>
           {lastVisited && <span>Käyty {relativeDay(lastVisited)}</span>}

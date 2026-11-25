@@ -34,7 +34,7 @@ describe('placeWeight', () => {
 });
 
 describe('buildOptions', () => {
-  const all = filterPlaces(PLACES, DEFAULT_FILTERS, MON_NOON);
+  const all = filterPlaces(PLACES, { ...DEFAULT_FILTERS, maxDistanceM: null }, MON_NOON);
 
   it('only includes places with lunch today and confirmed info by default', () => {
     const sunday = buildOptions(all, new Map(), S, SUN_NOON);
@@ -46,7 +46,7 @@ describe('buildOptions', () => {
   it('merges cluster places into one option each', () => {
     const opts = buildOptions(all, new Map(), { ...S, clustersAsOne: true }, MON_NOON);
     const clusters = opts.filter((o) => o.kind === 'cluster');
-    expect(clusters.map((c) => c.id).sort()).toEqual(['cluster:kauppahalli', 'cluster:koskikeskus', 'cluster:ratina']);
+    expect(clusters.map((c) => c.id).sort()).toEqual(['cluster:duo', 'cluster:kauppahalli', 'cluster:koskikeskus', 'cluster:ratina']);
     expect(opts.some((o) => o.kind === 'place' && o.place.clusterId)).toBe(false);
     const kh = clusters.find((c) => c.id === 'cluster:kauppahalli') as Extract<RandomOption, { kind: 'cluster' }>;
     expect(kh.places.length).toBeGreaterThan(5);

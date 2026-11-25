@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { PLACES } from '../data/places';
-import { DEFAULT_FILTERS, activeFilterCount, effectivePrice, filterPlaces, matches, type Filters } from './filters';
+import { DEFAULT_FILTERS, activeFilterCount, effectivePrice, filterPlaces, matches, widerArea, type Filters } from './filters';
 import { EMPTY_STATS } from './stats';
 
 const MON_NOON = new Date(2026, 10, 23, 12, 0);
@@ -9,10 +9,24 @@ const f = (over: Partial<Filters>): Filters => ({ ...DEFAULT_FILTERS, ...over })
 const byId = (id: string) => PLACES.find((p) => p.id === id)!;
 
 describe('filterPlaces', () => {
-  it('returns every non-closed place with default filters, nearest first', () => {
+  it('shows only places within 1 km by default, nearest first', () => {
     const r = filterPlaces(PLACES, DEFAULT_FILTERS, MON_NOON);
-    expect(r.length).toBe(PLACES.filter((p) => p.status !== 'closed').length);
+    expect(DEFAULT_FILTERS.maxDistanceM).toBe(1000);
+    expect(r.length).toBe(PLACES.filter((p) => p.status !== 'closed' && p.distanceM <= 1000).length);
+    expect(r.length).toBeLessThan(PLACES.length);
     expect(r[0]!.distanceM).toBeLessThanOrEqual(r[r.length - 1]!.distanceM);
+  });
+
+  it('returns every non-closed place when the area is all of Tampere', () => {
+    const r = filterPlaces(PLACES, f({ maxDistanceM: null }), MON_NOON);
+    expect(r.length).toBe(PLACES.filter((p) => p.status !== 'closed').length);
+  });
+
+  it('widens the area step by step up to all of Tampere', () => {
+    expect(widerArea(500)).toBe(1000);
+    expect(widerArea(1000)).toBe(2000);
+    expect(widerArea(5000)).toBe(null);
+    expect(widerArea(null)).toBe(null);
   });
 
   it('filters by group size using comfortMax', () => {
@@ -40,7 +54,7 @@ describe('filterPlaces', () => {
   });
 
   it('vegan places count as vegetarian', () => {
-    expect(matches(byId('gopal'), f({ diets: ['vegetarian'] }), MON_NOON)).toBe(true);
+    expect(matches(byId('gopal'), f({ diets: ['vegetarian'], maxDistanceM: null }), MON_NOON)).toBe(true);
     expect(matches(byId('eurolohi'), f({ diets: ['vegetarian'] }), MON_NOON)).toBe(false);
   });
 

@@ -1,7 +1,7 @@
 import 'fake-indexeddb/auto';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { LounasDB } from './db';
-import { addNote, addVisit, clearAll, deleteNote, exportAll, importBackup, parseBackup, removeVisit, setFavourite, setHidden, updateNote } from './repo';
+import { addNote, addVisit, clearAll, deleteNote, exportAll, importBackup, parseBackup, removeVisit, restoreVisit, setFavourite, setHidden, updateNote } from './repo';
 import { buildStats, daysSince, relativeDay } from '../domain/stats';
 
 let d: LounasDB;
@@ -29,6 +29,14 @@ describe('visits', () => {
     const v = await addVisit('malika', 5, new Date(2026, 10, 11), d);
     await removeVisit(v.id, d);
     expect((await stats()).get('malika')!.visitCount).toBe(1);
+  });
+
+  it('a removed visit can be put back exactly as it was', async () => {
+    const v = await addVisit('malika', 4, new Date(2026, 10, 12), d);
+    await removeVisit(v.id, d);
+    expect((await stats()).get('malika')).toBeUndefined();
+    await restoreVisit(v, d);
+    expect(await d.visits.get(v.id)).toEqual(v);
   });
 });
 

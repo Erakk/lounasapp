@@ -10,7 +10,9 @@ export interface Filters {
   categories: CategoryId[];
   /** Group size; places whose comfortable max is smaller are hidden. null = any. */
   groupSize: number | null;
-  /** Max walking minutes from Kehräsaari. null = any. */
+  /** Area: only places within this straight-line distance (m) of the starting point. null = all of Tampere. */
+  maxDistanceM: number | null;
+  /** Max walking minutes from the chosen starting point (finer than the area). null = any. */
   maxWalk: number | null;
   /** Max lunch price in €. Places with unknown price are kept (we don't hide what we don't know). */
   maxPrice: number | null;
@@ -37,6 +39,7 @@ const NO_STATS: StatsMap = new Map();
 export const DEFAULT_FILTERS: Filters = {
   categories: [],
   groupSize: null,
+  maxDistanceM: 1000,
   maxWalk: null,
   maxPrice: null,
   openNow: false,
@@ -50,6 +53,9 @@ export const DEFAULT_FILTERS: Filters = {
   sort: 'distance',
 };
 
+/** Area choices in metres; null = all of Tampere. The default is 1 km so the lists stay short. */
+export const AREA_OPTIONS = [500, 1000, 2000, 5000, null] as const;
+export const DEFAULT_AREA_M = 1000;
 export const WALK_OPTIONS = [3, 5, 10, 15] as const;
 export const PRICE_OPTIONS = [12, 14, 16] as const;
 
@@ -71,6 +77,7 @@ export function matches(p: Place, f: Filters, now: Date, stats: StatsMap = NO_ST
   if (!f.showUnverified && p.status === 'verify') return false;
   if (f.categories.length && !f.categories.some((c) => inCategory(p, c))) return false;
   if (f.groupSize !== null && p.group.comfortMax < f.groupSize) return false;
+  if (f.maxDistanceM !== null && p.distanceM > f.maxDistanceM) return false;
   if (f.maxWalk !== null && p.walkMin > f.maxWalk) return false;
   if (f.maxPrice !== null) {
     const price = effectivePrice(p);
@@ -121,7 +128,13 @@ export function filterPlaces(places: Place[], f: Filters, now: Date, stats: Stat
   );
 }
 
-/** Number of non-default filters, excluding categories and sort (shown separately). */
+/** The next wider area after `m`, or null (all of Tampere). */
+export function widerArea(m: number | null): number | null {
+  if (m === null) return null;
+  return AREA_OPTIONS.find((a) => a === null || a > m) ?? null;
+}
+
+/** Number of non-default filters, excluding categories, sort and area (each shown separately). */
 export function activeFilterCount(f: Filters): number {
   let n = 0;
   if (f.groupSize !== null) n++;

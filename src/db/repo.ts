@@ -11,6 +11,9 @@ export async function addVisit(placeId: string, groupSize?: number, date = new D
 
 export const removeVisit = (id: string, d: LounasDB = db) => d.visits.delete(id);
 
+/** Puts a removed visit back exactly as it was (undo for a removal). */
+export const restoreVisit = (v: Visit, d: LounasDB = db) => d.visits.put(v);
+
 // ── Notes ───────────────────────────────────────────────
 
 export async function addNote(

@@ -1,8 +1,8 @@
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { placeById } from '../data/places';
+import { usePlace } from '../state/usePlaces';
 import { CATEGORIES, tileBg } from '../data/categories';
 import { WEEKDAYS } from '../domain/schema';
-import { hoursToday, priceLabel, shortTime } from '../domain/format';
+import { distanceDetail, hoursToday, priceLabel, shortTime } from '../domain/format';
 import { isOpenForLunch } from '../domain/openingHours';
 import { Badge } from '../components/PlaceCard';
 import { VisitPanel } from '../components/VisitPanel';
@@ -15,7 +15,7 @@ import { fi } from '../i18n/fi';
 export function PlaceDetailScreen() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const place = id ? placeById.get(id) : undefined;
+  const place = usePlace(id);
   const stats = usePlaceStats(id ?? '');
   const showToast = useToast((s) => s.show);
 
@@ -77,7 +77,7 @@ export function PlaceDetailScreen() {
           <p className="mt-1 flex flex-wrap gap-x-3 text-xs text-ink-2">
             <span>📍 {place.address.replace(', Tampere', '')}</span>
             <span>
-              🚶 {place.walkMin} min · {place.distanceM} m
+              {distanceDetail(place)}
             </span>
           </p>
 

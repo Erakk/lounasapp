@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useShallow } from 'zustand/react/shallow';
-import { PRICE_OPTIONS, WALK_OPTIONS } from '../domain/filters';
+import { AREA_OPTIONS, PRICE_OPTIONS, WALK_OPTIONS } from '../domain/filters';
 import { DIETS, FORMATS } from '../domain/schema';
 import { selectFilters, useFilters } from '../state/filterStore';
 import { GroupChip } from './FilterBar';
@@ -58,6 +58,10 @@ export function FilterSheet({ open, resultCount, onClose }: Props) {
             <div className="overflow-y-auto px-5 pb-4">
               <Section title={fi.filters.sections.group}>
                 <GroupChip value={f.groupSize} onChange={(groupSize) => set({ groupSize })} />
+              </Section>
+
+              <Section title={fi.filters.sections.area} hint={fi.filters.areaHint}>
+                <AreaPicker value={f.maxDistanceM} onChange={(maxDistanceM) => set({ maxDistanceM })} />
               </Section>
 
               <Section title={fi.filters.sections.walk}>
@@ -148,19 +152,21 @@ function Section({ title, hint, children }: { title: string; hint?: string; chil
   );
 }
 
-function Segmented<T extends number | null>({
+export function Segmented<T extends number | null>({
   options,
   value,
   label,
   onChange,
+  ariaLabel,
 }: {
   options: readonly T[];
   value: T;
   label: (v: T) => string;
   onChange: (v: T) => void;
+  ariaLabel?: string;
 }) {
   return (
-    <div role="radiogroup" className="grid gap-1 rounded-2xl bg-bg p-1" style={{ gridTemplateColumns: `repeat(${options.length}, 1fr)` }}>
+    <div role="radiogroup" aria-label={ariaLabel} className="grid gap-1 rounded-2xl bg-bg p-1" style={{ gridTemplateColumns: `repeat(${options.length}, 1fr)` }}>
       {options.map((o) => {
         const on = o === value;
         return (
@@ -177,6 +183,19 @@ function Segmented<T extends number | null>({
         );
       })}
     </div>
+  );
+}
+
+/** Area radius around the starting point: 500 m … 5 km or all of Tampere. */
+export function AreaPicker({ value, onChange }: { value: number | null; onChange: (v: number | null) => void }) {
+  return (
+    <Segmented
+      options={AREA_OPTIONS}
+      value={value}
+      label={(v) => (v === null ? fi.filters.any : fi.filters.areaLabel(v))}
+      onChange={onChange}
+      ariaLabel={fi.filters.sections.area}
+    />
   );
 }
 

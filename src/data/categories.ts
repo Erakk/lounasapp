@@ -67,6 +67,7 @@ export const CLUSTERS = {
   koskikeskus: { name: 'Koskikeskus', address: 'Hatanpään valtatie 1', lat: 61.496259, lon: 23.766584 },
   kauppahalli: { name: 'Kauppahalli', address: 'Hämeenkatu 19', lat: 61.496931, lon: 23.758791 },
   ratina: { name: 'Ratina', address: 'Vuolteenkatu 1', lat: 61.493267, lon: 23.767339 },
+  duo: { name: 'Duo (Hervanta)', address: 'Pietilänkatu 2', lat: 61.450779, lon: 23.851549 },
 } as const;
 
 export type ClusterId = keyof typeof CLUSTERS;

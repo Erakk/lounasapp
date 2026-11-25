@@ -7,6 +7,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { PlaceSchema, type Place } from '../src/domain/schema';
 import { CATEGORIES } from '../src/data/categories';
+import { isInTampere } from '../src/domain/tampere';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const raw: unknown = JSON.parse(readFileSync(resolve(root, 'src/data/places.json'), 'utf8'));
@@ -60,7 +61,7 @@ for (const p of places) {
     }
   }
 
-  if (p.distanceM > 3000) warnings.push(`${p.id}: ${p.distanceM} m from Kehräsaari`);
+  if (!isInTampere(p.lat, p.lon)) errors.push(`${p.id}: outside the City of Tampere (${p.lat}, ${p.lon})`);
   if (p.dislikeRisk.level === 'H' && p.dislikeRisk.reasons.length === 0) errors.push(`${p.id}: risk H needs a reason`);
   if (p.group.bookingRequiredFrom && p.group.bookingRequiredFrom > p.group.comfortMax + 1)
     warnings.push(`${p.id}: booking required from ${p.group.bookingRequiredFrom} but comfortMax ${p.group.comfortMax}`);

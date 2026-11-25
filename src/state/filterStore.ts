@@ -13,7 +13,7 @@ interface FilterState extends Filters {
   toggleCategory: (c: CategoryId) => void;
   toggleFormat: (f: Format) => void;
   toggleDiet: (d: Diet) => void;
-  /** Clears everything except sort. */
+  /** Clears everything except sort and area (the area is a scope, set with the starting point). */
   reset: () => void;
 }
 
@@ -25,7 +25,7 @@ export const useFilters = create<FilterState>()(
       toggleCategory: (c) => set((s) => ({ categories: toggle(s.categories, c) })),
       toggleFormat: (f) => set((s) => ({ formats: toggle(s.formats, f) })),
       toggleDiet: (d) => set((s) => ({ diets: toggle(s.diets, d) })),
-      reset: () => set((s) => ({ ...DEFAULT_FILTERS, sort: s.sort })),
+      reset: () => set((s) => ({ ...DEFAULT_FILTERS, sort: s.sort, maxDistanceM: s.maxDistanceM })),
     }),
     {
       name: 'lounas.filters.v1',

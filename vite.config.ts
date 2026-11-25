@@ -18,7 +18,7 @@ export default defineConfig({
       manifest: {
         name: 'Lounas – Tampere',
         short_name: 'Lounas',
-        description: 'Lounaspaikat Tampereen keskustassa Kehräsaaresta katsottuna',
+        description: 'Lounaspaikat Tampereen keskustassa – etäisyydet valitsemastasi lähtöpisteestä',
         lang: 'fi',
         start_url: '.',
         display: 'standalone',

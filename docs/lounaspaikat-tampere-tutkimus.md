@@ -477,3 +477,41 @@ Coordinates for every geocoded place are in [`places-geocoded.json`](places-geoc
 7. **Missing prices in the clusters:** Ohana, Natsu, Pyörykkäbaari, Ranger, Café de Halle, Umami, Seoul Good, Rax, Moi Poke, Super Kebab, Taco Bell. Fast-food chains publish menu prices in their apps, not as lunch offers.
 8. **Completeness lesson:** lunch aggregators miss most ethnic and small places, and OpenStreetMap misses new openings (Umaya, OBANH, Noodle Master, Toor Shahzada, the second Itsudemo). The most complete source was **Google Maps category searches**. For the app, consider seeding places from the Google Places API (paid; check its terms) or OSM, plus a "suggest a place" button.
 9. **App modelling:** treat Koskikeskus, Kauppahalli and Ratina as **clusters** (one location with many options). That suits split-preference groups, and the cluster's dislike risk is effectively low.
+
+---
+
+## 9. Whole city (25.11.2026)
+
+The app now lets you choose any starting point inside the City of Tampere, so the survey was extended from the centre to the whole city. The data lives in `data/places.city.ts`, separate from the hand-checked central list.
+
+**Result:** 196 places added (362 in total, up from 168). 241 lie within 1.5 km of Kehräsaari; 121 are further out (Hervanta, Kaleva/Kauppi, Lielahti, Tesoma, Nekala/Viinikka, Hatanpää, Kaukajärvi, Vuores, Rusko, Aitolahti…). 61 are marked *verify* (in the app: "Tarkista").
+
+**Method (same criteria as §1):**
+1. **OpenStreetMap:** every `restaurant`, `fast_food`, `cafe` and `food_court` inside the city boundary (598). The 231 that were over 1.3 km from Kehräsaari and not yet in the data became candidates.
+2. **lounaat.info:** the Tampere listing (105) plus every place page reachable through the "Lounasravintoloita lähistöllä" links (311 pages, 250 in Tampere). This surfaced places the listing never shows, including about 60 central ones the first survey missed (e.g. Rookie's, Urbano, Sorella, Smokehouse Bros, Tuhto, Tbilisi, PSTA).
+3. **Own websites** of both groups, scanned for "lounas" lines, lunch hours and € prices.
+4. **Campus restaurants** from the universities' student guide and Juvenes' own pages: non-students pay €9.05–9.55.
+5. **Coordinates:** taken from the matching OpenStreetMap entry or by address lookup (Nominatim). Wrong-branch matches for chains were corrected by hand. Every place is checked against the city boundary by `npm run validate`.
+
+**Rules:**
+- **Confirmed lunch (lounaat.info hours or menu, or the restaurant's own page):** status *open*. The price counts as verified only when it came from this week's menu or the restaurant's own page.
+- **Pizza/kebab places and senior service-centre restaurants that are open over lunch per OpenStreetMap,** with no lunch offer confirmed: status *verify*. This is the same rule as §2.8b.
+- **Categories, format, group size and dislike risk:** drafted from the place's name, lounaat.info tags and menu using the same rules as §4–5, then reviewed one by one.
+- **New cluster:** Duo in Hervanta, with Bai Wei, Caffitella, FireWok, Gate of India, Koto and Zarillo.
+
+**Corrections to the central list:**
+- **Papu ja Pata:** moved from Laukontori to Sammonkatu 15, where it is a vegan lunch buffet. The old entry was removed.
+- **Baglung Durbar:** its site said it was closed, and KYRA (an Indian buffet) now runs at the same address, Aleksanterinkatu 22 C. Replaced.
+- **Clava:** listed at Kirkkokatu 10, Koski's address, and also advertises a business lunch. It is probably Koski renamed, so it was not added. Check this.
+
+**Left out:**
+- Pages with no menu or hours.
+- Evening-only places.
+- Places outside the city (Pirkkala, Ylöjärvi, Lempäälä/Ideapark).
+- Duplicates of existing places.
+- Staff-only canteens.
+- Hesburger, McDonald's, Subway and Kotipizza outside the shopping-centre clusters, as these chains have no lunch offer of their own.
+
+**Gaps:**
+- **No price:** 190 of the 362 places have none: 137 of the new ones and 53 of the central ones. Most lounaat.info pages say "katso lounaslista ravintolan sivuilta" and the restaurant's own page shows only the daily menu.
+- **Estimated lunch hours:** where only opening hours were known, the place's info says "Lounasaika arvio".

@@ -2,7 +2,8 @@
  * Hand-maintained source for all lunch places. `npm run data` turns this into
  * src/data/places.json (adds coordinates, distances and lunch-list links).
  *
- * Research behind every value: docs/lounaspaikat-tampere-tutkimus.md (21–22.11.2026).
+ * Research behind every value: docs/lounaspaikat-tampere-tutkimus.md (21–22.11.2026); places outside the
+ * central survey live in places.city.ts (25.11.2026).
  *
  * Compact fields:
  *   geo    exact name in docs/places-geocoded.json, or '@koskikeskus' | '@kauppahalli' | '@ratina',
@@ -15,6 +16,7 @@
  */
 import type { CategoryId, ClusterId } from '../src/data/categories';
 import type { Diet, Format, Include, RiskReason } from '../src/domain/schema';
+import { cityPlaces } from './places.city';
 
 export interface SourcePlace {
   id: string;
@@ -41,7 +43,7 @@ export interface SourcePlace {
 
 const VERIFY_NOTE = 'Lounastiedot vahvistamatta – tarkista ennen lähtöä';
 
-export const places: SourcePlace[] = [
+const centralPlaces: SourcePlace[] = [
   // ───────────────────────── Within ~5 min ─────────────────────────
   { id: 'koski', name: 'Koski', addr: 'Kirkkokatu 10', geo: 'Koski', cat: ['bistro'], fmt: 'plated',
     price: { lunch: 15 }, ok: true, inc: ['salad', 'soup', 'coffee'], hours: 'mon-fri 11-14',
@@ -64,10 +66,6 @@ export const places: SourcePlace[] = [
     inc: ['salad', 'bread', 'drink', 'dessert', 'coffee'], hours: 'mon-fri 10:30-15; sat-sun 11-15',
     grp: { max: 8, book: false }, diet: ['vegan'], risk: ['L'],
     info: ['Ei pöytävarauksia arkilounaalle', 'Viikonlopun herkkulounas 17,90 €', 'Salaattibaari 13,90 / 15,90 €'] },
-  { id: 'papu-ja-pata', name: 'Bistro Papu ja Pata', addr: 'Laukontori 10', geo: 'Papu ja Pata', link: null,
-    cat: ['vege'], fmt: 'plated', price: { min: 12 }, hours: 'mon-fri 11-14', grp: 4,
-    diet: ['vegan', 'vegetarian'], risk: ['H', 'vegan_only'], status: 'verify',
-    info: ['Verkkosivu ei enää toimi – tarkista onko auki'] },
   { id: 'saunaravintola-kuuma', name: 'Saunaravintola Kuuma', addr: 'Laukontori 21', geo: 'Saunaravintola Kuuma',
     cat: ['bistro', 'kotiruoka'], fmt: 'plated', price: { lunch: 14 }, hours: 'mon-fri 11-14:30', grp: 8,
     diet: ['vegetarian'], risk: ['L'], info: ['Vain kaksi annosta päivässä'] },
@@ -476,9 +474,6 @@ export const places: SourcePlace[] = [
   { id: 'pure-bite', name: 'Pure Bite', addr: 'Hatanpään valtatie 4', geo: 'Pure Bite', cat: ['thai'], fmt: 'plated',
     price: { lunch: 14, max: 14.9 }, ok: true, hours: 'mon-fri 10:30-15', grp: 6, risk: ['M', 'spicy'],
     rating: [4.6, 664, 'Google'], info: ['Wokit ja salaatit pöytiin'] },
-  { id: 'baglung-durbar', name: 'Baglung Durbar', addr: 'Aleksanterinkatu 22 C', geo: 'Baglung Durbar',
-    cat: ['intia', 'buffet'], fmt: 'buffet', hours: 'mon-fri 10:30-14:30', grp: 20, risk: ['M', 'spicy'],
-    rating: [4.8, 239, 'Google'], status: 'verify', info: ['Sivuilla "Olemme suljettu" -banneri – tarkista'] },
   { id: 'don-franco', name: 'Don Franco Trattoria', addr: 'Tuomiokirkonkatu 17', geo: 'Don Franco Trattoria',
     cat: ['pizza'], fmt: 'plated', hours: 'mon-fri 11-14:30', grp: { max: 8, book: true }, risk: ['L'],
     info: ['Yli 8 hengen ryhmät sähköpostilla'] },
@@ -605,3 +600,6 @@ export const places: SourcePlace[] = [
     cat: ['valimeri'], fmt: 'counter', hours: 'mon-fri 10:30-15', grp: 6, risk: ['L'], rating: [4.7, 788, 'Google'],
     status: 'verify', info: [VERIFY_NOTE] },
 ];
+
+/** Central survey (21–22.11.2026) + the rest of the city (places.city.ts, 25.11.2026). */
+export const places: SourcePlace[] = [...centralPlaces, ...cityPlaces];

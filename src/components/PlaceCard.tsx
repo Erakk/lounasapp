@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import type { Place } from '../domain/schema';
 import { CATEGORIES, tileBg } from '../data/categories';
-import { hoursToday, priceLabel } from '../domain/format';
+import { distanceLabel, hoursToday, priceLabel } from '../domain/format';
 import { isOpenForLunch } from '../domain/openingHours';
 import { fi } from '../i18n/fi';
 import { relativeDay, type PlaceStats } from '../domain/stats';
@@ -34,7 +34,7 @@ export function PlaceCard({ place, now, stats }: { place: Place; now: Date; stat
           {place.name}
         </Link>
         <div className="mt-0.5 flex flex-wrap gap-x-2 text-xs text-ink-2">
-          <span>🚶 {fi.card.walk(place.walkMin)}</span>
+          <span>{distanceLabel(place)}</span>
           {catLabels && <span>{catLabels}</span>}
           {hours && <span>{hours}</span>}
         </div>

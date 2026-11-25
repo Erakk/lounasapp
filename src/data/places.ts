@@ -2,7 +2,8 @@ import raw from './places.json';
 import type { Place } from '../domain/schema';
 import { ASIAN_SUBCATEGORIES, type CategoryId } from './categories';
 
-/** All places, sorted by distance from Kehräsaari (validated at build time by `npm run validate`). */
+/** All places, sorted by distance from Kehräsaari (validated at build time by `npm run validate`).
+ *  Screens use `usePlaces()`, which re-measures from the starting point the user picked. */
 export const PLACES = raw as Place[];
 
 export const placeById = new Map(PLACES.map((p) => [p.id, p]));

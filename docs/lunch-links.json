@@ -1195,5 +1195,1292 @@
   "httpStatus": 200,
   "checkedAt": "2026-11-22",
   "note": "lunch prices/info, no dated weekly list"
+ },
+ {
+  "name": "Afgan Ravintola",
+  "lunchListUrl": "https://www.lounaat.info/lounas/afgan-ravintola/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Aitoleipä Tammela (GO21)",
+  "lunchListUrl": "https://www.lounaat.info/lounas/aitoleipa-tammela-go21/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Antell Hermian Farmi",
+  "lunchListUrl": "https://www.lounaat.info/lounas/antell-hermian-farmi/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Antika",
+  "lunchListUrl": "https://www.lounaat.info/lounas/antika/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Armas Kuppila",
+  "lunchListUrl": "https://www.lounaat.info/lounas/armas-kuppila/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Baba's Kitchen",
+  "lunchListUrl": "https://www.lounaat.info/lounas/babas-kitchen/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Babiloni",
+  "lunchListUrl": "https://www.lounaat.info/lounas/babiloni-ravintola/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Bai Wei",
+  "lunchListUrl": "https://www.lounaat.info/lounas/bai-wei/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Bertha Kellari & Keittiö",
+  "lunchListUrl": "https://www.lounaat.info/lounas/bertha-kellari-keittio/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Bistro Amande",
+  "lunchListUrl": "https://www.lounaat.info/lounas/bistro-amande/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Bistro Naapuri",
+  "lunchListUrl": "https://www.lounaat.info/lounas/bistro-naapuri/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Bistro Venla",
+  "lunchListUrl": "https://www.lounaat.info/lounas/bistro-venla/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Bord",
+  "lunchListUrl": "https://www.lounaat.info/lounas/bord/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Brander Tullintori",
+  "lunchListUrl": "https://www.lounaat.info/lounas/brander-tullintori/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Cafe & Bakery Mimosa",
+  "lunchListUrl": "https://www.lounaat.info/lounas/cafe-bakery-mimosa/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Café & Bar KATTO",
+  "lunchListUrl": "https://www.lounaat.info/lounas/cafe-bar-katto/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Cafe Europa",
+  "lunchListUrl": "https://www.lounaat.info/lounas/cafe-europa/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Caffitella Duo",
+  "lunchListUrl": "https://www.lounaat.info/lounas/caffitella-duo/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Caffitella Ratina",
+  "lunchListUrl": "https://www.lounaat.info/lounas/caffitella-ratina/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Classic American Diner Lielahti",
+  "lunchListUrl": "https://www.lounaat.info/lounas/classic-diner-lielahti/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Edun Herkkukeidas Eetwartti",
+  "lunchListUrl": "https://www.lounaat.info/lounas/edun-herkkukeidas-eetwartti/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Edun Herkkukeidas Hakametsä",
+  "lunchListUrl": "https://www.lounaat.info/lounas/edun-herkkukeidas-hakametsa/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Edun Herkkukeidas Tulli",
+  "lunchListUrl": "https://www.lounaat.info/lounas/edun-herkkukeidas/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Fafa's Aleksanterinkatu",
+  "lunchListUrl": "https://www.lounaat.info/lounas/fafas/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "FireWok Duo",
+  "lunchListUrl": "https://www.lounaat.info/lounas/firewok-duo/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Food & Co Flavory",
+  "lunchListUrl": "https://www.lounaat.info/lounas/flavory/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Tisle",
+  "lunchListUrl": "https://www.lounaat.info/lounas/gastrobar-tisle/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Gastropub Soho",
+  "lunchListUrl": "https://www.lounaat.info/lounas/gastropub-soho/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Grillsson Hämeenpuisto",
+  "lunchListUrl": "https://www.lounaat.info/lounas/grillsson-hameenpuisto/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Herkku Lettu",
+  "lunchListUrl": "https://www.lounaat.info/lounas/herkku-lettu/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Huadu Lielahtikeskus",
+  "lunchListUrl": "https://www.lounaat.info/lounas/huadu-lielahtikeskus/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Hullu Poro",
+  "lunchListUrl": "https://www.lounaat.info/lounas/hullu-poro/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Hygge",
+  "lunchListUrl": "https://www.lounaat.info/lounas/hygge/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Il Posto Lielahti",
+  "lunchListUrl": "https://www.lounaat.info/lounas/il-posto-lielahti/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Il Posto Hervanta",
+  "lunchListUrl": "https://www.lounaat.info/lounas/il-posto-trattoria/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Juvenes Bistro Elisa",
+  "lunchListUrl": "https://www.lounaat.info/lounas/juvenes-bistro-elisa/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Juvenes Ratamo",
+  "lunchListUrl": "https://www.lounaat.info/lounas/juvenes-ratamo/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "K-Supermarket Kuninkaankulma",
+  "lunchListUrl": "https://www.lounaat.info/lounas/k-supermarket-kuninkaankulma/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Kahvila Hetki",
+  "lunchListUrl": "https://www.lounaat.info/lounas/kahvila-hetki/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Kahvila Jenna ja Minna",
+  "lunchListUrl": "https://www.lounaat.info/lounas/kahvila-jenna-ja-minna/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Kahvila-ravintola Viistokatu",
+  "lunchListUrl": "https://www.lounaat.info/lounas/kahvila-ravintola-viistokatu/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Linkosuo Kalevanpaasi",
+  "lunchListUrl": "https://www.lounaat.info/lounas/kalevanpaasi/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Kokkipoika",
+  "lunchListUrl": "https://www.lounaat.info/lounas/kokkipoika/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Kontukeittiö Hervanta",
+  "lunchListUrl": "https://www.lounaat.info/lounas/konnun-keittio-hervanta/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Kontukeittiö Pyynikki",
+  "lunchListUrl": "https://www.lounaat.info/lounas/konnun-keittio-pyynikki/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Kumru",
+  "lunchListUrl": "https://www.lounaat.info/lounas/kumru/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "KYRA",
+  "lunchListUrl": "https://www.lounaat.info/lounas/kyra/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "La Famiglia",
+  "lunchListUrl": "https://www.lounaat.info/lounas/la-famiglia-tampere/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "LEO",
+  "lunchListUrl": "https://www.lounaat.info/lounas/leo/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Little Joe",
+  "lunchListUrl": "https://www.lounaat.info/lounas/little-joe/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Lotus Garden",
+  "lunchListUrl": "https://www.lounaat.info/lounas/lotus-garden/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Papu ja Pata",
+  "lunchListUrl": "https://www.lounaat.info/lounas/lounaskahvila-papu-ja-pata/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Lounaskahvila Pure",
+  "lunchListUrl": "https://www.lounaat.info/lounas/lounaskahvila-pure/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Luckiefun's Hämeenkatu",
+  "lunchListUrl": "https://www.lounaat.info/lounas/luckiefuns-hameenkatu/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Malabadi",
+  "lunchListUrl": "https://www.lounaat.info/lounas/malabadi/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Maltti Taproom (Nokia Arena)",
+  "lunchListUrl": "https://www.lounaat.info/lounas/maltti-taproom-entinen-casino-taproom/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ravintola Manseri",
+  "lunchListUrl": "https://www.lounaat.info/lounas/manseri/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Munkkimiehet Leipomon Kahvila",
+  "lunchListUrl": "https://www.lounaat.info/lounas/munkkimiehet-leipomon-kahvila/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Nekalan Patakunkku",
+  "lunchListUrl": "https://www.lounaat.info/lounas/nekalan-patakunkku/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ninan Keittiö Kaapeli",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ninan-keittio-kaapeli/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ninan Keittiö Lielahti",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ninan-keittio-lielahti/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ravintola Osku (Rusko)",
+  "lunchListUrl": "https://www.lounaat.info/lounas/osku-rusko/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Osuusravintola Oksa",
+  "lunchListUrl": "https://www.lounaat.info/lounas/osuusravintola-oksa/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Pancho Villa Lielahti",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pancho-villa-lielahti/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Pancho Villa Hämeenkatu",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pancho-villa/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Wigren Pata 2",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pata-2/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Wigren Pata S",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pata-s/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Pedro´s Pub",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pedros-pub/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Pella's",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pellas-koskikatu-7/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Chalupa",
+  "lunchListUrl": "https://www.lounaat.info/lounas/petri-laakso/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Peurankello",
+  "lunchListUrl": "https://www.lounaat.info/lounas/peurankello/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Picnic Ratina",
+  "lunchListUrl": "https://www.lounaat.info/lounas/picnic-ratina/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Pizza & Buffa Prisma Kaleva",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pizza-buffa-prisma-kaleva/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Pizzeria Basilikò",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pizzeria-basiliko/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Plate Ravintola",
+  "lunchListUrl": "https://www.lounaat.info/lounas/plate/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Prisma Koivistonkylä Ruokatori",
+  "lunchListUrl": "https://www.lounaat.info/lounas/prisma-koivistonkyla-ruokatori/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Prisma Lielahti Ruokatori",
+  "lunchListUrl": "https://www.lounaat.info/lounas/prisma-lielahti-ruokatori/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "PSTA",
+  "lunchListUrl": "https://www.lounaat.info/lounas/psta/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Public House Huurre",
+  "lunchListUrl": "https://www.lounaat.info/lounas/public-house-huurre/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Pure Kiitobaari",
+  "lunchListUrl": "https://www.lounaat.info/lounas/pure-kiitobaari/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ravintola Bertel",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-bertel/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ravintola K-Auto Tampere",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-k-auto-tampere/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ravintola Kulma",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-kulma/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Pikante Kupari",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-kupari/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ravintola Maukas (GO21)",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-maukas/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Ravintola Mazin",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-mazin/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Minea Tietotalo",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-minea-tietotalo/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Linkosuo Orvokki",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-orvokki/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ravintola Uuniperuna",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-uuniperuna/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ravintola Wivi",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ravintola-wivi/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Restaurant Madame",
+  "lunchListUrl": "https://www.lounaat.info/lounas/restaurant-madame/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Ristorante Pulcinella",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ristorante-pulcinella/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Ristorante Siciliano",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ristorante-siciliano/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Rookie's Bar & Kitchen",
+  "lunchListUrl": "https://www.lounaat.info/lounas/rookies-barkitchen/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Ruskon Helmi",
+  "lunchListUrl": "https://www.lounaat.info/lounas/ruskon-helmi/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Salaattibaari Sipuli",
+  "lunchListUrl": "https://www.lounaat.info/lounas/salaattibaari-sipuli/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Sasor",
+  "lunchListUrl": "https://www.lounaat.info/lounas/sasor-restaurant-winebar/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "ScanBurger Hervanta",
+  "lunchListUrl": "https://www.lounaat.info/lounas/scanburger-hervanta/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Siipiweikot Tampella",
+  "lunchListUrl": "https://www.lounaat.info/lounas/siipiweikot-tampella/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Sisu Buffet Hervanta",
+  "lunchListUrl": "https://www.lounaat.info/lounas/sisu-buffet-hervanta/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Sitko Pizza",
+  "lunchListUrl": "https://www.lounaat.info/lounas/sitko-pizza/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Smokehouse Bros",
+  "lunchListUrl": "https://www.lounaat.info/lounas/smokehouse-bros/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Sodexo Hermia 5",
+  "lunchListUrl": "https://www.lounaat.info/lounas/sodexo-hermia-5/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Sodexo Hermia 6",
+  "lunchListUrl": "https://www.lounaat.info/lounas/sodexo-hermia-6/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Sodexo Kulmasarvis",
+  "lunchListUrl": "https://www.lounaat.info/lounas/sodexo-kulmasarvis/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Sodexo Hertsi",
+  "lunchListUrl": "https://www.lounaat.info/lounas/sodexo-tty-tietotalo/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Sorella",
+  "lunchListUrl": "https://www.lounaat.info/lounas/sorella---dining-cellar-club/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "SpeakEasy Finlayson",
+  "lunchListUrl": "https://www.lounaat.info/lounas/speakeasy-finlayson-ylkerta/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "SpeakEasy Hervanta",
+  "lunchListUrl": "https://www.lounaat.info/lounas/speakeasy-hervanta/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ståhlberg Lielahti",
+  "lunchListUrl": "https://www.lounaat.info/lounas/stahlberg-lielahti/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Ståhlberg Viinikka",
+  "lunchListUrl": "https://www.lounaat.info/lounas/stahlberg-lunch-catering-viinikka/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Taj Indian",
+  "lunchListUrl": "https://www.lounaat.info/lounas/taj-indian/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Tampereen Bakery Cafe",
+  "lunchListUrl": "https://www.lounaat.info/lounas/tampereen-bakery-cafe/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Taqueria El Loco",
+  "lunchListUrl": "https://www.lounaat.info/lounas/taqueria-el-loco/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Tbilisi",
+  "lunchListUrl": "https://www.lounaat.info/lounas/tbilisi/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Teboil Aitolahti",
+  "lunchListUrl": "https://www.lounaat.info/lounas/teboil-aitolahti/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Tesoman yhteisökahvila",
+  "lunchListUrl": "https://www.lounaat.info/lounas/tesoman-yhteisokahvila/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Tiinan Kotiruoka Toyota Tammer-Auto",
+  "lunchListUrl": "https://www.lounaat.info/lounas/tiinan-kotiruoka-toyota-tammer-auto/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Tom & Grill",
+  "lunchListUrl": "https://www.lounaat.info/lounas/tomgrill-kaleva/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Tribeni",
+  "lunchListUrl": "https://www.lounaat.info/lounas/tribeni/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Tuhto",
+  "lunchListUrl": "https://www.lounaat.info/lounas/tuhto/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Turkuaz",
+  "lunchListUrl": "https://www.lounaat.info/lounas/turkuaz/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Urbano",
+  "lunchListUrl": "https://www.lounaat.info/lounas/urbano/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Valkoinen puu",
+  "lunchListUrl": "https://www.lounaat.info/lounas/valkoinen-puu/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Vaskitähti",
+  "lunchListUrl": "https://www.lounaat.info/lounas/vaskitahti/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Villisika",
+  "lunchListUrl": "https://www.lounaat.info/lounas/villisika/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Villit ja Viinit",
+  "lunchListUrl": "https://www.lounaat.info/lounas/villit-ja-viinit/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Ravintola Piemonte",
+  "lunchListUrl": "https://www.lounaat.info/lounas/vinoteca-del-piemonte/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Ravintola Viola",
+  "lunchListUrl": "https://www.lounaat.info/lounas/viola/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Wigren Pikkupata",
+  "lunchListUrl": "https://www.lounaat.info/lounas/wigren-pikkupata/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "WillaViola",
+  "lunchListUrl": "https://www.lounaat.info/lounas/willaviola/tampere",
+  "source": "aggregator",
+  "quality": "lunch_info",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "lunch hours on lounaat.info, menu on own site"
+ },
+ {
+  "name": "Zarillo Duo",
+  "lunchListUrl": "https://www.lounaat.info/lounas/zarillo-hervanta-duo/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Zarillo Tesoma",
+  "lunchListUrl": "https://www.lounaat.info/lounas/zarillo-tesoma-westeri/tampere",
+  "source": "aggregator",
+  "quality": "lunch_list",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25",
+  "note": "this week's menu on lounaat.info"
+ },
+ {
+  "name": "Faasai Kaleva",
+  "lunchListUrl": "https://faasairavintola.fi/kaleva.html",
+  "source": "own",
+  "quality": "lunch_info",
+  "note": "own website",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "Nekalan Hovi",
+  "lunchListUrl": "https://nekalanhovi.fi",
+  "source": "own",
+  "quality": "lunch_info",
+  "note": "own website",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "Campusravita (TAMK)",
+  "lunchListUrl": "https://campusravita.fi",
+  "source": "own",
+  "quality": "lunch_list",
+  "note": "own website",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "Ravintola Pulssi (Pikante)",
+  "lunchListUrl": "https://pikante.fi/lounaslistat/",
+  "source": "own",
+  "quality": "lunch_list",
+  "note": "own website",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "Ravintola Ellipsi (Pikante)",
+  "lunchListUrl": "https://pikante.fi/lounaslistat/",
+  "source": "own",
+  "quality": "lunch_list",
+  "note": "own website",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "Café Sirius (Pikante)",
+  "lunchListUrl": "https://pikante.fi/lounaslistat/",
+  "source": "own",
+  "quality": "lunch_list",
+  "note": "own website",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "Juvenes Arvo",
+  "lunchListUrl": "https://juvenes.fi/arvo/",
+  "source": "own",
+  "quality": "lunch_list",
+  "note": "own website",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "Juvenes Newton",
+  "lunchListUrl": "https://juvenes.fi/newton/",
+  "source": "own",
+  "quality": "lunch_list",
+  "note": "own website",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "Food & Co Reaktori",
+  "lunchListUrl": "https://www.compass-group.fi/ravintolat-ja-ruokalistat/foodco/kaupungit/tampere/reaktori/",
+  "source": "own",
+  "quality": "lunch_list",
+  "note": "own website",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25"
+ },
+ {
+  "name": "Linkosuo Hertta",
+  "lunchListUrl": "https://linkosuo.fi/toimipaikka/hertta/",
+  "source": "own",
+  "quality": "lunch_list",
+  "note": "own website",
+  "httpStatus": 200,
+  "checkedAt": "2026-11-25"
  }
 ]
