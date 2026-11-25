@@ -4,7 +4,7 @@ import { fi } from '../i18n/fi';
 /** A titled block on the Asetukset screen. `id` lets other screens link straight to it (?osio=<id>). */
 export function SettingsSection({ id, title, hint, children }: { id?: string; title: string; hint?: string; children: React.ReactNode }) {
   return (
-    <section id={id ? `osio-${id}` : undefined} aria-label={title} className="mt-3 scroll-mt-4 rounded-[var(--radius-card)] bg-surface px-4 py-3.5 shadow-card">
+    <section id={id ? `osio-${id}` : undefined} aria-label={title} className="mt-3 scroll-mt-20 rounded-[var(--radius-card)] bg-surface px-4 py-3.5 shadow-card">
       <h2 className="mb-2.5 text-[12px] font-bold tracking-wide text-ink-3 uppercase">{title}</h2>
       {children}
       {hint && <p className="mt-2 text-xs text-ink-3">{hint}</p>}

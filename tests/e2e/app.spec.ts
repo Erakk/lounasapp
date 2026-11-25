@@ -82,23 +82,28 @@ test('random pick: "Mennään!" logs a visit', async ({ page }) => {
   await expect(page.getByText(`1. ${picked}`)).toBeVisible();
 });
 
-test('backup: export, delete everything, import back', async ({ page }) => {
+test('backup: export, delete everything, import back (in Asetukset)', async ({ page }) => {
   await open(page, '/paikka/noodle-master');
   await page.getByRole('button', { name: '+1 Kävimme' }).click();
   await page.getByRole('button', { name: 'Lisää suosikkeihin' }).click();
 
-  await page.getByRole('link', { name: /Omat/ }).click();
-  const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: /Lataa varmuuskopio/ }).click()]);
+  await page.getByRole('link', { name: 'Asetukset' }).click();
+  const data = page.getByRole('region', { name: 'Omat tiedot' });
+  await expect(data.getByText('Tallessa 1 käyntiä ja 0 muistiinpanoa.', { exact: false })).toBeVisible();
+  const [download] = await Promise.all([page.waitForEvent('download'), data.getByRole('button', { name: /Lataa varmuuskopio/ }).click()]);
   const file = await download.path();
   const backup = JSON.parse(readFileSync(file, 'utf8'));
   expect(backup.app).toBe('lounasapp');
   expect(backup.visits).toHaveLength(1);
 
   page.on('dialog', (d) => void d.accept());
-  await page.getByRole('button', { name: 'Poista kaikki omat tiedot' }).click();
+  await data.getByRole('button', { name: /Poista kaikki omat tiedot/ }).click();
+  await page.getByRole('link', { name: /Omat/ }).click();
   await expect(page.getByText(/Ei vielä omia tietoja/)).toBeVisible();
 
-  await page.locator('input[type=file]').setInputFiles(file);
+  await page.getByRole('link', { name: /Varmuuskopio ja tietojen poisto/ }).click();
+  await data.locator('input[type=file]').setInputFiles(file);
+  await page.getByRole('link', { name: /Omat/ }).click();
   await expect(page.getByText('1. Noodle Master')).toBeVisible();
   await expect(page.getByText('♥ Suosikit')).toBeVisible();
 });
@@ -112,25 +117,19 @@ test('map: markers render and tapping Kauppahalli lists its places', async ({ pa
   await expect(page.getByText(/\d+ paikkaa/).last()).toBeVisible();
 });
 
-test('random pick uses the same filters as the list, both ways', async ({ page }) => {
-  await open(page, '/arvo');
-  await expect(page.getByRole('button', { name: /Mennään/ })).toBeVisible({ timeout: 5000 });
+test('random pick uses the same settings as the list', async ({ page }) => {
+  // Choose a category in Asetukset → both the list and the random pick use it.
+  await open(page, '/asetukset');
+  await page.getByRole('region', { name: 'Kategoriat' }).getByRole('button', { name: /Intia & Nepal/ }).click();
+  await page.getByRole('link', { name: 'Näytä lista' }).click();
+  await expect(page.getByRole('button', { name: /^Intia & Nepal/ })).toHaveAttribute('aria-pressed', 'true');
+  const listCount = (await page.locator('section[aria-live] h2').innerText()).match(/\d+/)![0];
 
-  // Choose a category on the Arvo screen → it picks again from that category.
-  await page.getByRole('group', { name: 'Kategoriat' }).getByRole('button', { name: /Intia & Nepal/ }).click();
-  const countText = page.getByText(/Mukana \d+\/\d+ listan paikasta|Kaikki \d+ listan paikkaa mukana/);
-  await expect(countText).toBeVisible();
-  const listCount = (await countText.innerText()).match(/(\d+) listan/)![1];
+  await page.getByRole('link', { name: 'Arvo' }).click();
+  await expect(page.getByText(new RegExp(`Mukana \\d+/${listCount} listan paikasta|Kaikki ${listCount} listan paikkaa mukana`))).toBeVisible();
   await expect(page.getByRole('button', { name: /Mennään/ })).toBeVisible({ timeout: 5000 });
-  const picked = await page.locator('h2.font-display').innerText();
   await page.getByRole('link', { name: 'Avaa tiedot' }).click();
   await expect(page.getByText('Intia & Nepal').first()).toBeVisible();
-  expect(picked.length).toBeGreaterThan(0);
-
-  // The home list shows the same selection.
-  await page.getByRole('link', { name: /Etsi/ }).click();
-  await expect(page.getByRole('button', { name: /^Intia & Nepal/ })).toHaveAttribute('aria-pressed', 'true');
-  await expect(page.locator('section[aria-live] h2')).toHaveText(`${listCount} paikkaa`);
 });
 
 test('starting point: preset re-measures the list, search stays inside Tampere, choice survives reload', async ({ page }) => {

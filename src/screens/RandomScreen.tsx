@@ -15,8 +15,6 @@ import { addVisit, removeVisit } from '../db/repo';
 import { selectFilters, useFilters } from '../state/filterStore';
 import { selectRandomSettings, useRandomSettings } from '../state/randomStore';
 import { useToast } from '../state/toastStore';
-import { ScopeLink } from '../components/ScopeLink';
-import { CategoryChips } from '../components/CategoryChips';
 import { fi } from '../i18n/fi';
 
 type Phase = 'rolling' | 'result' | 'done' | 'empty';
@@ -25,7 +23,6 @@ export function RandomScreen() {
   const navigate = useNavigate();
   const reduceMotion = useReducedMotion();
   const filters = useFilters(useShallow(selectFilters));
-  const toggleCategory = useFilters((s) => s.toggleCategory);
   const settings = useRandomSettings(useShallow(selectRandomSettings));
   const stats = useAllStats();
   const showToast = useToast((s) => s.show);
@@ -137,24 +134,7 @@ export function RandomScreen() {
         {fi.random.fromList(left.included, listPlaces.length)}
         {left.noLunch > 0 && ` · ${fi.random.noLunchCount(left.noLunch)}`}
         {left.unverified > 0 && ` · ${fi.random.unverifiedCount(left.unverified)}`}
-        {(left.noLunch > 0 || left.unverified > 0) && (
-          <>
-            {' '}
-            <Link to="/asetukset?osio=arvonta" className="font-bold underline underline-offset-2">
-              {fi.random.change}
-            </Link>
-          </>
-        )}
       </p>
-
-      {/* Same filters as the home list – changes apply to both. */}
-      <section aria-label={fi.random.filtersTitle} className="mx-auto mt-3 max-w-[340px] rounded-[20px] bg-surface p-2.5 text-ink shadow-[0_8px_24px_rgb(0_0_0/.15)]">
-        <div className="mb-2 flex flex-wrap items-center justify-between gap-2 pl-1">
-          <h2 className="text-sm font-extrabold">{fi.random.filtersTitle}</h2>
-          <ScopeLink className="!min-h-8 !text-[12px]" />
-        </div>
-        <CategoryChips selected={filters.categories} onToggle={toggleCategory} />
-      </section>
 
       <div className="relative mt-5 min-h-[260px]">
         {phase !== 'empty' && (
@@ -226,12 +206,6 @@ export function RandomScreen() {
         )}
       </div>
 
-
-      <div className="mx-auto mt-4 max-w-[340px] text-center">
-        <Link to="/asetukset?osio=arvonta" className="text-[13px] font-bold underline-offset-2 opacity-90 hover:underline">
-          ⚙️ {fi.random.settings}
-        </Link>
-      </div>
     </div>
   );
 }

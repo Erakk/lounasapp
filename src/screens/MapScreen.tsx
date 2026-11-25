@@ -1,10 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Link, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import maplibregl, { type Map as MlMap, type Marker } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import { useShallow } from 'zustand/react/shallow';
 import { CATEGORIES, CLUSTERS, tileBg } from '../data/categories';
-import { activeFilterCount, filterPlaces } from '../domain/filters';
+import { filterPlaces } from '../domain/filters';
 import { bounds, circlePolygon, groupSpots, radiusForWalk, type MapSpot } from '../domain/geo';
 import { useAllStats } from '../db/hooks';
 import { usePlaces } from '../state/usePlaces';
@@ -44,7 +44,6 @@ export default function MapScreen() {
   const visible = useMemo(() => filterPlaces(places, filters, now, stats), [places, filters, now, stats]);
   const spots = useMemo(() => groupSpots(visible), [visible]);
   const selected = spots.find((s) => s.key === selectedKey);
-  const filtersOn = activeFilterCount(filters) + filters.categories.length;
 
   // ── Create the map once ──
   useEffect(() => {
@@ -218,18 +217,11 @@ export default function MapScreen() {
       )}
       {failed && <div className="absolute inset-0 grid place-items-center bg-bg p-8 text-center text-sm text-ink-2">{fi.map.error}</div>}
 
-      {/* Top overlay. Row 1: count + filters link, recenter. Row 2: starting point (tap to change) + ring legend. */}
+      {/* Top overlay. Row 1: place count, recenter. Row 2: starting point + area and the ring legend (info only; changed in Asetukset). */}
       <div className="pointer-events-none absolute inset-x-3 top-3 z-10 flex items-start justify-between gap-2">
-        <Link
-          to="/asetukset?osio=suodattimet"
-          className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/95 px-3.5 py-2 text-[13px] font-bold whitespace-nowrap shadow-card backdrop-blur"
-        >
+        <div className="pointer-events-auto rounded-full bg-surface/95 px-3.5 py-2 text-[13px] font-bold whitespace-nowrap shadow-card backdrop-blur">
           {fi.map.count(visible.length)}
-          <span className={`rounded-full px-2 py-0.5 text-[11px] ${filtersOn ? 'bg-ink text-bg' : 'bg-bg text-ink-2'}`}>
-            ⚙️ {fi.map.filters}
-            {filtersOn ? ` (${filtersOn})` : ''}
-          </span>
-        </Link>
+        </div>
         <button
           type="button"
           onClick={recenter}
@@ -241,23 +233,18 @@ export default function MapScreen() {
         </button>
       </div>
       {!picking && (
-        <Link
-          to="/asetukset?osio=lahtopiste"
-          aria-label={`${fi.origin.change}, nyt ${origin.name}, ${fi.filters.areaLabel(area)}`}
-          className="absolute top-[60px] left-3 z-10 max-w-[calc(100%-24px)] rounded-xl bg-surface/95 px-3 py-1.5 text-left shadow-card backdrop-blur"
-        >
+        <div className="pointer-events-none absolute top-[60px] left-3 z-10 max-w-[calc(100%-24px)] rounded-xl bg-surface/95 px-3 py-1.5 shadow-card backdrop-blur">
           <span className="flex items-center gap-1 text-[13px] font-bold">
             <span className="truncate">
               🏠 {origin.name} · {fi.filters.areaLabel(area)}
             </span>
-            <span aria-hidden className="text-ink-3">›</span>
           </span>
           {!selectedKey && (
             <span className="block text-[11px] font-semibold text-ink-2">
               {fi.map.rings}: {RING_MINUTES.join(' / ')} min
             </span>
           )}
-        </Link>
+        </div>
       )}
 
       {/* Pick mode: fixed crosshair in the middle of the map + confirm bar */}

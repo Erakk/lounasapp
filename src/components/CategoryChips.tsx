@@ -1,10 +1,14 @@
 import { CATEGORIES, tileBg, type CategoryId } from '../data/categories';
 import { GRID_IDS } from './CategoryGrid';
 
-/** Compact, horizontally scrolling version of the category grid (same categories, same shared selection). */
-export function CategoryChips({ selected, onToggle }: { selected: CategoryId[]; onToggle: (id: CategoryId) => void }) {
+/** Compact version of the category grid (same categories, same shared selection): one scrolling row, or wrapped. */
+export function CategoryChips({ selected, onToggle, wrap }: { selected: CategoryId[]; onToggle: (id: CategoryId) => void; wrap?: boolean }) {
   return (
-    <div className="no-scrollbar -mx-3 flex gap-1.5 overflow-x-auto px-3 pb-0.5" role="group" aria-label="Kategoriat">
+    <div
+      className={wrap ? 'flex flex-wrap gap-1.5' : 'no-scrollbar -mx-3 flex gap-1.5 overflow-x-auto px-3 pb-0.5'}
+      role="group"
+      aria-label="Kategoriat"
+    >
       {GRID_IDS.map((id) => {
         const c = CATEGORIES.find((x) => x.id === id)!;
         const on = selected.includes(id);

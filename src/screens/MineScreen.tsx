@@ -1,18 +1,15 @@
-import { useMemo, useRef } from 'react';
+import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { placeById } from '../data/places';
 import { useAllNotes, useAllStats, useAllVisits } from '../db/hooks';
-import { clearAll, exportAll, importBackup, parseBackup, setHidden } from '../db/repo';
+import { setHidden } from '../db/repo';
 import { daysSince, formatDate, relativeDay } from '../domain/stats';
-import { useToast } from '../state/toastStore';
 import { fi } from '../i18n/fi';
 
 export function MineScreen() {
   const stats = useAllStats();
   const visits = useAllVisits();
   const notes = useAllNotes();
-  const showToast = useToast((s) => s.show);
-  const fileRef = useRef<HTMLInputElement>(null);
 
   const now = new Date();
   const derived = useMemo(() => {
@@ -34,35 +31,6 @@ export function MineScreen() {
   }).length;
 
   const hasData = visits.length > 0 || notes.length > 0 || derived.favourites.length > 0 || derived.hidden.length > 0;
-
-  const onExport = async () => {
-    const backup = await exportAll();
-    const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `lounas-varmuuskopio-${new Date().toISOString().slice(0, 10)}.json`;
-    a.click();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
-    showToast(fi.mine.exported);
-  };
-
-  const onImportFile = async (file: File) => {
-    try {
-      const backup = parseBackup(await file.text());
-      if (!window.confirm(fi.mine.importConfirm(backup.visits.length, backup.notes.length))) return;
-      const c = await importBackup(backup);
-      showToast(fi.mine.imported(c.visits, c.notes));
-    } catch (e) {
-      showToast((e as Error).message);
-    }
-  };
-
-  const onClear = async () => {
-    if (!window.confirm(fi.mine.clearConfirm)) return;
-    await clearAll();
-    showToast(fi.mine.cleared);
-  };
 
   return (
     <div className="px-4 pt-6 pb-8">
@@ -134,35 +102,11 @@ export function MineScreen() {
         </Section>
       )}
 
-      <Section title={fi.mine.backup} hint={fi.mine.backupHint}>
-        <div className="flex flex-col gap-2 py-1">
-          <button type="button" onClick={() => void onExport()} className="min-h-11 rounded-xl bg-ink px-4 text-sm font-bold text-bg">
-            ⬇️ {fi.mine.export}
-          </button>
-          <button type="button" onClick={() => fileRef.current?.click()} className="min-h-11 rounded-xl border border-line px-4 text-sm font-bold">
-            ⬆️ {fi.mine.import}
-          </button>
-          <input
-            ref={fileRef}
-            type="file"
-            accept="application/json,.json"
-            className="hidden"
-            onChange={(e) => {
-              const file = e.target.files?.[0];
-              e.target.value = '';
-              if (file) void onImportFile(file);
-            }}
-          />
-        </div>
-      </Section>
-
-      {hasData && (
-        <div className="mt-6 text-center">
-          <button type="button" onClick={() => void onClear()} className="rounded-xl px-3 py-2 text-xs font-bold text-ink-3 hover:text-accent-text">
-            {fi.mine.clear}
-          </button>
-        </div>
-      )}
+      <p className="mt-6 text-center text-[13px] text-ink-2">
+        <Link to="/asetukset?osio=tiedot" className="font-bold text-accent-text">
+          {fi.mine.backupLink}
+        </Link>
+      </p>
     </div>
   );
 }

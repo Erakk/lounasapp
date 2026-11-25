@@ -4,6 +4,8 @@ import { useShallow } from 'zustand/react/shallow';
 import { AreaPicker, Segmented, SettingsSection, Switch } from '../components/SettingsControls';
 import { FilterControls } from '../components/FilterControls';
 import { OriginPicker } from '../components/OriginPicker';
+import { CategoryChips } from '../components/CategoryChips';
+import { BackupControls } from '../components/BackupControls';
 import { activeFilterCount, filterPlaces } from '../domain/filters';
 import { useAllStats } from '../db/hooks';
 import { selectFilters, useFilters } from '../state/filterStore';
@@ -20,7 +22,7 @@ import { fi } from '../i18n/fi';
 export function SettingsScreen() {
   const [params] = useSearchParams();
   const filters = useFilters(useShallow(selectFilters));
-  const { set, reset } = useFilters(useShallow((s) => ({ set: s.set, reset: s.reset })));
+  const { set, reset, toggleCategory } = useFilters(useShallow((s) => ({ set: s.set, reset: s.reset, toggleCategory: s.toggleCategory })));
   const random = useRandomSettings(useShallow(selectRandomSettings));
   const setRandom = useRandomSettings((s) => s.set);
   const { theme, setTheme } = useTheme();
@@ -61,6 +63,10 @@ export function SettingsScreen() {
         <AreaPicker value={filters.maxDistanceM} onChange={(maxDistanceM) => set({ maxDistanceM })} />
       </SettingsSection>
 
+      <SettingsSection id="kategoriat" title={fi.settings.categories} hint={fi.settings.categoriesHint}>
+        <CategoryChips selected={filters.categories} onToggle={toggleCategory} wrap />
+      </SettingsSection>
+
       <SettingsSection id="suodattimet" title={fi.settings.filters}>
         <FilterControls />
         {filterCount > 0 && (
@@ -87,6 +93,10 @@ export function SettingsScreen() {
           onChange={setTheme}
           ariaLabel={fi.mine.theme}
         />
+      </SettingsSection>
+
+      <SettingsSection id="tiedot" title={fi.settings.data}>
+        <BackupControls />
       </SettingsSection>
 
       <SettingsSection id="sovellus" title={fi.settings.app}>
