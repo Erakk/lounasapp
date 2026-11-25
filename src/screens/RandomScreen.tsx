@@ -5,7 +5,7 @@ import { useShallow } from 'zustand/react/shallow';
 import { usePlaces } from '../state/usePlaces';
 import { useOrigin } from '../state/originStore';
 import { CATEGORIES, tileBg } from '../data/categories';
-import { activeFilterCount, filterPlaces } from '../domain/filters';
+import { filterPlaces } from '../domain/filters';
 import { weekdayOf } from '../domain/openingHours';
 import { buildOptions, pickRandom, type RandomOption } from '../domain/randomPick';
 import { distanceLabel, hoursToday, priceLabel } from '../domain/format';
@@ -15,8 +15,7 @@ import { addVisit, removeVisit } from '../db/repo';
 import { selectFilters, useFilters } from '../state/filterStore';
 import { selectRandomSettings, useRandomSettings } from '../state/randomStore';
 import { useToast } from '../state/toastStore';
-import { FilterSheet, Switch } from '../components/FilterSheet';
-import { FilterBar } from '../components/FilterBar';
+import { ScopeLink } from '../components/ScopeLink';
 import { CategoryChips } from '../components/CategoryChips';
 import { fi } from '../i18n/fi';
 
@@ -27,10 +26,7 @@ export function RandomScreen() {
   const reduceMotion = useReducedMotion();
   const filters = useFilters(useShallow(selectFilters));
   const toggleCategory = useFilters((s) => s.toggleCategory);
-  const [sheetOpen, setSheetOpen] = useState(false);
-  const closeSheet = useCallback(() => setSheetOpen(false), []);
   const settings = useRandomSettings(useShallow(selectRandomSettings));
-  const setSettings = useRandomSettings((s) => s.set);
   const stats = useAllStats();
   const showToast = useToast((s) => s.show);
 
@@ -54,7 +50,6 @@ export function RandomScreen() {
   const [phase, setPhase] = useState<Phase>('rolling');
   const [winner, setWinner] = useState<RandomOption>();
   const [flash, setFlash] = useState<string>(''); // names flicking past during the shuffle
-  const [showSettings, setShowSettings] = useState(false);
   const [confettiKey, setConfettiKey] = useState(0);
   const timer = useRef<ReturnType<typeof setInterval>>();
 
@@ -123,7 +118,6 @@ export function RandomScreen() {
     setPhase('done');
   };
 
-  const filterCount = activeFilterCount(filters);
 
   return (
     <div className="relative min-h-[calc(100vh-84px)] overflow-hidden bg-gradient-to-b from-accent to-[#9E2537] px-5 pt-10 pb-6 text-white">
@@ -146,44 +140,20 @@ export function RandomScreen() {
         {(left.noLunch > 0 || left.unverified > 0) && (
           <>
             {' '}
-            <button
-              type="button"
-              onClick={() => {
-                setShowSettings(true);
-                setTimeout(() => document.getElementById('random-settings')?.scrollIntoView({ behavior: 'smooth', block: 'center' }), 50);
-              }}
-              className="font-bold underline underline-offset-2"
-            >
+            <Link to="/asetukset?osio=arvonta" className="font-bold underline underline-offset-2">
               {fi.random.change}
-            </button>
+            </Link>
           </>
         )}
       </p>
 
       {/* Same filters as the home list – changes apply to both. */}
       <section aria-label={fi.random.filtersTitle} className="mx-auto mt-3 max-w-[340px] rounded-[20px] bg-surface p-2.5 text-ink shadow-[0_8px_24px_rgb(0_0_0/.15)]">
-        <div className="mb-2 flex items-center justify-between pl-1">
+        <div className="mb-2 flex flex-wrap items-center justify-between gap-2 pl-1">
           <h2 className="text-sm font-extrabold">{fi.random.filtersTitle}</h2>
-          <button
-            type="button"
-            onClick={() => setSheetOpen(true)}
-            aria-label={filterCount ? `${fi.filters.title} (${filterCount} käytössä)` : fi.filters.title}
-            className={`relative inline-flex min-h-9 items-center gap-1.5 rounded-full border px-3 text-[12.5px] font-bold ${
-              filterCount ? 'border-ink bg-ink text-bg' : 'border-line bg-surface text-ink'
-            }`}
-          >
-            <span aria-hidden>⚙️</span> {fi.filters.title}
-            {filterCount > 0 && (
-              <span aria-hidden className="absolute -top-1.5 -right-1 grid size-5 place-items-center rounded-full bg-accent text-[11px] text-white">
-                {filterCount}
-              </span>
-            )}
-          </button>
+          <ScopeLink className="!min-h-8 !text-[12px]" />
         </div>
         <CategoryChips selected={filters.categories} onToggle={toggleCategory} />
-        <div className="mt-2">
-          <FilterBar />
-        </div>
       </section>
 
       <div className="relative mt-5 min-h-[260px]">
@@ -230,7 +200,7 @@ export function RandomScreen() {
               </div>
               <p className="mt-2 font-bold">{fi.random.empty}</p>
               <p className="mt-1 text-sm text-ink-2">{fi.random.emptyHint}</p>
-              <Link to="/" className="mt-4 inline-block rounded-xl bg-ink px-4 py-2.5 text-sm font-bold text-bg">
+              <Link to="/asetukset" className="mt-4 inline-block rounded-xl bg-ink px-4 py-2.5 text-sm font-bold text-bg">
                 {fi.random.toFilters}
               </Link>
             </motion.div>
@@ -257,28 +227,11 @@ export function RandomScreen() {
       </div>
 
 
-      <div id="random-settings" className="mx-auto mt-4 max-w-[340px]">
-        <button
-          type="button"
-          aria-expanded={showSettings}
-          onClick={() => setShowSettings((s) => !s)}
-          className="w-full text-center text-[13px] font-bold underline-offset-2 opacity-90 hover:underline"
-        >
-          ⚙️ {fi.random.settings} {showSettings ? '▴' : '▾'}
-        </button>
-        {showSettings && (
-          <div className="mt-2 rounded-[20px] bg-surface px-4 py-2 text-ink">
-            <Switch label={fi.random.s.avoidRecent} hint={fi.random.s.avoidRecentHint} checked={settings.avoidRecent} onChange={(avoidRecent) => setSettings({ avoidRecent })} />
-            <Switch label={fi.random.s.preferLiked} checked={settings.preferLiked} onChange={(preferLiked) => setSettings({ preferLiked })} />
-            <Switch label={fi.random.s.clustersAsOne} checked={settings.clustersAsOne} onChange={(clustersAsOne) => setSettings({ clustersAsOne })} />
-            <Switch label={fi.random.s.avoidDivisive} checked={settings.avoidDivisive} onChange={(avoidDivisive) => setSettings({ avoidDivisive })} />
-            <Switch label={fi.random.s.lunchTodayOnly} checked={settings.lunchTodayOnly} onChange={(lunchTodayOnly) => setSettings({ lunchTodayOnly })} />
-            <Switch label={fi.random.s.skipUnverified} checked={settings.skipUnverified} onChange={(skipUnverified) => setSettings({ skipUnverified })} />
-          </div>
-        )}
+      <div className="mx-auto mt-4 max-w-[340px] text-center">
+        <Link to="/asetukset?osio=arvonta" className="text-[13px] font-bold underline-offset-2 opacity-90 hover:underline">
+          ⚙️ {fi.random.settings}
+        </Link>
       </div>
-
-      <FilterSheet open={sheetOpen} resultCount={listPlaces.length} onClose={closeSheet} />
     </div>
   );
 }

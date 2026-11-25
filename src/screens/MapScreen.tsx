@@ -9,7 +9,6 @@ import { bounds, circlePolygon, groupSpots, radiusForWalk, type MapSpot } from '
 import { useAllStats } from '../db/hooks';
 import { usePlaces } from '../state/usePlaces';
 import { useOrigin, type Origin } from '../state/originStore';
-import { useOriginSheet } from '../state/originSheetStore';
 import { useToast } from '../state/toastStore';
 import { selectFilters, useFilters } from '../state/filterStore';
 import { PlaceCard } from '../components/PlaceCard';
@@ -30,7 +29,6 @@ export default function MapScreen() {
   const [picking, setPicking] = useState(false);
   const origin = useOrigin((s) => s.origin);
   const setOrigin = useOrigin((s) => s.setOrigin);
-  const showOriginSheet = useOriginSheet((s) => s.show);
   const showToast = useToast((s) => s.show);
   const originRef = useRef(origin);
   originRef.current = origin;
@@ -223,7 +221,7 @@ export default function MapScreen() {
       {/* Top overlay. Row 1: count + filters link, recenter. Row 2: starting point (tap to change) + ring legend. */}
       <div className="pointer-events-none absolute inset-x-3 top-3 z-10 flex items-start justify-between gap-2">
         <Link
-          to="/"
+          to="/asetukset?osio=suodattimet"
           className="pointer-events-auto flex items-center gap-2 rounded-full bg-surface/95 px-3.5 py-2 text-[13px] font-bold whitespace-nowrap shadow-card backdrop-blur"
         >
           {fi.map.count(visible.length)}
@@ -243,24 +241,23 @@ export default function MapScreen() {
         </button>
       </div>
       {!picking && (
-        <button
-          type="button"
-          onClick={showOriginSheet}
-          aria-label={`${fi.origin.change}, nyt ${origin.name}`}
+        <Link
+          to="/asetukset?osio=lahtopiste"
+          aria-label={`${fi.origin.change}, nyt ${origin.name}, ${fi.filters.areaLabel(area)}`}
           className="absolute top-[60px] left-3 z-10 max-w-[calc(100%-24px)] rounded-xl bg-surface/95 px-3 py-1.5 text-left shadow-card backdrop-blur"
         >
           <span className="flex items-center gap-1 text-[13px] font-bold">
             <span className="truncate">
               🏠 {origin.name} · {fi.filters.areaLabel(area)}
             </span>
-            <span aria-hidden className="text-ink-3">▾</span>
+            <span aria-hidden className="text-ink-3">›</span>
           </span>
           {!selectedKey && (
             <span className="block text-[11px] font-semibold text-ink-2">
               {fi.map.rings}: {RING_MINUTES.join(' / ')} min
             </span>
           )}
-        </button>
+        </Link>
       )}
 
       {/* Pick mode: fixed crosshair in the middle of the map + confirm bar */}

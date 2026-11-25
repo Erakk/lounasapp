@@ -110,7 +110,7 @@ const built: Place[] = source.map((s) => {
     links: resolveLinks(s),
     info: s.info ?? [],
     status: s.status ?? 'open',
-    verifiedAt: VERIFIED_AT,
+    verifiedAt: s.checked ?? VERIFIED_AT,
   };
   return place;
 });

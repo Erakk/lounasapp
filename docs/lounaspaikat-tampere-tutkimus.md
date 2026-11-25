@@ -484,7 +484,7 @@ Coordinates for every geocoded place are in [`places-geocoded.json`](places-geoc
 
 The app now lets you choose any starting point inside the City of Tampere, so the survey was extended from the centre to the whole city. The data lives in `data/places.city.ts`, separate from the hand-checked central list.
 
-**Result:** 196 places added (362 in total, up from 168). 241 lie within 1.5 km of Kehräsaari; 121 are further out (Hervanta, Kaleva/Kauppi, Lielahti, Tesoma, Nekala/Viinikka, Hatanpää, Kaukajärvi, Vuores, Rusko, Aitolahti…). 61 are marked *verify* (in the app: "Tarkista").
+**Result:** 196 places added (362 in total, up from 168), then 32 lunch cafés (394 in total). 241 lie within 1.5 km of Kehräsaari; 121 are further out (Hervanta, Kaleva/Kauppi, Lielahti, Tesoma, Nekala/Viinikka, Hatanpää, Kaukajärvi, Vuores, Rusko, Aitolahti…). 61 are marked *verify* (in the app: "Tarkista").
 
 **Method (same criteria as §1):**
 1. **OpenStreetMap:** every `restaurant`, `fast_food`, `cafe` and `food_court` inside the city boundary (598). The 231 that were over 1.3 km from Kehräsaari and not yet in the data became candidates.
@@ -498,6 +498,12 @@ The app now lets you choose any starting point inside the City of Tampere, so th
 - **Pizza/kebab places and senior service-centre restaurants that are open over lunch per OpenStreetMap,** with no lunch offer confirmed: status *verify*. This is the same rule as §2.8b.
 - **Categories, format, group size and dislike risk:** drafted from the place's name, lounaat.info tags and menu using the same rules as §4–5, then reviewed one by one.
 - **New cluster:** Duo in Hervanta, with Bai Wei, Caffitella, FireWok, Gate of India, Koto and Zarillo.
+
+**Lunch cafés (added later the same day, after user feedback):** Cafés and bakery-cafés that serve savoury food over lunchtime are now included even without a formal "lounas" offer. That means soup, salads, filled baguettes and sandwiches, or savoury pies. The prompt was Kahvila-Konditoria Mari (Ahotie 34), known for filled baguettes, salads and meat pies.
+- **How they were found:** every OpenStreetMap café not yet in the data was checked on its own website for savoury food.
+- **What was added:** 32 cafés, in `cafes.mjs` in the generator, shown as category *Kahvila*, counter service, small groups. Examples: Pyymäen, Hakanen's three cafés, Arnold's, Cafe Metso, Kahvila Laikku, Tallipihan kahvila, Cafe Kaisuli, the Pikante cafés at TAYS, Makutuote, Viialan kotileipomo, and the waffle cafés with savoury waffles.
+- **Still out:** coffee chains (Espresso House, Robert's, Coffee House), bubble tea, ice cream, summer kiosks, bars and board-game cafés.
+- **Not checked:** OpenStreetMap's bakery shops, because the server was overloaded; Hakanen's cafés came from its own location list instead.
 
 **Corrections to the central list:**
 - **Papu ja Pata:** moved from Laukontori to Sammonkatu 15, where it is a vegan lunch buffet. The old entry was removed.

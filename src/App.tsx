@@ -8,6 +8,7 @@ import { HomeScreen } from './screens/HomeScreen';
 const MapScreen = lazy(() => import('./screens/MapScreen'));
 const RandomScreen = lazy(() => import('./screens/RandomScreen').then((m) => ({ default: m.RandomScreen })));
 const MineScreen = lazy(() => import('./screens/MineScreen').then((m) => ({ default: m.MineScreen })));
+const SettingsScreen = lazy(() => import('./screens/SettingsScreen').then((m) => ({ default: m.SettingsScreen })));
 const PlaceDetailScreen = lazy(() => import('./screens/PlaceDetailScreen').then((m) => ({ default: m.PlaceDetailScreen })));
 
 const fallback = <div className="grid min-h-[70vh] place-items-center text-sm text-ink-2">Ladataan…</div>;
@@ -23,6 +24,7 @@ export function App() {
           <Route path="kartta" element={wrap(<MapScreen />)} />
           <Route path="arvo" element={wrap(<RandomScreen />)} />
           <Route path="omat" element={wrap(<MineScreen />)} />
+          <Route path="asetukset" element={wrap(<SettingsScreen />)} />
           <Route path="paikka/:id" element={wrap(<PlaceDetailScreen />)} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Route>

@@ -6,13 +6,14 @@ const TABS = [
   { to: '/kartta', label: fi.tabs.map, icon: '🗺️', end: false },
   { to: '/arvo', label: fi.tabs.random, icon: '🎲', end: false },
   { to: '/omat', label: fi.tabs.mine, icon: '⭐', end: false },
+  { to: '/asetukset', label: fi.tabs.settings, icon: '⚙️', end: false },
 ];
 
 export function TabBar() {
   return (
     <nav
       aria-label="Päävalikko"
-      className="fixed inset-x-0 bottom-0 z-20 mx-auto grid max-w-[480px] grid-cols-4 border-t border-line bg-surface px-2 pt-2 pb-[calc(10px+env(safe-area-inset-bottom))]"
+      className="fixed inset-x-0 bottom-0 z-20 mx-auto grid max-w-[480px] grid-cols-5 border-t border-line bg-surface px-2 pt-2 pb-[calc(10px+env(safe-area-inset-bottom))]"
     >
       {TABS.map((t) => (
         <NavLink

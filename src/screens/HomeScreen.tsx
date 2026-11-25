@@ -1,13 +1,10 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import { useShallow } from 'zustand/react/shallow';
 import { CategoryGrid } from '../components/CategoryGrid';
-import { FilterBar } from '../components/FilterBar';
-import { FilterSheet } from '../components/FilterSheet';
 import { PlaceCard } from '../components/PlaceCard';
+import { ScopeLink } from '../components/ScopeLink';
 import { countByCategory } from '../data/places';
 import { usePlaces } from '../state/usePlaces';
-import { useOrigin } from '../state/originStore';
-import { useOriginSheet } from '../state/originSheetStore';
 import { activeFilterCount, filterPlaces, widerArea, type SortKey } from '../domain/filters';
 import { isOpenForLunch } from '../domain/openingHours';
 import { selectFilters, useFilters } from '../state/filterStore';
@@ -21,12 +18,8 @@ export function HomeScreen() {
   const { set, toggleCategory, reset } = useFilters(
     useShallow((s) => ({ set: s.set, toggleCategory: s.toggleCategory, reset: s.reset })),
   );
-  const [sheetOpen, setSheetOpen] = useState(false);
-  const closeSheet = useCallback(() => setSheetOpen(false), []);
 
   const places = usePlaces();
-  const originName = useOrigin((s) => s.origin.name);
-  const showOriginSheet = useOriginSheet((s) => s.show);
   const now = useMemo(() => new Date(), []);
   const stats = useAllStats();
   // "N auki nyt" counts the chosen area only, like the list.
@@ -47,44 +40,19 @@ export function HomeScreen() {
 
   return (
     <div className="pb-4">
-      <header className="flex items-center justify-between px-4 pt-6">
-        <div>
-          <h1 className="font-display text-[26px] font-bold tracking-tight">
-            {fi.appName}
-            <span className="text-accent-text">.</span>
-          </h1>
-          <p className="mt-0.5 text-[13px] text-ink-2">
-            {dateLabel} · {openCount ? fi.home.openNow(openCount) : fi.home.noneOpen}
-          </p>
-          <button
-            type="button"
-            onClick={showOriginSheet}
-            aria-label={`${fi.origin.change}, nyt ${originName}, ${fi.filters.areaLabel(area)}`}
-            className="-ml-1 mt-1 inline-flex min-h-8 max-w-[60vw] items-center gap-1 rounded-full px-1 text-[13px] font-bold text-ink"
-          >
-            <span className="truncate">{fi.origin.from(originName, fi.filters.areaLabel(area))}</span>
-            <span aria-hidden className="text-ink-3">▾</span>
-          </button>
-        </div>
-        <button
-          type="button"
-          onClick={() => setSheetOpen(true)}
-          aria-label={filterCount ? `${fi.filters.title} (${filterCount} käytössä)` : fi.filters.title}
-          className={`relative inline-flex min-h-10 items-center gap-1.5 rounded-full border px-3.5 text-[13px] font-bold ${
-            filterCount ? 'border-ink bg-ink text-bg' : 'border-line bg-surface text-ink'
-          }`}
-        >
-          <span aria-hidden>⚙️</span> {fi.filters.title}
-          {filterCount > 0 && (
-            <span aria-hidden className="absolute -top-1.5 -right-1 grid size-5 place-items-center rounded-full bg-accent text-[11px] text-white">
-              {filterCount}
-            </span>
-          )}
-        </button>
+      <header className="px-4 pt-6">
+        <h1 className="font-display text-[26px] font-bold tracking-tight">
+          {fi.appName}
+          <span className="text-accent-text">.</span>
+        </h1>
+        <p className="mt-0.5 text-[13px] text-ink-2">
+          {dateLabel} · {openCount ? fi.home.openNow(openCount) : fi.home.noneOpen}
+        </p>
       </header>
 
-      <div className="sticky top-0 z-10 bg-bg/95 px-4 pt-3 pb-2 backdrop-blur">
-        <FilterBar />
+      {/* Starting point, area and filters live in the Asetukset tab; this line shows them and links there. */}
+      <div className="sticky top-0 z-10 bg-bg/95 px-4 pt-2 pb-2 backdrop-blur">
+        <ScopeLink />
       </div>
 
       <section className="mt-3 px-4">
@@ -149,7 +117,6 @@ export function HomeScreen() {
         )}
       </section>
 
-      <FilterSheet open={sheetOpen} resultCount={results.length} onClose={closeSheet} />
     </div>
   );
 }

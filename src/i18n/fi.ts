@@ -1,7 +1,7 @@
 // All UI strings in one place so an English version can be added later.
 export const fi = {
   appName: 'Lounas',
-  tabs: { search: 'Etsi', map: 'Kartta', random: 'Arvo', mine: 'Omat' },
+  tabs: { search: 'Etsi', map: 'Kartta', random: 'Arvo', mine: 'Omat', settings: 'Asetukset' },
   home: {
     question: 'Mitä tänään syötäisiin?',
     openNow: (n: number) => `${n} auki nyt`,
@@ -154,6 +154,29 @@ export const fi = {
     rings: 'Kävelymatka',
     placesHere: (n: number) => `${n} paikkaa`,
     showOnMap: '🗺️ Näytä kartalla',
+  },
+  settings: {
+    title: 'Asetukset',
+    intro: 'Koskevat koko sovellusta: listaa, karttaa ja arvontaa.',
+    results: (n: number) => `${n} paikkaa näillä asetuksilla`,
+    showList: 'Näytä lista',
+    resetFilters: 'Tyhjennä suodattimet',
+    origin: 'Lähtöpiste',
+    area: 'Alue',
+    filters: 'Suodattimet',
+    random: 'Arvonta',
+    look: 'Ulkoasu',
+    app: 'Sovellus',
+    version: (v: string) => `Versio ${v}`,
+    checkUpdate: 'Tarkista päivitys',
+    checking: 'Tarkistetaan…',
+    latest: 'Sinulla on uusin versio',
+    offline: 'Päivitystä ei voitu tarkistaa – ei verkkoyhteyttä?',
+    updating: 'Päivitetään…',
+    forceUpdate: 'Pakota päivitys',
+    forceHint: 'Lataa sovelluksen tiedostot uudelleen verkosta. Käynnit, muistiinpanot ja asetukset säilyvät.',
+    filtersOn: (n: number) => (n === 1 ? '1 suodatin' : `${n} suodatinta`),
+    change: 'Muuta asetuksia',
   },
   origin: {
     title: 'Lähtöpiste',

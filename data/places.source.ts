@@ -39,6 +39,8 @@ export interface SourcePlace {
   rating?: [number, number, string];
   info?: string[];
   status?: 'open' | 'verify' | 'closed';
+  /** Date the data was checked (YYYY-MM-DD); defaults to the central survey date. */
+  checked?: string;
 }
 
 const VERIFY_NOTE = 'Lounastiedot vahvistamatta – tarkista ennen lähtöä';
@@ -602,4 +604,4 @@ const centralPlaces: SourcePlace[] = [
 ];
 
 /** Central survey (21–22.11.2026) + the rest of the city (places.city.ts, 25.11.2026). */
-export const places: SourcePlace[] = [...centralPlaces, ...cityPlaces];
+export const places: SourcePlace[] = [...centralPlaces, ...cityPlaces.map((p) => ({ checked: '2026-11-25', ...p }))];

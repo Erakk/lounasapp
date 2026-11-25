@@ -1098,7 +1098,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "hullu-poro-hatanpaan",
+    "id": "hullu-poro",
     "name": "Hullu Poro",
     "address": "Koskikeskus, Hatanpään valtatie 1, Tampere",
     "lat": 61.496259,
@@ -1172,7 +1172,78 @@
       "Lappi-henkinen ravintola"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "arnolds-koskikeskus",
+    "name": "Arnold's Koskikeskus",
+    "address": "Koskikeskus, Hatanpään valtatie 1, Tampere",
+    "lat": 61.496259,
+    "lon": 23.766584,
+    "distanceM": 173,
+    "walkMin": 3,
+    "clusterId": "koskikeskus",
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "10:00",
+          "to": "18:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {
+      "website": "https://www.arnolds.fi"
+    },
+    "info": [
+      "Bagelit, salaatit ja toastit"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "umaya",
@@ -1248,7 +1319,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "little-joe-laukontori",
+    "id": "little-joe",
     "name": "Little Joe",
     "address": "Laukontori, Tampere",
     "lat": 61.494924,
@@ -1313,7 +1384,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "rapee-grill",
@@ -1622,6 +1693,74 @@
     "verifiedAt": "2026-11-22"
   },
   {
+    "id": "fazer-cafe-hameenkatu",
+    "name": "Fazer Café Hämeenkatu",
+    "address": "Hämeenkatu 15, Tampere",
+    "lat": 61.497711,
+    "lon": 23.762829,
+    "distanceM": 243,
+    "walkMin": 4,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "07:30",
+          "to": "20:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "07:30",
+          "to": "20:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "07:30",
+          "to": "20:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "07:30",
+          "to": "20:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "07:30",
+          "to": "20:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Salaatit, voileivät ja suolaiset leivonnaiset"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
     "id": "pure-bite",
     "name": "Pure Bite",
     "address": "Hatanpään valtatie 4, Tampere",
@@ -1861,7 +2000,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "valkoinen-puu-aleksis",
+    "id": "valkoinen-puu",
     "name": "Valkoinen puu",
     "address": "Aleksis Kiven katu 24, Tampere",
     "lat": 61.497275,
@@ -1927,10 +2066,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "villisika-verkatehtaankatu",
+    "id": "villisika",
     "name": "Villisika",
     "address": "Verkatehtaankatu 3, Tampere",
     "lat": 61.497249,
@@ -1998,7 +2137,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "salud",
@@ -2085,7 +2224,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "picnic-ratina-vuolteenkatu",
+    "id": "picnic-ratina",
     "name": "Picnic Ratina",
     "address": "Vuolteenkatu 5, Tampere",
     "lat": 61.493452,
@@ -2160,7 +2299,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "4-vuodenaikaa",
@@ -3099,7 +3238,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "leo-hameenkatu",
+    "id": "leo",
     "name": "LEO",
     "address": "Kauppahalli, Hämeenkatu 19, Tampere",
     "lat": 61.496931,
@@ -3173,7 +3312,79 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "hakasen-leipomo-kauppahalli",
+    "name": "Hakasen Leipomo Kauppahalli",
+    "address": "Kauppahalli, Hämeenkatu 19, Tampere",
+    "lat": 61.496931,
+    "lon": 23.758791,
+    "distanceM": 300,
+    "walkMin": 5,
+    "clusterId": "kauppahalli",
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "08:00",
+          "to": "18:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "08:00",
+          "to": "18:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "08:00",
+          "to": "18:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "08:00",
+          "to": "18:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "08:00",
+          "to": "18:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 3
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {
+      "website": "https://www.hakasenleipomo.fi"
+    },
+    "info": [
+      "Suolaiset leivonnaiset ja piirakat",
+      "Aukioloaika arvio"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pons",
@@ -3326,7 +3537,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "kyra-aleksanterinkatu",
+    "id": "kyra",
     "name": "KYRA",
     "address": "Aleksanterinkatu 22 C, Tampere",
     "lat": 61.495742,
@@ -3407,7 +3618,7 @@
       "Samassa osoitteessa toimi aiemmin Baglung Durbar"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "puisto",
@@ -4767,7 +4978,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "caffitella-ratina-vuolteenkatu",
+    "id": "caffitella-ratina",
     "name": "Caffitella Ratina",
     "address": "Ratina, Vuolteenkatu 1, Tampere",
     "lat": 61.493267,
@@ -4832,7 +5043,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "2hk",
@@ -4903,7 +5114,77 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "ravintola-piemonte-suvantokatu",
+    "id": "pyymaen-aira",
+    "name": "Pyymäen Aira",
+    "address": "Hämeenkatu 14, Tampere",
+    "lat": 61.498282,
+    "lon": 23.765938,
+    "distanceM": 325,
+    "walkMin": 5,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "07:00",
+          "to": "21:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "07:00",
+          "to": "21:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "07:00",
+          "to": "21:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "07:00",
+          "to": "21:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "07:00",
+          "to": "21:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "09:00",
+          "to": "21:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {
+      "website": "https://pyymaen.fi"
+    },
+    "info": [
+      "Leipomokahvila: suolaiset leivonnaiset ja voileivät"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "ravintola-piemonte",
     "name": "Ravintola Piemonte",
     "address": "Suvantokatu 9, Tampere",
     "lat": 61.495672,
@@ -4960,10 +5241,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "bistro-amande-aleksanterinkatu",
+    "id": "bistro-amande",
     "name": "Bistro Amande",
     "address": "Aleksanterinkatu 31, Tampere",
     "lat": 61.496998,
@@ -5020,7 +5301,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "roka-street-bistro",
@@ -5523,7 +5804,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "pella-s-koskikatu",
+    "id": "pella-s",
     "name": "Pella's",
     "address": "Koskikatu 7, Tampere",
     "lat": 61.498592,
@@ -5589,7 +5870,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "noodle-master",
@@ -5824,6 +6105,76 @@
     "verifiedAt": "2026-11-22"
   },
   {
+    "id": "kahvila-laikku",
+    "name": "Kahvila Laikku",
+    "address": "Keskustori 4, Tampere",
+    "lat": 61.498764,
+    "lon": 23.762057,
+    "distanceM": 366,
+    "walkMin": 6,
+    "categories": [
+      "keitto",
+      "kahvila"
+    ],
+    "format": "soup",
+    "price": {},
+    "priceVerified": false,
+    "includes": [
+      "bread"
+    ],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [
+      "vegan"
+    ],
+    "dislikeRisk": {
+      "level": "M",
+      "reasons": [
+        "soup_only"
+      ]
+    },
+    "links": {},
+    "info": [
+      "Keittolounas arkisin, sis. leivän ja veden; lounaskahvi 2 €",
+      "Keitot usein vegaanisia"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
     "id": "obanh",
     "name": "OBANH",
     "address": "Verkatehtaankatu 7 B, Tampere",
@@ -5975,7 +6326,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "bistro-naapuri-tuomiokirkonkatu",
+    "id": "bistro-naapuri",
     "name": "Bistro Naapuri",
     "address": "Tuomiokirkonkatu 24, Tampere",
     "lat": 61.496231,
@@ -6044,10 +6395,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "chalupa-verkatehtaankatu",
+    "id": "chalupa",
     "name": "Chalupa",
     "address": "Verkatehtaankatu 7, Tampere",
     "lat": 61.497389,
@@ -6110,10 +6461,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "cafe-europa-aleksanterinkatu",
+    "id": "cafe-europa",
     "name": "Cafe Europa",
     "address": "Aleksanterinkatu 29, Tampere",
     "lat": 61.497638,
@@ -6176,10 +6527,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "fafa-s-aleksanterinkatu-aleksanterinkatu",
+    "id": "fafa-s-aleksanterinkatu",
     "name": "Fafa's Aleksanterinkatu",
     "address": "Aleksanterinkatu 29, Tampere",
     "lat": 61.497638,
@@ -6245,10 +6596,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "tom-grill-tuomiokirkonkatu",
+    "id": "tom-grill",
     "name": "Tom & Grill",
     "address": "Tuomiokirkonkatu 36, Tampere",
     "lat": 61.496707,
@@ -6306,7 +6657,75 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "kuparitalon-vohvelikahvila",
+    "name": "Kuparitalon Vohvelikahvila",
+    "address": "Tuomiokirkonkatu 34, Tampere",
+    "lat": 61.496973,
+    "lon": 23.77026,
+    "distanceM": 383,
+    "walkMin": 6,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "11:00",
+          "to": "19:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Suolaiset ja makeat vohvelit"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "lam",
@@ -6539,7 +6958,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "plate-ravintola-hameenkatu",
+    "id": "plate-ravintola",
     "name": "Plate Ravintola",
     "address": "Hämeenkatu 7, Tampere",
     "lat": 61.497978,
@@ -6602,10 +7021,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "bord-koskikatu",
+    "id": "bord",
     "name": "Bord",
     "address": "Koskikatu 5, Tampere",
     "lat": 61.498922,
@@ -6671,7 +7090,7 @@
       "Scandic-hotellin ravintola"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "shanghai",
@@ -6733,6 +7152,76 @@
     ],
     "status": "verify",
     "verifiedAt": "2026-11-22"
+  },
+  {
+    "id": "pyymaen-oma",
+    "name": "Pyymäen Oma",
+    "address": "Tuomiokirkonkatu 32, Tampere",
+    "lat": 61.497554,
+    "lon": 23.769999,
+    "distanceM": 402,
+    "walkMin": 7,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "07:00",
+          "to": "20:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "07:00",
+          "to": "20:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "07:00",
+          "to": "20:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "07:00",
+          "to": "20:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "07:00",
+          "to": "20:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "09:00",
+          "to": "19:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {
+      "website": "https://pyymaen.fi"
+    },
+    "info": [
+      "Leipomokahvila: suolaiset leivonnaiset ja voileivät"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "bianco",
@@ -7027,7 +7516,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "pancho-villa-hameenkatu-hameenkatu",
+    "id": "pancho-villa-hameenkatu",
     "name": "Pancho Villa Hämeenkatu",
     "address": "Hämeenkatu 7, Tampere",
     "lat": 61.498155,
@@ -7094,7 +7583,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "don-franco",
@@ -7234,7 +7723,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "gastropub-soho-otavalankatu",
+    "id": "gastropub-soho",
     "name": "Gastropub Soho",
     "address": "Otavalankatu 10, Tampere",
     "lat": 61.496497,
@@ -7296,10 +7785,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "kahvila-jenna-ja-minna-otavalankatu",
+    "id": "kahvila-jenna-ja-minna",
     "name": "Kahvila Jenna ja Minna",
     "address": "Otavalankatu 10, Tampere",
     "lat": 61.496497,
@@ -7361,7 +7850,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "zarillo-otavalankatu",
@@ -7434,7 +7923,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "armas-kuppila-tuomiokirkonkatu",
+    "id": "armas-kuppila",
     "name": "Armas Kuppila",
     "address": "Tuomiokirkonkatu 17, Tampere",
     "lat": 61.49765,
@@ -7496,10 +7985,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "bistro-venla-kauppakatu",
+    "id": "bistro-venla",
     "name": "Bistro Venla",
     "address": "Kauppakatu 6, Tampere",
     "lat": 61.49829,
@@ -7575,10 +8064,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "sorella-vuolteenkatu",
+    "id": "sorella",
     "name": "Sorella",
     "address": "Vuolteenkatu 20, Tampere",
     "lat": 61.494627,
@@ -7642,7 +8131,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "biang",
@@ -7847,7 +8336,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "juvenes-bistro-elisa-vuolteenkatu",
+    "id": "juvenes-bistro-elisa",
     "name": "Juvenes Bistro Elisa",
     "address": "Vuolteenkatu 2, Tampere",
     "lat": 61.494894,
@@ -7913,7 +8402,7 @@
       "Elisan toimitalon ravintola"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "itsudemo-stockmann",
@@ -8203,7 +8692,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "restaurant-madame-puutarhakatu",
+    "id": "restaurant-madame",
     "name": "Restaurant Madame",
     "address": "Puutarhakatu 2, Tampere",
     "lat": 61.499659,
@@ -8262,10 +8751,10 @@
       "Viisi vaihtuvaa vaihtoehtoa päivittäin; businesslounas pöytiin"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "luckiefun-s-hameenkatu-hameenkatu",
+    "id": "luckiefun-s-hameenkatu",
     "name": "Luckiefun's Hämeenkatu",
     "address": "Hämeenkatu 26, Tampere",
     "lat": 61.497538,
@@ -8332,7 +8821,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "sushi-panda",
@@ -8479,7 +8968,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "turkuaz-kuninkaankatu",
+    "id": "turkuaz",
     "name": "Turkuaz",
     "address": "Kuninkaankatu 19, Tampere",
     "lat": 61.498836,
@@ -8543,10 +9032,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "tampereen-bakery-cafe-tuomiokirkonkatu",
+    "id": "tampereen-bakery-cafe",
     "name": "Tampereen Bakery Cafe",
     "address": "Tuomiokirkonkatu 26, Tampere",
     "lat": 61.499208,
@@ -8609,7 +9098,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "thai-laos",
@@ -8838,7 +9327,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "kahvila-ravintola-viistokatu-aleksis",
+    "id": "kahvila-ravintola-viistokatu",
     "name": "Kahvila-ravintola Viistokatu",
     "address": "Aleksis Kiven katu 14-16, Tampere",
     "lat": 61.499606,
@@ -8902,7 +9391,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "eflatun",
@@ -9513,7 +10002,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "rookie-s-bar-kitchen-hameenkatu",
+    "id": "rookie-s-bar-kitchen",
     "name": "Rookie's Bar & Kitchen",
     "address": "Hämeenkatu 2, Tampere",
     "lat": 61.498922,
@@ -9578,10 +10067,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "urbano-hameenkatu",
+    "id": "urbano",
     "name": "Urbano",
     "address": "Hämeenkatu 2, Tampere",
     "lat": 61.498922,
@@ -9646,7 +10135,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "onni-leo",
@@ -9730,7 +10219,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "bertha-kellari-keittio-rautatienkatu",
+    "id": "bertha-kellari-keittio",
     "name": "Bertha Kellari & Keittiö",
     "address": "Rautatienkatu 14, Tampere",
     "lat": 61.498968,
@@ -9789,7 +10278,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "zeytuun",
@@ -9942,7 +10431,71 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "grillsson-hameenpuisto-hameenpuisto",
+    "id": "kunkun-lounaskahvila",
+    "name": "Kunkun lounaskahvila",
+    "address": "Puutarhakatu 10, Tampere",
+    "lat": 61.499316,
+    "lon": 23.756342,
+    "distanceM": 570,
+    "walkMin": 9,
+    "categories": [
+      "kahvila",
+      "kotiruoka"
+    ],
+    "format": "plated",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Lounaskahvila",
+      "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
+    ],
+    "status": "verify",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "grillsson-hameenpuisto",
     "name": "Grillsson Hämeenpuisto",
     "address": "Hämeenpuisto 47, Tampere",
     "lat": 61.493218,
@@ -10006,7 +10559,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "huili-hatanpaa",
@@ -10099,7 +10652,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "villit-ja-viinit-rautatienkatu",
+    "id": "villit-ja-viinit",
     "name": "Villit ja Viinit",
     "address": "Rautatienkatu 12, Tampere",
     "lat": 61.499299,
@@ -10156,10 +10709,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "k-supermarket-kuninkaankulma-kuninkaankatu",
+    "id": "k-supermarket-kuninkaankulma",
     "name": "K-Supermarket Kuninkaankulma",
     "address": "Kuninkaankatu 14, Tampere",
     "lat": 61.499386,
@@ -10224,10 +10777,84 @@
       "Kaupan lounastiski"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ristorante-pulcinella-kyttalankatu",
+    "id": "vohvelikahvila-ojakatu",
+    "name": "Vohvelikahvila",
+    "address": "Ojakatu 2, Tampere",
+    "lat": 61.500591,
+    "lon": 23.767044,
+    "distanceM": 587,
+    "walkMin": 10,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "10:00",
+          "to": "19:00"
+        }
+      ],
+      "sun": [
+        {
+          "from": "11:00",
+          "to": "18:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Suolaiset ja makeat vohvelit"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "ristorante-pulcinella",
     "name": "Ristorante Pulcinella",
     "address": "Kyttälänkatu 11, Tampere",
     "lat": 61.499666,
@@ -10290,10 +10917,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "tbilisi-kuninkaankatu",
+    "id": "tbilisi",
     "name": "Tbilisi",
     "address": "Kuninkaankatu 15, Tampere",
     "lat": 61.499683,
@@ -10356,7 +10983,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "juvenes-saarni",
@@ -10429,7 +11056,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "maltti-taproom-nokia-arena-kansikatu",
+    "id": "maltti-taproom-nokia-arena",
     "name": "Maltti Taproom (Nokia Arena)",
     "address": "Kansikatu 3, Tampere",
     "lat": 61.494015,
@@ -10496,7 +11123,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "etelan-kebab-house",
@@ -10578,7 +11205,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "sitko-pizza-nasilinnankatu",
+    "id": "sitko-pizza",
     "name": "Sitko Pizza",
     "address": "Näsilinnankatu 22, Tampere",
     "lat": 61.498583,
@@ -10634,7 +11261,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "a11-tulli",
@@ -10774,7 +11401,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "lotus-garden-rongankatu",
+    "id": "lotus-garden",
     "name": "Lotus Garden",
     "address": "Rongankatu 5-7, Tampere",
     "lat": 61.500554,
@@ -10838,7 +11465,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "tammerin-kellari",
@@ -11070,7 +11697,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "cafe-bar-katto-satakunnankatu",
+    "id": "cafe-bar-katto",
     "name": "Café & Bar KATTO",
     "address": "Satakunnankatu 18, Tampere",
     "lat": 61.501099,
@@ -11133,7 +11760,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "plevna",
@@ -11281,7 +11908,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "taj-indian-itainenkatu",
+    "id": "taj-indian",
     "name": "Taj Indian",
     "address": "Itäinenkatu 11, Tampere",
     "lat": 61.501006,
@@ -11351,7 +11978,83 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "kahvila-runo",
+    "name": "Kahvila Runo",
+    "address": "Ojakatu 3, Tampere",
+    "lat": 61.501082,
+    "lon": 23.767332,
+    "distanceM": 644,
+    "walkMin": 10,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "09:00",
+          "to": "18:00"
+        }
+      ],
+      "sun": [
+        {
+          "from": "10:00",
+          "to": "20:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {
+      "website": "https://kahvilaruno.fi"
+    },
+    "info": [
+      "Itse leivotut suolaiset piirakat ja täytetyt sämpylät"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "aleksis-technopolis",
@@ -11501,6 +12204,70 @@
     "verifiedAt": "2026-11-22"
   },
   {
+    "id": "pala-cafe",
+    "name": "Pala Café",
+    "address": "Itäinenkatu 9, Tampere",
+    "lat": 61.501095,
+    "lon": 23.759322,
+    "distanceM": 657,
+    "walkMin": 11,
+    "categories": [
+      "kahvila",
+      "keitto"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Lounas: salaattia, uuniperunaa, munakasta ja päivän keitto",
+      "Lounasaika arvio"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
     "id": "grill-it-paja",
     "name": "Grill it! Paja",
     "address": "Ratapihankatu 43, Tampere",
@@ -11571,7 +12338,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "speakeasy-finlayson-paamaarankuja",
+    "id": "speakeasy-finlayson",
     "name": "SpeakEasy Finlayson",
     "address": "Päämääränkuja 10, Tampere",
     "lat": 61.501214,
@@ -11637,7 +12404,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "nanda-devi",
@@ -11926,7 +12693,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "afgan-ravintola-itainenkatu",
+    "id": "afgan-ravintola",
     "name": "Afgan Ravintola",
     "address": "Itäinenkatu 5-7, Tampere",
     "lat": 61.501421,
@@ -11992,7 +12759,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "kims-bap",
@@ -12032,7 +12799,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "ristorante-siciliano-itainenkatu",
+    "id": "ristorante-siciliano",
     "name": "Ristorante Siciliano",
     "address": "Itäinenkatu 5, Tampere",
     "lat": 61.501489,
@@ -12095,7 +12862,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "ravintola-piha",
@@ -12170,7 +12937,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "edun-herkkukeidas-eetwartti-sumeliuksenkatu",
+    "id": "edun-herkkukeidas-eetwartti",
     "name": "Edun Herkkukeidas Eetwartti",
     "address": "Sumeliuksenkatu 16, Tampere",
     "lat": 61.49545,
@@ -12234,10 +13001,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "juvenes-ratamo-tampereen",
+    "id": "juvenes-ratamo",
     "name": "Juvenes Ratamo",
     "address": "Tampereen valtatie 15, Tampere",
     "lat": 61.491607,
@@ -12301,7 +13068,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "ravintola-tampella",
@@ -12463,7 +13230,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "brander-tullintori-tullikatu",
+    "id": "brander-tullintori",
     "name": "Brander Tullintori",
     "address": "Tullikatu 6, Tampere",
     "lat": 61.497177,
@@ -12526,10 +13293,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "tisle-tullikatu",
+    "id": "tisle",
     "name": "Tisle",
     "address": "Tullikatu 6, Tampere",
     "lat": 61.496931,
@@ -12592,10 +13359,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "herkku-lettu-tullikatu",
+    "id": "herkku-lettu",
     "name": "Herkku Lettu",
     "address": "Tullikatu 6, Tampere",
     "lat": 61.496931,
@@ -12669,10 +13436,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "baba-s-kitchen-tullikatu",
+    "id": "baba-s-kitchen",
     "name": "Baba's Kitchen",
     "address": "Tullikatu 6, Tampere",
     "lat": 61.497275,
@@ -12735,7 +13502,209 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "cafe-metso",
+    "name": "Cafe Metso (pääkirjasto)",
+    "address": "Pirkankatu 2, Tampere",
+    "lat": 61.497959,
+    "lon": 23.750823,
+    "distanceM": 732,
+    "walkMin": 12,
+    "categories": [
+      "kahvila",
+      "kotiruoka",
+      "buffet"
+    ],
+    "format": "buffet",
+    "price": {
+      "soup": 8.8
+    },
+    "priceVerified": true,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "11:00",
+          "to": "14:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "11:00",
+          "to": "14:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "11:00",
+          "to": "14:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "11:00",
+          "to": "14:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "11:00",
+          "to": "14:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 6
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Pääkirjasto Metson lounaskahvila, lounaspöytä arkisin",
+      "Keittolounas 8,80 €"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "pyymaen-tullintori",
+    "name": "Pyymäen Tullintori",
+    "address": "Tullikatu 6, Tampere",
+    "lat": 61.497372,
+    "lon": 23.776968,
+    "distanceM": 734,
+    "walkMin": 12,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "08:00",
+          "to": "18:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "08:00",
+          "to": "18:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "08:00",
+          "to": "18:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "08:00",
+          "to": "18:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "08:00",
+          "to": "18:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {
+      "website": "https://pyymaen.fi"
+    },
+    "info": [
+      "Leipomokahvila: suolaiset leivonnaiset ja voileivät",
+      "Aukioloaika arvio"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "arnolds-tullintori",
+    "name": "Arnold's Tullintori",
+    "address": "Tullikatu 6, Tampere",
+    "lat": 61.49705,
+    "lon": 23.777215,
+    "distanceM": 738,
+    "walkMin": 12,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "08:00",
+          "to": "20:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "08:00",
+          "to": "20:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "08:00",
+          "to": "20:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "08:00",
+          "to": "20:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "08:00",
+          "to": "20:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "10:00",
+          "to": "19:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {
+      "website": "https://www.arnolds.fi"
+    },
+    "info": [
+      "Bagelit, salaatit ja toastit"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "non-la",
@@ -13173,7 +14142,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "hygge-itsenaisyydenkatu",
+    "id": "hygge",
     "name": "Hygge",
     "address": "Itsenäisyydenkatu 3, Tampere",
     "lat": 61.499199,
@@ -13237,7 +14206,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "food-co-naulankanta",
@@ -13377,7 +14346,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "pizzeria-basiliko-pinninkatu",
+    "id": "pizzeria-basiliko",
     "name": "Pizzeria Basilikò",
     "address": "Pinninkatu 59, Tampere",
     "lat": 61.495089,
@@ -13439,10 +14408,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ravintola-kulma-akerlundinkatu",
+    "id": "ravintola-kulma",
     "name": "Ravintola Kulma",
     "address": "Åkerlundinkatu 3, Tampere",
     "lat": 61.495926,
@@ -13509,7 +14478,71 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "pinnin-helmi",
+    "name": "Lounaskahvila Pinnin Helmi",
+    "address": "Pinninkatu 59, Tampere",
+    "lat": 61.495089,
+    "lon": 23.778547,
+    "distanceM": 792,
+    "walkMin": 13,
+    "categories": [
+      "kahvila",
+      "kotiruoka"
+    ],
+    "format": "plated",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Lounaskahvila, salaatteja",
+      "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
+    ],
+    "status": "verify",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "telakka",
@@ -13588,7 +14621,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "salaattibaari-sipuli-pinninkatu",
+    "id": "salaattibaari-sipuli",
     "name": "Salaattibaari Sipuli",
     "address": "Pinninkatu, Tampere",
     "lat": 61.497639,
@@ -13651,10 +14684,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "psta-vellamonkatu",
+    "id": "psta",
     "name": "PSTA",
     "address": "Vellamonkatu 2, Tampere",
     "lat": 61.500007,
@@ -13717,10 +14750,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "edun-herkkukeidas-tulli-tullikamarin",
+    "id": "edun-herkkukeidas-tulli",
     "name": "Edun Herkkukeidas Tulli",
     "address": "Tullikamarin aukio 1, Tampere",
     "lat": 61.498345,
@@ -13784,7 +14817,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "valssi",
@@ -14303,7 +15336,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "sasor-yliopistonkatu",
+    "id": "sasor",
     "name": "Sasor",
     "address": "Yliopistonkatu 50, Tampere",
     "lat": 61.49675,
@@ -14368,10 +15401,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "aitoleipa-tammela-go21-go21",
+    "id": "aitoleipa-tammela-go21",
     "name": "Aitoleipä Tammela (GO21)",
     "address": "GO21, Tampere",
     "lat": 61.501117,
@@ -14437,10 +15470,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "kahvila-hetki-peltokatu",
+    "id": "kahvila-hetki",
     "name": "Kahvila Hetki",
     "address": "Peltokatu 34, Tampere",
     "lat": 61.501117,
@@ -14503,10 +15536,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ravintola-maukas-go21-go21",
+    "id": "ravintola-maukas-go21",
     "name": "Ravintola Maukas (GO21)",
     "address": "GO21, Tampere",
     "lat": 61.501117,
@@ -14570,10 +15603,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ravintola-wivi-koulukatu",
+    "id": "ravintola-wivi",
     "name": "Ravintola Wivi",
     "address": "Koulukatu 18, Tampere",
     "lat": 61.493082,
@@ -14635,10 +15668,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "minea-tietotalo-naulakatu",
+    "id": "minea-tietotalo",
     "name": "Minea Tietotalo",
     "address": "Naulakatu 2, Tampere",
     "lat": 61.491594,
@@ -14702,7 +15735,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pikante-saippuatehdas",
@@ -14775,7 +15808,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "siipiweikot-tampella-juhlatalonkatu",
+    "id": "siipiweikot-tampella",
     "name": "Siipiweikot Tampella",
     "address": "Juhlatalonkatu 5, Tampere",
     "lat": 61.503638,
@@ -14816,7 +15849,70 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "cafe-alakuppila",
+    "name": "YR Café Alakuppila",
+    "address": "Kalevantie 4, Tampere",
+    "lat": 61.493659,
+    "lon": 23.780107,
+    "distanceM": 898,
+    "walkMin": 15,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:30",
+          "to": "15:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:30",
+          "to": "15:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:30",
+          "to": "15:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:30",
+          "to": "15:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:30",
+          "to": "15:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Yliopiston päärakennus; salaatit ja suolaiset piirakat",
+      "Aukioloaika arvio"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "kitchen-bar-courtyard",
@@ -14886,7 +15982,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "ravintola-viola-juhlatalonkatu",
+    "id": "ravintola-viola",
     "name": "Ravintola Viola",
     "address": "Juhlatalonkatu 4, Tampere",
     "lat": 61.503774,
@@ -14964,7 +16060,7 @@
       "Palvelukodin ravintola – lounas avoin kaikille"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "linkosuo-min-asemakeskus",
@@ -15120,7 +16216,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "willaviola-tampellan",
+    "id": "willaviola",
     "name": "WillaViola",
     "address": "Tampellan Esplanadi 4, Tampere",
     "lat": 61.503903,
@@ -15186,7 +16282,7 @@
       "Palvelukodin ravintola – lounas avoin kaikille"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "new-chinese-food",
@@ -15256,7 +16352,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "smokehouse-bros-tammelan",
+    "id": "smokehouse-bros",
     "name": "Smokehouse Bros",
     "address": "Tammelan puistokatu 34, Tampere",
     "lat": 61.499448,
@@ -15321,10 +16417,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "tuhto-yliopistonkatu",
+    "id": "tuhto",
     "name": "Tuhto",
     "address": "Yliopistonkatu 55, Tampere",
     "lat": 61.49621,
@@ -15391,10 +16487,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "antika-vainolankatu",
+    "id": "antika",
     "name": "Antika",
     "address": "Väinölänkatu 1, Tampere",
     "lat": 61.501834,
@@ -15457,7 +16553,86 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "tallipihan-kahvila",
+    "name": "Tallipihan kahvila",
+    "address": "Kuninkaankatu 4, Tampere",
+    "lat": 61.503056,
+    "lon": 23.755241,
+    "distanceM": 945,
+    "walkMin": 15,
+    "categories": [
+      "kahvila",
+      "keitto"
+    ],
+    "format": "counter",
+    "price": {
+      "min": 14.5,
+      "note": "Salaatit 14,50 €; keittolounas joka päivä"
+    },
+    "priceVerified": true,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ],
+      "sun": [
+        {
+          "from": "11:00",
+          "to": "15:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Keittolounas joka päivä, myös viikonloppuisin",
+      "Ruokaisat salaatit tilauksesta"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "toki-nuki",
@@ -15588,6 +16763,73 @@
     "info": [],
     "status": "open",
     "verifiedAt": "2026-11-22"
+  },
+  {
+    "id": "cafe-kaisuli",
+    "name": "Cafe Kaisuli",
+    "address": "Tammelan puistokatu 30-32, Tampere",
+    "lat": 61.500121,
+    "lon": 23.779319,
+    "distanceM": 973,
+    "walkMin": 16,
+    "categories": [
+      "kahvila",
+      "kotiruoka"
+    ],
+    "format": "plated",
+    "price": {
+      "lunch": 13.5,
+      "soup": 10.9
+    },
+    "priceVerified": true,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 6
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Arkisin kotiruokalounas, joka päivä aamiaisbuffet",
+      "Lounasaika arvio"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "yak-nak",
@@ -15803,6 +17045,76 @@
     ],
     "status": "verify",
     "verifiedAt": "2026-11-22"
+  },
+  {
+    "id": "hakasen-leipomo-tammela",
+    "name": "Hakasen Leipomo Tammela",
+    "address": "Itsenäisyydenkatu 8, Tampere",
+    "lat": 61.498804,
+    "lon": 23.780981,
+    "distanceM": 987,
+    "walkMin": 16,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "09:00",
+          "to": "14:30"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {
+      "website": "https://www.hakasenleipomo.fi"
+    },
+    "info": [
+      "Leipomokahvila: suolaista ja makeaa"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "borneo-mamak",
@@ -16182,7 +17494,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "sodexo-kulmasarvis-hatanpaankatu",
+    "id": "sodexo-kulmasarvis",
     "name": "Sodexo Kulmasarvis",
     "address": "Hatanpäänkatu 1 D, Tampere",
     "lat": 61.485693,
@@ -16249,10 +17561,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "kontukeittio-pyynikki-f",
+    "id": "kontukeittio-pyynikki",
     "name": "Kontukeittiö Pyynikki",
     "address": "F.E. Sillanpään katu 2, Tampere",
     "lat": 61.496278,
@@ -16316,7 +17628,76 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "pyynikintorin-liha-ja-kahvi",
+    "name": "Pyynikintorin Liha ja Kahvi",
+    "address": "Pyynikintori 4-6, Tampere",
+    "lat": 61.496984,
+    "lon": 23.742599,
+    "distanceM": 1129,
+    "walkMin": 18,
+    "categories": [
+      "kahvila",
+      "bistro"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:00",
+          "to": "19:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:00",
+          "to": "19:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:00",
+          "to": "19:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:00",
+          "to": "19:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:00",
+          "to": "19:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "10:00",
+          "to": "19:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Kahvila, bistro ja herkkupuoti"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "gopal",
@@ -16483,7 +17864,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "cafe-bakery-mimosa-itsenaisyydenkatu",
+    "id": "cafe-bakery-mimosa",
     "name": "Cafe & Bakery Mimosa",
     "address": "Itsenäisyydenkatu 16, Tampere",
     "lat": 61.498833,
@@ -16546,7 +17927,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "delhi-house",
@@ -16623,7 +18004,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "taqueria-el-loco-tammelankatu",
+    "id": "taqueria-el-loco",
     "name": "Taqueria El Loco",
     "address": "Tammelankatu 25, Tampere",
     "lat": 61.499968,
@@ -16687,7 +18068,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "salho",
@@ -16889,7 +18270,7 @@
       "Vaihtuva lounas ti–pe"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "carotiini",
@@ -16965,10 +18346,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "la-famiglia-teiskontie",
+    "id": "la-famiglia",
     "name": "La Famiglia",
     "address": "Teiskontie 1, Tampere",
     "lat": 61.499454,
@@ -17031,7 +18412,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "coussicca",
@@ -17068,10 +18449,10 @@
       "Lounasaika ei tiedossa"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ravintola-k-auto-tampere-hatanpaan",
+    "id": "ravintola-k-auto-tampere",
     "name": "Ravintola K-Auto Tampere",
     "address": "Hatanpään valtatie 42, Tampere",
     "lat": 61.482847,
@@ -17136,10 +18517,73 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "vaskitahti-hatanpaan",
+    "id": "laelta",
+    "name": "Laelta",
+    "address": "Ranta-Tampellan katu 13, Tampere",
+    "lat": 61.508132,
+    "lon": 23.759417,
+    "distanceM": 1415,
+    "walkMin": 23,
+    "categories": [
+      "kahvila",
+      "keitto"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "tue": [
+        {
+          "from": "12:00",
+          "to": "16:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "12:00",
+          "to": "16:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "12:00",
+          "to": "16:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "12:00",
+          "to": "16:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "12:00",
+          "to": "16:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Lohikeitto ja piirakat"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "vaskitahti",
     "name": "Vaskitähti",
     "address": "Hatanpään puistokuja 22 G, Tampere",
     "lat": 61.483401,
@@ -17215,7 +18659,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "coriander",
@@ -17331,7 +18775,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pahis-grilli",
@@ -17396,7 +18840,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pohjolan-palvelukeskus",
@@ -17460,7 +18904,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "lillan",
@@ -17531,7 +18975,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "peurankello-peurankallionkatu",
+    "id": "peurankello",
     "name": "Peurankello",
     "address": "Peurankallionkatu 10, Tampere",
     "lat": 61.499897,
@@ -17609,10 +19053,10 @@
       "Tampereen kaupunkilähetyksen lounaskahvila"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ravintola-manseri-yliopistonkatu",
+    "id": "ravintola-manseri",
     "name": "Ravintola Manseri",
     "address": "Iidesranta 9, Tampere",
     "lat": 61.49106,
@@ -17680,7 +19124,7 @@
       "Muuttanut Iidesrantaan"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "new-garden",
@@ -17743,7 +19187,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pieni-panda",
@@ -17820,10 +19264,84 @@
       "Buffet joka päivä"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ravintola-mazin-sammonkatu",
+    "id": "pyynikin-munkkikahvila",
+    "name": "Pyynikin munkkikahvila",
+    "address": "Näkötornintie 20, Tampere",
+    "lat": 61.496319,
+    "lon": 23.731921,
+    "distanceM": 1687,
+    "walkMin": 27,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ],
+      "sun": [
+        {
+          "from": "09:00",
+          "to": "20:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Munkkien lisäksi suolaiset piirakat, leivät ja toastit"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "ravintola-mazin",
     "name": "Ravintola Mazin",
     "address": "Sammonkatu 13, Tampere",
     "lat": 61.497986,
@@ -17880,7 +19398,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "yuki-house",
@@ -17953,10 +19471,10 @@
       "Lounasaika arvio – tarkista"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "nekalan-patakunkku-kuokkamaantie",
+    "id": "nekalan-patakunkku",
     "name": "Nekalan Patakunkku",
     "address": "Kuokkamaantie 4, Tampere",
     "lat": 61.481682,
@@ -18023,10 +19541,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "papu-ja-pata",
+    "id": "papu-ja-pata-sammonkatu",
     "name": "Papu ja Pata",
     "address": "Sammonkatu 15, Tampere",
     "lat": 61.498015,
@@ -18097,7 +19615,7 @@
       "Muuttanut Laukontorilta Sammonkadulle"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "classic-pizza-lapinniemi",
@@ -18134,7 +19652,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "zafran",
@@ -18210,7 +19728,7 @@
     "verifiedAt": "2026-11-22"
   },
   {
-    "id": "pikante-kupari-tipotie",
+    "id": "pikante-kupari",
     "name": "Pikante Kupari",
     "address": "Tipotie 4, Tampere",
     "lat": 61.49948,
@@ -18277,7 +19795,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "talvipuutarha-sommer",
@@ -18405,7 +19923,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "ravintola-evin",
@@ -18459,10 +19977,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "kumru-sammonkatu",
+    "id": "kumru",
     "name": "Kumru",
     "address": "Sammonkatu 34, Tampere",
     "lat": 61.49662,
@@ -18526,10 +20044,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "stahlberg-viinikka-viinikankatu",
+    "id": "stahlberg-viinikka",
     "name": "Ståhlberg Viinikka",
     "address": "Viinikankatu 47, Tampere",
     "lat": 61.480556,
@@ -18602,10 +20120,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ravintola-bertel-haarlankatu",
+    "id": "ravintola-bertel",
     "name": "Ravintola Bertel",
     "address": "Haarlankatu 4 H, Tampere",
     "lat": 61.501793,
@@ -18671,7 +20189,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pizzeria-nupelda",
@@ -18737,10 +20255,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "tiinan-kotiruoka-toyota-tammer-auto-hatanpaan",
+    "id": "tiinan-kotiruoka-toyota-tammer-auto",
     "name": "Tiinan Kotiruoka Toyota Tammer-Auto",
     "address": "Hatanpään valtatie 38, Tampere",
     "lat": 61.476651,
@@ -18803,7 +20321,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "helmisimpukka-lahdenperankatu",
@@ -18869,7 +20387,72 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "konditoria-mari",
+    "name": "Kahvila-Konditoria Mari",
+    "address": "Ahotie 34, Tampere",
+    "lat": 61.483122,
+    "lon": 23.794452,
+    "distanceM": 2141,
+    "walkMin": 35,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "07:00",
+          "to": "16:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "07:00",
+          "to": "16:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "07:00",
+          "to": "16:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "07:00",
+          "to": "16:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "07:00",
+          "to": "16:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {
+      "website": "https://www.konditoriamari.fi"
+    },
+    "info": [
+      "Täytetyt patongit, salaatit, liharullat ja peremetz-lihapiirakat – kaikki tehdään itse",
+      "Auki arkisin, kunnes hyllyt tyhjenevät"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "koukun-helmi",
@@ -18945,7 +20528,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "vg-wok-kaleva",
@@ -18980,7 +20563,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "faasai-kaleva",
@@ -19052,10 +20635,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "public-house-huurre-sammonkatu",
+    "id": "public-house-huurre",
     "name": "Public House Huurre",
     "address": "Sammonkatu 46, Tampere",
     "lat": 61.495882,
@@ -19112,7 +20695,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "noodle-lab",
@@ -19184,7 +20767,7 @@
       "Lounasaika arvio – tarkista"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "juvenes-rata",
@@ -19343,10 +20926,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "linkosuo-kalevanpaasi-sarvijaakonkatu",
+    "id": "linkosuo-kalevanpaasi",
     "name": "Linkosuo Kalevanpaasi",
     "address": "Sarvijaakonkatu 3, Tampere",
     "lat": 61.493855,
@@ -19413,7 +20996,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "evas",
@@ -19479,7 +21062,7 @@
       "Lounaspöydässä pizzaa ja kotiruokaa, arkisin myös intialainen buffet"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "nekalan-hovi",
@@ -19546,7 +21129,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "campusravita",
@@ -19621,7 +21204,7 @@
       "TAMKin pääkampus; opiskelijahinta Kela-tuella"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "cafe-pispala",
@@ -19674,7 +21257,201 @@
       "Lounasaika arvio"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "cafe-olive",
+    "name": "Café Olive (Pikante)",
+    "address": "Biokatu 4, Tampere",
+    "lat": 61.505562,
+    "lon": 23.811903,
+    "distanceM": 2790,
+    "walkMin": 45,
+    "categories": [
+      "kahvila",
+      "keitto"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:30",
+          "to": "13:30"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:30",
+          "to": "13:30"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:30",
+          "to": "13:30"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:30",
+          "to": "13:30"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:30",
+          "to": "13:30"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Kevytlounas ja suolaiset piirakat, take away kilohinnalla"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "hakasen-leipomo-vihioja",
+    "name": "Hakasen Leipomo Vihioja",
+    "address": "Vihiojantie 28, Tampere",
+    "lat": 61.475758,
+    "lon": 23.796268,
+    "distanceM": 2801,
+    "walkMin": 46,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {
+      "website": "https://www.hakasenleipomo.fi"
+    },
+    "info": [
+      "Leipomon oma kahvila-myymälä",
+      "Aukioloaika arvio"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "pikante-cafe-tays",
+    "name": "Pikante Café (TAYS)",
+    "address": "Elämänaukio 6, Tampere",
+    "lat": 61.504689,
+    "lon": 23.813529,
+    "distanceM": 2834,
+    "walkMin": 46,
+    "categories": [
+      "kahvila",
+      "keitto"
+    ],
+    "format": "counter",
+    "price": {
+      "lunch": 13
+    },
+    "priceVerified": true,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Bistro-annokset ja salaatit koko aukioloajan",
+      "Pikante Lunch 13 €"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pikante-pulssi",
@@ -19743,7 +21520,7 @@
       "Ent. Finn-Medin ravintola, Kaupin kampus"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pikante-ellipsi",
@@ -19812,7 +21589,7 @@
       "Lounas, keitto & salaatti sekä delibuffet"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "ravintola-puhti",
@@ -19878,10 +21655,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "prisma-koivistonkyla-ruokatori-lempaalantie",
+    "id": "prisma-koivistonkyla-ruokatori",
     "name": "Prisma Koivistonkylä Ruokatori",
     "address": "Lempääläntie 21, Tampere",
     "lat": 61.469093,
@@ -19945,7 +21722,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pikante-sirius",
@@ -20013,7 +21790,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "sumer-pizzeria",
@@ -20077,10 +21854,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "pizza-buffa-prisma-kaleva-kaleva",
+    "id": "pizza-buffa-prisma-kaleva",
     "name": "Pizza & Buffa Prisma Kaleva",
     "address": "Prisma Kaleva, Sammonkatu 75, Tampere",
     "lat": 61.491653,
@@ -20156,7 +21933,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "itsudemo-kaleva",
@@ -20221,10 +21998,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "osuusravintola-oksa-lempaalantie",
+    "id": "osuusravintola-oksa",
     "name": "Osuusravintola Oksa",
     "address": "Lempääläntie 21, Tampere",
     "lat": 61.468133,
@@ -20296,10 +22073,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "edun-herkkukeidas-hakametsa-keltinkatu",
+    "id": "edun-herkkukeidas-hakametsa",
     "name": "Edun Herkkukeidas Hakametsä",
     "address": "Keltinkatu 2, Tampere",
     "lat": 61.495847,
@@ -20363,7 +22140,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "juvenes-arvo",
@@ -20436,7 +22213,7 @@
       "Kaupin kampus, TAYSin vieressä"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "jaahovi",
@@ -20503,10 +22280,10 @@
       "Menu vaihtuu viikoittain"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "wigren-pikkupata-lakalaivankatu",
+    "id": "wigren-pikkupata",
     "name": "Wigren Pikkupata",
     "address": "Lakalaivankatu 12, Tampere",
     "lat": 61.458573,
@@ -20573,7 +22350,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pispan-palvelukeskus",
@@ -20637,10 +22414,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "wigren-pata-2-patamaenkatu",
+    "id": "wigren-pata-2",
     "name": "Wigren Pata 2",
     "address": "Patamäenkatu 2, Tampere",
     "lat": 61.459543,
@@ -20707,7 +22484,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "abc-lahdesjarvi",
@@ -20774,7 +22551,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "rozerin",
@@ -20840,10 +22617,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "lounaskahvila-pure-asentajankatu",
+    "id": "lounaskahvila-pure",
     "name": "Lounaskahvila Pure",
     "address": "Asentajankatu 5, Tampere",
     "lat": 61.456771,
@@ -20907,10 +22684,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "wigren-pata-s-nuutisarankatu",
+    "id": "wigren-pata-s",
     "name": "Wigren Pata S",
     "address": "Nuutisarankatu 35, Tampere",
     "lat": 61.459684,
@@ -20977,10 +22754,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "food-co-flavory-patamaenkatu",
+    "id": "food-co-flavory",
     "name": "Food & Co Flavory",
     "address": "Patamäenkatu 7, Tampere",
     "lat": 61.455847,
@@ -21044,7 +22821,108 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "kahvila-elonen",
+    "name": "Kahvila Elonen",
+    "address": "Martinpojankatu 4, Tampere",
+    "lat": 61.47538,
+    "lon": 23.840243,
+    "distanceM": 4643,
+    "walkMin": 75,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ],
+      "sat": [
+        {
+          "from": "09:00",
+          "to": "17:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Kahvila: voileivät"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "cafe-kartano",
+    "name": "Cafe Kartano",
+    "address": "Tehdaskartanonkatu 53, Tampere",
+    "lat": 61.515987,
+    "lon": 23.686495,
+    "distanceM": 4681,
+    "walkMin": 76,
+    "categories": [
+      "kahvila",
+      "kotiruoka"
+    ],
+    "format": "plated",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {},
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Lounas arkisin, brunssi viikonloppuisin",
+      "Lounasaika ei tiedossa"
+    ],
+    "status": "verify",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "ravintola-lennie",
@@ -21110,7 +22988,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "kebab-pizza-city",
@@ -21174,7 +23052,73 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "makutuote",
+    "name": "Makutuote",
+    "address": "Matilda Niemen katu 22, Tampere",
+    "lat": 61.52179,
+    "lon": 23.688198,
+    "distanceM": 4952,
+    "walkMin": 80,
+    "categories": [
+      "kahvila",
+      "keitto"
+    ],
+    "format": "soup",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "M",
+      "reasons": [
+        "soup_only"
+      ]
+    },
+    "links": {},
+    "info": [
+      "Lounaskahvila: vaihtuvat keitot, myös mukaan",
+      "Lounasaika arvio"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "helmisimpukka-sammon-valtatie",
@@ -21239,7 +23183,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "hallilan-pizzeria",
@@ -21305,7 +23249,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "kahvila-epila",
@@ -21371,7 +23315,7 @@
       "Lounasaika arvio"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "huili-teiskontie",
@@ -21436,7 +23380,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pappilanpuiston-palvelukeskus",
@@ -21506,10 +23450,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "il-posto-lielahti-antti",
+    "id": "il-posto-lielahti",
     "name": "Il Posto Lielahti",
     "address": "Kauppakeskus Like, Antti Possin kuja 1, Tampere",
     "lat": 61.519954,
@@ -21570,10 +23514,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "kokkipoika-antti",
+    "id": "kokkipoika",
     "name": "Kokkipoika",
     "address": "Kauppakeskus Like, Antti Possin kuja 1, Tampere",
     "lat": 61.519954,
@@ -21638,10 +23582,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "huadu-lielahtikeskus-teivaankatu",
+    "id": "huadu-lielahtikeskus",
     "name": "Huadu Lielahtikeskus",
     "address": "Teivaankatu 1, Tampere",
     "lat": 61.518622,
@@ -21717,10 +23661,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "tribeni-teivaankatu",
+    "id": "tribeni",
     "name": "Tribeni",
     "address": "Teivaankatu 1, Tampere",
     "lat": 61.518622,
@@ -21782,10 +23726,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "classic-american-diner-lielahti-taninkatu",
+    "id": "classic-american-diner-lielahti",
     "name": "Classic American Diner Lielahti",
     "address": "Taninkatu 2, Tampere",
     "lat": 61.51641,
@@ -21853,10 +23797,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "stahlberg-lielahti-taninkatu",
+    "id": "stahlberg-lielahti",
     "name": "Ståhlberg Lielahti",
     "address": "Taninkatu 2, Tampere",
     "lat": 61.516668,
@@ -21924,7 +23868,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "bollywood-spice",
@@ -21994,10 +23938,10 @@
       "Lounasaika arvio – tarkista"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "prisma-lielahti-ruokatori-turvesuonkatu",
+    "id": "prisma-lielahti-ruokatori",
     "name": "Prisma Lielahti Ruokatori",
     "address": "Turvesuonkatu 2, Tampere",
     "lat": 61.519852,
@@ -22061,10 +24005,74 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "scanburger-hervanta-tieteenkatu",
+    "id": "lounaskahvila-mainio",
+    "name": "Lounaskahvila-konditoria Mainio",
+    "address": "Possijärvenkatu 3, Tampere",
+    "lat": 61.5181,
+    "lon": 23.662457,
+    "distanceM": 5925,
+    "walkMin": 96,
+    "categories": [
+      "kahvila",
+      "kotiruoka"
+    ],
+    "format": "plated",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "10:30",
+          "to": "14:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Lounaskahvila ja konditoria",
+      "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
+    ],
+    "status": "verify",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "scanburger-hervanta",
     "name": "ScanBurger Hervanta",
     "address": "Tieteenkatu 2, Tampere",
     "lat": 61.458115,
@@ -22128,7 +24136,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pancho-villa-kaukajarvi",
@@ -22194,10 +24202,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ninan-keittio-lielahti-taninkatu",
+    "id": "ninan-keittio-lielahti",
     "name": "Ninan Keittiö Lielahti",
     "address": "Taninkatu 7, Tampere",
     "lat": 61.518059,
@@ -22264,10 +24272,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "pancho-villa-lielahti-taninkatu",
+    "id": "pancho-villa-lielahti",
     "name": "Pancho Villa Lielahti",
     "address": "Taninkatu 7, Tampere",
     "lat": 61.518059,
@@ -22334,10 +24342,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ravintola-uuniperuna-taninkatu",
+    "id": "ravintola-uuniperuna",
     "name": "Ravintola Uuniperuna",
     "address": "Taninkatu 11, Tampere",
     "lat": 61.519106,
@@ -22404,10 +24412,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "sisu-buffet-hervanta-tieteenkatu",
+    "id": "sisu-buffet-hervanta",
     "name": "Sisu Buffet Hervanta",
     "address": "Tieteenkatu 20, Tampere",
     "lat": 61.455593,
@@ -22480,7 +24488,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "ravintola-deluxe",
@@ -22546,7 +24554,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "c-sushi",
@@ -22612,7 +24620,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "sointu-kaukaharju",
@@ -22681,7 +24689,7 @@
       "Lounasaika arvio"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "raholan-pizza-kebab",
@@ -22745,10 +24753,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "il-posto-hervanta-insinoorinkatu",
+    "id": "il-posto-hervanta",
     "name": "Il Posto Hervanta",
     "address": "Insinöörinkatu 19, Tampere",
     "lat": 61.452143,
@@ -22815,10 +24823,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "babiloni-insinoorinkatu",
+    "id": "babiloni",
     "name": "Babiloni",
     "address": "Insinöörinkatu 30, Tampere",
     "lat": 61.45169,
@@ -22887,10 +24895,10 @@
       "Lounaaseen kuuluu salaattipöytä, kahvi tai mehu ja jälkiruoka"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "speakeasy-hervanta-insinoorinkatu",
+    "id": "speakeasy-hervanta",
     "name": "SpeakEasy Hervanta",
     "address": "Insinöörinkatu 30, Tampere",
     "lat": 61.451617,
@@ -22963,7 +24971,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "kesti-tupa",
@@ -23026,10 +25034,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "malabadi-lindforsinkatu",
+    "id": "malabadi",
     "name": "Malabadi",
     "address": "Lindforsinkatu 2, Tampere",
     "lat": 61.450781,
@@ -23095,10 +25103,72 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "bai-wei-pietilankatu",
+    "id": "viialan-kotileipomo",
+    "name": "Viialan kotileipomo",
+    "address": "Lindforsinkatu 2, Tampere",
+    "lat": 61.450833,
+    "lon": 23.847876,
+    "distanceM": 6689,
+    "walkMin": 109,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "08:00",
+          "to": "16:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Leipomokahvila: suolaiset piirakat ja täytetyt sämpylät"
+    ],
+    "status": "open",
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "bai-wei",
     "name": "Bai Wei",
     "address": "Pietilänkatu 2, Tampere",
     "lat": 61.45098,
@@ -23162,10 +25232,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "firewok-duo-pietilankatu",
+    "id": "firewok-duo",
     "name": "FireWok Duo",
     "address": "Pietilänkatu 2, Tampere",
     "lat": 61.45098,
@@ -23229,10 +25299,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "zarillo-duo-pietilankatu",
+    "id": "zarillo-duo",
     "name": "Zarillo Duo",
     "address": "Pietilänkatu 2, Tampere",
     "lat": 61.451408,
@@ -23302,7 +25372,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "koto-asian-cuisine",
@@ -23385,10 +25455,10 @@
       "Buffet koko päivän: sushia, wokkia, keittoja"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "caffitella-duo-pietilankatu",
+    "id": "caffitella-duo",
     "name": "Caffitella Duo",
     "address": "Pietilänkatu 2, Tampere",
     "lat": 61.451086,
@@ -23463,7 +25533,7 @@
       "Kaikille sama hinta, alle 8-v. 2 €"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "gate-of-india-duo",
@@ -23545,10 +25615,10 @@
       "Viikonloppuna thali-lounas 13,50 €"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "kontukeittio-hervanta-pietilankatu",
+    "id": "kontukeittio-hervanta",
     "name": "Kontukeittiö Hervanta",
     "address": "Pietilänkatu 5, Tampere",
     "lat": 61.450122,
@@ -23620,10 +25690,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "sodexo-hertsi-korkeakoulunkatu",
+    "id": "sodexo-hertsi",
     "name": "Sodexo Hertsi",
     "address": "Korkeakoulunkatu 1, Tampere",
     "lat": 61.449991,
@@ -23689,7 +25759,7 @@
       "Hervannan kampus; opiskelijahinta 3,10 €"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "sofram",
@@ -23755,7 +25825,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "reaktori",
@@ -23824,7 +25894,7 @@
       "Hervannan kampus, Kampusareena"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "vg-wok-hervanta",
@@ -23890,7 +25960,7 @@
       "Kampusareenan wok-tiski"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "juvenes-newton",
@@ -23963,7 +26033,7 @@
       "Hervannan kampus, Konetalo"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "wukong",
@@ -24029,7 +26099,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "linkosuo-hertta",
@@ -24101,10 +26171,10 @@
       "Hermia, Hervanta"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "pedro-s-pub-tesoman",
+    "id": "pedro-s-pub",
     "name": "Pedro´s Pub",
     "address": "Tesoman valtatie 37, Tampere",
     "lat": 61.505948,
@@ -24167,10 +26237,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "zarillo-tesoma-tesomankatu",
+    "id": "zarillo-tesoma",
     "name": "Zarillo Tesoma",
     "address": "Tesomankatu 4, Tampere",
     "lat": 61.505284,
@@ -24231,7 +26301,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "picasso-rahola",
@@ -24295,10 +26365,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "linkosuo-orvokki-hermiankatu",
+    "id": "linkosuo-orvokki",
     "name": "Linkosuo Orvokki",
     "address": "Hermiankatu 6A, Tampere",
     "lat": 61.446702,
@@ -24365,7 +26435,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "saigon-vuores",
@@ -24427,7 +26497,7 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "lounasravintola-helmi-vuorentausta",
@@ -24490,10 +26560,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "antell-hermian-farmi-visiokatu",
+    "id": "antell-hermian-farmi",
     "name": "Antell Hermian Farmi",
     "address": "Visiokatu 4, Tampere",
     "lat": 61.446776,
@@ -24557,10 +26627,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "sodexo-hermia-5-visiokatu",
+    "id": "sodexo-hermia-5",
     "name": "Sodexo Hermia 5",
     "address": "Visiokatu 1, Tampere",
     "lat": 61.447219,
@@ -24626,10 +26696,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "sodexo-hermia-6-visiokatu",
+    "id": "sodexo-hermia-6",
     "name": "Sodexo Hermia 6",
     "address": "Visiokatu 3, Tampere",
     "lat": 61.447219,
@@ -24698,7 +26768,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "kebab-pizza-heval",
@@ -24758,10 +26828,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "tesoman-yhteisokahvila-tesomankatu",
+    "id": "tesoman-yhteisokahvila",
     "name": "Tesoman yhteisökahvila",
     "address": "Tesomankatu 4, Tampere",
     "lat": 61.50493,
@@ -24825,7 +26895,7 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "tesoman-grilli-14",
@@ -24891,10 +26961,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "munkkimiehet-leipomon-kahvila-kauhakorvenkatu",
+    "id": "munkkimiehet-leipomon-kahvila",
     "name": "Munkkimiehet Leipomon Kahvila",
     "address": "Kauhakorvenkatu 30, Tampere",
     "lat": 61.452875,
@@ -24958,10 +27028,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ruskon-helmi-eturuskonkatu",
+    "id": "ruskon-helmi",
     "name": "Ruskon Helmi",
     "address": "Eturuskonkatu 2, Tampere",
     "lat": 61.451095,
@@ -25028,7 +27098,70 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
+  },
+  {
+    "id": "kotileipomo-ruskolainen",
+    "name": "Kotileipomo Ruskolainen",
+    "address": "Polunmäenkatu 25, Tampere",
+    "lat": 61.453613,
+    "lon": 23.895152,
+    "distanceM": 8397,
+    "walkMin": 136,
+    "categories": [
+      "kahvila"
+    ],
+    "format": "counter",
+    "price": {},
+    "priceVerified": false,
+    "includes": [],
+    "lunchHours": {
+      "mon": [
+        {
+          "from": "06:00",
+          "to": "16:00"
+        }
+      ],
+      "tue": [
+        {
+          "from": "06:00",
+          "to": "16:00"
+        }
+      ],
+      "wed": [
+        {
+          "from": "06:00",
+          "to": "16:00"
+        }
+      ],
+      "thu": [
+        {
+          "from": "06:00",
+          "to": "16:00"
+        }
+      ],
+      "fri": [
+        {
+          "from": "06:00",
+          "to": "16:00"
+        }
+      ]
+    },
+    "group": {
+      "comfortMax": 4
+    },
+    "diet": [],
+    "dislikeRisk": {
+      "level": "L",
+      "reasons": []
+    },
+    "links": {},
+    "info": [
+      "Leipomokahvila",
+      "Tarjonta vahvistamatta – tarkista"
+    ],
+    "status": "verify",
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pizza-place-annala",
@@ -25091,10 +27224,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ravintola-osku-rusko-ruskontie",
+    "id": "ravintola-osku-rusko",
     "name": "Ravintola Osku (Rusko)",
     "address": "Ruskontie 55, Tampere",
     "lat": 61.450865,
@@ -25162,7 +27295,7 @@
       "Henkilöstöravintola, avoin kaikille"
     ],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
     "id": "pizzeria-tasanne",
@@ -25226,10 +27359,10 @@
       "Lounastiedot vahvistamatta – tarkista ennen lähtöä"
     ],
     "status": "verify",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "pure-kiitobaari-teollisuustie",
+    "id": "pure-kiitobaari",
     "name": "Pure Kiitobaari",
     "address": "Teollisuustie 7, Tampere",
     "lat": 61.504075,
@@ -25293,10 +27426,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "ninan-keittio-kaapeli-kaapelikatu",
+    "id": "ninan-keittio-kaapeli",
     "name": "Ninan Keittiö Kaapeli",
     "address": "Kaapelikatu 3, Tampere",
     "lat": 61.500531,
@@ -25360,10 +27493,10 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   },
   {
-    "id": "teboil-aitolahti-kaitavedentie",
+    "id": "teboil-aitolahti",
     "name": "Teboil Aitolahti",
     "address": "Kaitavedentie 95, Tampere",
     "lat": 61.539066,
@@ -25430,6 +27563,6 @@
     },
     "info": [],
     "status": "open",
-    "verifiedAt": "2026-11-22"
+    "verifiedAt": "2026-11-25"
   }
 ]

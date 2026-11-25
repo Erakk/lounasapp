@@ -9,20 +9,25 @@ async function open(page: Page, path = '/') {
   await page.goto(`/#${path}`);
 }
 
-test('browse: category + quick filters narrow the list, a card opens the place page', async ({ page }) => {
+test('browse: a category + settings narrow the list, a card opens the place page', async ({ page }) => {
   await open(page);
   await expect(page.getByRole('heading', { name: /paikkaa/ }).last()).toBeVisible();
-
   await page.getByRole('button', { name: /^Aasialainen \d+ paikkaa/ }).click();
-  for (let i = 0; i < 4; i++) await page.getByRole('button', { name: 'Isompi ryhmä' }).click(); // → 5 hlö
-  await page.getByRole('button', { name: /Matka/ }).click(); // ≤ 3
-  await page.getByRole('button', { name: /≤ 3 min/ }).click(); // ≤ 5
-  await expect(page.getByRole('button', { name: /≤ 5 min/ })).toBeVisible();
+  const all = Number((await page.locator('section[aria-live] h2').innerText()).match(/\d+/)![0]);
+
+  // Filters live in the Asetukset tab and apply to the list.
+  await page.getByRole('link', { name: 'Asetukset' }).click();
+  const filters = page.getByRole('region', { name: 'Suodattimet' });
+  for (let i = 0; i < 4; i++) await filters.getByRole('button', { name: 'Isompi ryhmä' }).click(); // → 5 hlö
+  await expect(filters.getByText('5 hlö')).toBeVisible();
+  await filters.getByRole('radiogroup', { name: 'Kävelymatka lähtöpisteestä' }).getByRole('radio', { name: '5 min', exact: true }).click();
+  await page.getByRole('link', { name: 'Näytä lista' }).click();
+  await expect(page.getByRole('link', { name: /2 suodatinta/ })).toBeVisible();
 
   const results = page.locator('section[aria-live] li');
   const n = await results.count();
   expect(n).toBeGreaterThan(0);
-  expect(n).toBeLessThan(46);
+  expect(n).toBeLessThan(all);
 
   const firstName = await results.first().getByRole('link').first().innerText();
   await results.first().getByRole('link').first().click();
@@ -31,11 +36,11 @@ test('browse: category + quick filters narrow the list, a card opens the place p
 });
 
 test('empty state appears and "Tyhjennä" restores the list', async ({ page }) => {
-  await open(page);
-  await page.getByRole('button', { name: /^Suodattimet/ }).click();
+  await open(page, '/asetukset');
   await page.getByText('Vain suosikit ♥').click(); // tap the label, like a user
   await expect(page.getByRole('switch', { name: /Vain suosikit/ })).toBeChecked();
-  await page.getByRole('button', { name: /Näytä 0 paikkaa/ }).click();
+  await expect(page.getByText('0 paikkaa näillä asetuksilla')).toBeVisible();
+  await page.getByRole('link', { name: 'Näytä lista' }).click();
   await expect(page.getByText('Ei osumia näillä suodattimilla')).toBeVisible();
   await page.getByRole('button', { name: 'Tyhjennä' }).last().click();
   await expect(page.getByRole('heading', { name: /\d+ paikkaa/ })).not.toHaveText('0 paikkaa');
@@ -142,25 +147,26 @@ test('starting point: preset re-measures the list, search stays inside Tampere, 
   const firstCard = page.locator('section[aria-live] li').first();
   const before = (await firstCard.textContent())!;
 
-  await page.getByRole('button', { name: /Vaihda lähtöpiste, nyt Kehräsaari/ }).click();
-  const sheet = page.getByRole('dialog', { name: 'Lähtöpiste' });
-  await sheet.getByRole('button', { name: 'Finlayson' }).click();
-  await expect(page.getByRole('button', { name: /nyt Finlayson/ })).toBeVisible();
+  await page.getByRole('link', { name: /lähtöpiste Kehräsaari/ }).click(); // the summary line opens Asetukset
+  const origin = page.getByRole('region', { name: 'Lähtöpiste' });
+  await origin.getByRole('button', { name: 'Finlayson' }).click();
+  await page.getByRole('link', { name: 'Näytä lista' }).click();
+  await expect(page.getByRole('link', { name: /lähtöpiste Finlayson/ })).toBeVisible();
   await expect(firstCard).not.toHaveText(before);
 
-  await page.getByRole('button', { name: /nyt Finlayson/ }).click();
-  await sheet.getByRole('searchbox').fill('tampere-talo');
-  await sheet.getByRole('button', { name: 'Hae', exact: true }).click();
-  await expect(sheet.getByRole('button', { name: /Tampere-talo/ })).toBeVisible();
-  await expect(sheet.getByText('Nokian kirkko')).toHaveCount(0);
-  await sheet.getByRole('button', { name: /Tampere-talo/ }).click();
-  await expect(page.getByRole('button', { name: /nyt Tampere-talo/ })).toBeVisible();
+  await page.getByRole('link', { name: 'Asetukset' }).click();
+  await origin.getByRole('searchbox').fill('tampere-talo');
+  await origin.getByRole('button', { name: 'Hae', exact: true }).click();
+  await expect(origin.getByRole('button', { name: /Tampere-talo/ })).toBeVisible();
+  await expect(origin.getByText('Nokian kirkko')).toHaveCount(0);
+  await origin.getByRole('button', { name: /Tampere-talo/ }).click();
+  await expect(origin.getByText('🏠 Tampere-talo')).toBeVisible();
 
   await page.reload();
-  await expect(page.getByRole('button', { name: /nyt Tampere-talo/ })).toBeVisible();
-  await page.getByRole('button', { name: /nyt Tampere-talo/ }).click();
-  await expect(sheet.getByRole('heading', { name: 'Viimeksi käytetyt' })).toBeVisible();
-  await sheet.getByRole('button', { name: 'Palauta Kehräsaari' }).click();
+  await expect(origin.getByText('🏠 Tampere-talo')).toBeVisible();
+  await expect(origin.getByRole('heading', { name: 'Viimeksi käytetyt' })).toBeVisible();
+  await origin.getByRole('button', { name: 'Palauta Kehräsaari' }).click();
+  await page.getByRole('link', { name: 'Näytä lista' }).click();
   await expect(firstCard).toHaveText(before);
 });
 
@@ -185,16 +191,23 @@ test('a mistaken visit can be removed with −1, and the removal can be undone',
 test('area: 1 km by default, can be widened to all of Tampere', async ({ page }) => {
   await open(page);
   const heading = page.locator('section[aria-live] h2');
-  await expect(page.getByRole('button', { name: /nyt Kehräsaari, 1 km/ })).toBeVisible();
+  await expect(page.getByRole('link', { name: /lähtöpiste Kehräsaari, alue 1 km/ })).toBeVisible();
   const near = Number((await heading.innerText()).match(/\d+/)![0]);
 
-  await page.getByRole('button', { name: /Vaihda lähtöpiste/ }).click();
-  const sheet = page.getByRole('dialog', { name: 'Lähtöpiste' });
-  await sheet.getByRole('radiogroup', { name: 'Alue lähtöpisteestä' }).getByRole('radio', { name: 'Kaikki' }).click();
-  await sheet.getByRole('button', { name: 'Sulje' }).click();
+  await page.getByRole('link', { name: 'Asetukset' }).click();
+  await page.getByRole('region', { name: 'Alue' }).getByRole('radio', { name: 'Kaikki' }).click();
+  await page.getByRole('link', { name: 'Näytä lista' }).click();
 
-  await expect(page.getByRole('button', { name: /Koko Tampere/ })).toBeVisible();
+  await expect(page.getByRole('link', { name: /alue Koko Tampere/ })).toBeVisible();
   await expect(heading).not.toHaveText(`${near} paikkaa`);
   const all = Number((await heading.innerText()).match(/\d+/)![0]);
   expect(all).toBeGreaterThan(near + 100);
+});
+
+test('Asetukset shows the app version and can check for updates', async ({ page }) => {
+  await open(page, '/asetukset');
+  const app = page.getByRole('region', { name: 'Sovellus' });
+  await expect(app.getByText(/^Versio \d{4}-\d{2}-\d{2} · \w+/)).toBeVisible();
+  await app.getByRole('button', { name: 'Tarkista päivitys' }).click();
+  await expect(app.getByText('Sinulla on uusin versio')).toBeVisible();
 });

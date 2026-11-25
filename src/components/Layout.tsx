@@ -3,8 +3,6 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { TabBar } from './TabBar';
 import { ToastHost } from './ToastHost';
 import { ErrorBoundary } from './ErrorBoundary';
-import { OriginSheet } from './OriginSheet';
-import { useOriginSheet } from '../state/originSheetStore';
 import { applyTheme, useTheme } from '../state/themeStore';
 
 /** Phone-first shell: content column (max 480 px on desktop) + fixed bottom tab bar. */
@@ -16,9 +14,6 @@ export function Layout() {
   useEffect(() => {
     if (pathname !== '/') window.scrollTo(0, 0);
   }, [pathname]);
-
-  // The Lähtöpiste sheet is global; never carry it over to another page.
-  useEffect(() => useOriginSheet.getState().hide(), [pathname]);
 
   useEffect(() => {
     applyTheme(theme);
@@ -38,7 +33,6 @@ export function Layout() {
           <Outlet />
         </ErrorBoundary>
       </main>
-      <OriginSheet />
       <ToastHost />
       <TabBar />
     </div>

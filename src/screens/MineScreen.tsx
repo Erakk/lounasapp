@@ -6,7 +6,6 @@ import { clearAll, exportAll, importBackup, parseBackup, setHidden } from '../db
 import { daysSince, formatDate, relativeDay } from '../domain/stats';
 import { useToast } from '../state/toastStore';
 import { fi } from '../i18n/fi';
-import { useTheme, type ThemeChoice } from '../state/themeStore';
 
 export function MineScreen() {
   const stats = useAllStats();
@@ -14,7 +13,6 @@ export function MineScreen() {
   const notes = useAllNotes();
   const showToast = useToast((s) => s.show);
   const fileRef = useRef<HTMLInputElement>(null);
-  const { theme, setTheme } = useTheme();
 
   const now = new Date();
   const derived = useMemo(() => {
@@ -135,23 +133,6 @@ export function MineScreen() {
           ))}
         </Section>
       )}
-
-      <Section title={fi.mine.theme}>
-        <div role="radiogroup" aria-label={fi.mine.theme} className="my-2 grid grid-cols-3 gap-1 rounded-2xl bg-bg p-1">
-          {(['auto', 'light', 'dark'] as ThemeChoice[]).map((t) => (
-            <button
-              key={t}
-              type="button"
-              role="radio"
-              aria-checked={theme === t}
-              onClick={() => setTheme(t)}
-              className={`min-h-10 rounded-xl text-[13px] font-bold ${theme === t ? 'bg-surface text-ink shadow-card' : 'text-ink-2'}`}
-            >
-              {fi.mine.themes[t]}
-            </button>
-          ))}
-        </div>
-      </Section>
 
       <Section title={fi.mine.backup} hint={fi.mine.backupHint}>
         <div className="flex flex-col gap-2 py-1">
